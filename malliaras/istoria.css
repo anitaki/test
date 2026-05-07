@@ -1,0 +1,140 @@
+/* Circled Text image */
+.circled-text img {
+  width: 30%;
+  border-radius: 50% !important;
+  margin-top: -50px;
+  margin-right: 75px;
+  animation: myAnimation 20s linear infinite alternate;
+}
+
+@keyframes myAnimation {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(-60deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .circled-text img {
+    margin-right: 0px;
+  }
+}
+
+/* TIMELINE */
+
+/* Timeline dots */
+span.line-dot.dot-start,
+span.line-dot.dot-end {
+  display: none;
+}
+
+.woodmart-timeline-dot {
+  position: absolute;
+  top: calc(50% - 25px) !important;
+  left: calc(50% - 25px) !important;
+  width: 50px !important;
+  height: 50px !important;
+  border: solid 2px #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .woodmart-timeline-dot {
+    position: absolute;
+    top: calc(50% - 5px) !important;
+    left: calc(50% - 5px) !important;
+    width: 10px !important;
+    height: 10px !important;
+    border: solid 2px #fff;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .woodmart-timeline-dot {
+    display: none;
+  }
+}
+
+/* Primary Section of Timeline */
+.timeline-col.timeline-col-primary {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 0px;
+}
+
+.wd-timeline-wrapper {
+  padding-block: 0px !important;
+}
+
+/* Primary Section - Years */
+.num-grey {
+  color: #afb5c5;
+  padding: 0px;
+  margin: 0px;
+  font-size: 10rem;
+  font-weight: 900;
+  letter-spacing: -0.8rem;
+}
+
+.num-blue {
+  color: #162e54;
+  padding: 0px;
+  margin: 0px;
+  margin-top: -80px;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: -0.4rem;
+  line-height: 0.1;
+  z-index: 99;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  .num-blue {
+    line-height: 0.2;
+    position: static;
+  }
+}
+
+@media (max-width: 425px) {
+  .num-grey {
+    font-size: 7rem;
+    font-weight: 900;
+    letter-spacing: -0.7rem;
+    text-align: center;
+  }
+
+  .num-blue {
+    margin-top: -50px;
+    font-size: 4rem;
+    letter-spacing: -0.3rem;
+  }
+}
+
+/* Secondary Section of Timeline */
+
+.timeline-col.timeline-col-secondary {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 0px;
+}
+
+.timeline-col.timeline-col-secondary h4.wd-timeline-title {
+  order: 2;
+  border-top: 1px solid #404040;
+  padding-top: 1rem;
+  color: #1a3059;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 425px) {
+  .timeline-col.timeline-col-secondary h4.wd-timeline-title {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    border-top: none;
+  }
+}

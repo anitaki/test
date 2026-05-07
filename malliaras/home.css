@@ -1,0 +1,46 @@
+/* Home slider */
+a.btn.btn-style-default.btn-shape-rectangle.btn-size-default.home-slider-button {
+  padding-right: 2.5rem;
+  padding-left: 0.8rem;
+}
+
+.home-slide-title
+  h4.woodmart-title-container.title.wd-font-weight-.wd-fontsize-xxxl {
+  letter-spacing: 2px;
+}
+
+/* Row with 4 icons and background image */
+.four-cols-image img {
+  padding-bottom: 0px;
+  width: 100px;
+}
+
+.four-cols-image {
+  margin: 0;
+}
+
+.four-cols-text p {
+  font-size: 1.1rem;
+  margin-top: -15px;
+}
+
+/* Η Φιλοσοφία μας */
+.wd-title-style-simple .liner-continer:after {
+  width: 100px;
+}
+
+/* Animated counter section */
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.counter-button {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 12px;
+  text-align: center;
+}
+
+

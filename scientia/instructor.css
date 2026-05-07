@@ -1,0 +1,91 @@
+/* ** Instructor CV ** */
+
+/*Banner*/
+.instructor-public__cover-image img.vc_single_image-img.attachment-full {
+  display: flex;
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*Avatar*/
+.instructor-public__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.instructor-public__cover-image
+  img {
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+/*Instructor Name*/
+.instructor-public__name {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #001931;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+/*Instuctor position and title*/
+.instructor-public__position {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #4d5e6f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+/*Instructor bio description*/
+.instructor-public__description {
+  color: #4d5e6f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.instructor-public__description {
+  padding-bottom: 20px;
+}
+
+.instructor-public__description p {
+  text-align: justify;
+  padding-inline: 20px;
+}
+
+/*Instructor bio borders + margins*/
+.vc_column-inner.vc_custom_1770310525337 > .wpb_wrapper:first-of-type {
+    border-inline: 1px solid #dbe0e9;
+    border-bottom: 1px solid #dbe0e9;
+}
+
+.instructor-public__profile .vc_column-inner:first-of-type {
+    padding-top: 0px;
+}
+
+/* **Instructor page tabs** */
+
+.teacher-tabs span.vc_tta-title-text {
+    color: #4d5e6f;
+}
+
+

@@ -1,0 +1,92 @@
+/*TRUST BAR*/
+
+/*Text icon in infobox*/
+.banner-of-infobox .text-iconbox .info-box-icon {
+    font-family: "GFS Didot", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/*Center icons and text icons with titles*/
+.banner-of-infobox .wd-info-box {
+    display: flex;
+    align-items: center;
+}
+
+
+/*Κληρονομιά*/
+
+.iron-details .vc_single_image-wrapper.vc_box_border_grey{
+    overflow: hidden;
+}
+
+.iron-details img {
+    filter: grayscale(0.8);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 5px !important;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1)
+}
+
+.iron-details img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1)
+    
+}
+
+
+/*Τι δημιουργούμε section*/
+
+/*Titles*/
+.product-section:hover .product-section-text h4.woodmart-title-container.title.wd-font-weight-.wd-fontsize-l {
+    color: #943a8f;
+}
+
+
+/*Images zoom-in on hover*/
+.product-image .vc_single_image-wrapper.vc_box_border_grey {
+    overflow: hidden;
+}
+
+.product-image img{
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1)
+}
+
+.product-image img:hover {
+    transform: scale(1.1)
+}
+
+/*Arrows*/
+.product-cat-arrow span.vc_icon_element-icon.fa.fa-solid.fa-arrow-right-long {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* SECTION 1 */
+.product-section.section-1:hover .product-cat-arrow-1 span.fa-arrow-right-long,
+.product-image.img-1:hover ~ .product-section.section-1 .product-cat-arrow-1 span.fa-arrow-right-long {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+
+/* SECTION 2 */
+.product-section.section-2:hover .product-cat-arrow-2 span.fa-arrow-right-long,
+.product-image.img-2:hover ~ .product-section.section-2 .product-cat-arrow-2 span.fa-arrow-right-long {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+/* SECTION 3 */
+.product-section.section-3:hover .product-cat-arrow-3 span.fa-arrow-right-long,
+.product-image.img-3:hover ~ .product-section.section-3 .product-cat-arrow span.fa-arrow-right-long {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+/* SECTION 4 */
+.product-section.section-4:hover .product-cat-arrow-4 span.fa-arrow-right-long,
+.product-image.img-4:hover ~ .product-section.section-4 .product-cat-arrow-4 span.fa-arrow-right-long {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}

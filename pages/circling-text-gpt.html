@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Reveal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+img {
+    width: 100px; /* Adjust as needed for your images */
+    display: block; /* Helps with centering and consistent layout */
+    margin: 10px; /* Add some spacing if needed */
+}
+
+/* Styles for the existing arrow image (no change needed here) */
+.reveal-clip {
+    height: auto;
+    clip-path: inset(100% 100% 100% 100%);
+}
+
+/* Class added by JavaScript for the arrow animation */
+.animate-on-hover {
+    animation: clipReveal 2s ease-out forwards;
+}
+
+@keyframes clipReveal {
+    0% {
+        clip-path: inset(100% 100% 100% 100%);
+    }
+    25% {
+        clip-path: inset(100% 100% 100% 0);
+    }
+    50% {
+        clip-path: inset(100% 100% 0 0);
+    }
+    75% {
+        clip-path: inset(100% 0 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* New styles for the circle image */
+.reveal-circle {
+    height: auto;
+    /* Initially fully clipped/hidden */
+    clip-path: circle(0% at 50% 50%); /* Start completely hidden */
+}
+
+/* Class added by JavaScript for the circle animation */
+.animate-circle-on-hover {
+    animation: circleSequentialDraw 4s ease-in-out forwards; /* Longer duration for more steps */
+}
+
+@keyframes circleSequentialDraw {
+    /* Step 0: Start hidden */
+    0% {
+        clip-path: circle(0% at 50% 50%);
+    }
+
+    /* Step 1: Reveal Top Center segment */
+    10% { /* Short initial pause or reveal */
+        clip-path: circle(10% at 50% 0%); /* Small circle at top center */
+    }
+    15% {
+        clip-path: circle(20% at 50% 0%); /* Grow slightly more */
+    }
+
+
+    /* Step 2: Add Top Left segment */
+    25% {
+        clip-path: circle(20% at 50% 0%), /* Keep top center */
+                     circle(20% at 0% 0%);  /* Add top left */
+    }
+
+    /* Step 3: Add Bottom Left segment */
+    40% {
+        clip-path: circle(20% at 50% 0%),
+                     circle(20% at 0% 0%),
+                     circle(20% at 0% 100%); /* Add bottom left */
+    }
+
+    /* Step 4: Add Bottom Center segment */
+    55% {
+        clip-path: circle(20% at 50% 0%),
+                     circle(20% at 0% 0%),
+                     circle(20% at 0% 100%),
+                     circle(20% at 50% 100%); /* Add bottom center */
+    }
+
+    /* Step 5: Add Bottom Right segment */
+    70% {
+        clip-path: circle(20% at 50% 0%),
+                     circle(20% at 0% 0%),
+                     circle(20% at 0% 100%),
+                     circle(20% at 50% 100%),
+                     circle(20% at 100% 100%); /* Add bottom right */
+    }
+
+    /* Step 6: Add Top Right segment */
+    85% {
+        clip-path: circle(20% at 50% 0%),
+                     circle(20% at 0% 0%),
+                     circle(20% at 0% 100%),
+                     circle(20% at 50% 100%),
+                     circle(20% at 100% 100%),
+                     circle(20% at 100% 0%); /* Add top right */
+    }
+
+    /* Step 7: Final state - full circle */
+    100% {
+        clip-path: circle(50% at 50% 50%); /* Fully reveal the circle */
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="about-us-first-row">
+        <img src="./img/Circular Text.png" alt="Arrow" class="reveal-clip"> 
+        <img src="./img/circles-text.png" alt="Circle" class="reveal-circle"> 
+    </div>
+
+    <div style="height: 100vh;"></div> <script src="script.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const triggerElement = document.querySelector('.about-us-first-row');
+
+    // For the arrow image
+    const arrowTargetElement = document.querySelector('.reveal-clip');
+    let arrowAnimationTriggeredByHover = false;
+
+    // For the new circle image
+    const circleTargetElement = document.querySelector('.reveal-circle');
+    let circleAnimationTriggeredByHover = false;
+
+    if (triggerElement && arrowTargetElement) {
+        // --- Hover event listeners for arrow ---
+        triggerElement.addEventListener('mouseenter', () => {
+            if (!arrowAnimationTriggeredByHover) { // Only trigger if not already animated by hover
+                arrowTargetElement.classList.remove('animate-on-hover');
+                void arrowTargetElement.offsetWidth; // Force reflow
+                arrowTargetElement.classList.add('animate-on-hover');
+                arrowAnimationTriggeredByHover = true;
+            }
+        });
+
+        // --- Intersection Observer for arrow (modified) ---
+        const arrowObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0 // Still useful for initial load behavior if you want
+        };
+
+        const arrowObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // If the element is intersecting (becomes visible) and not yet animated by hover
+                if (entry.isIntersecting && !arrowAnimationTriggeredByHover) {
+                    arrowTargetElement.classList.remove('animate-on-hover'); // Ensure reset if needed
+                    void arrowTargetElement.offsetWidth; // Force reflow
+                    arrowTargetElement.classList.add('animate-on-hover');
+                    arrowAnimationTriggeredByHover = true; // Set flag
+                }
+                // *** REMOVED THE LOGIC TO REMOVE THE CLASS WHEN OUT OF VIEW ***
+            });
+        }, arrowObserverOptions);
+
+        arrowObserver.observe(arrowTargetElement);
+    }
+
+    if (triggerElement && circleTargetElement) {
+        // --- Hover event listeners for circle ---
+        triggerElement.addEventListener('mouseenter', () => {
+            if (!circleAnimationTriggeredByHover) { // Only trigger if not already animated by hover
+                circleTargetElement.classList.remove('animate-circle-on-hover');
+                void circleTargetElement.offsetWidth; // Force reflow
+                circleTargetElement.classList.add('animate-circle-on-hover');
+                circleAnimationTriggeredByHover = true;
+            }
+        });
+
+        // --- Intersection Observer for circle (modified) ---
+        const circleObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0
+        };
+
+        const circleObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // If the element is intersecting (becomes visible) and not yet animated by hover
+                if (entry.isIntersecting && !circleAnimationTriggeredByHover) {
+                    circleTargetElement.classList.remove('animate-circle-on-hover'); // Ensure reset if needed
+                    void circleTargetElement.offsetWidth; // Force reflow
+                    circleTargetElement.classList.add('animate-circle-on-hover');
+                    circleAnimationTriggeredByHover = true; // Set flag
+                }
+                // *** REMOVED THE LOGIC TO REMOVE THE CLASS WHEN OUT OF VIEW ***
+            });
+        }, circleObserverOptions);
+
+        circleObserver.observe(circleTargetElement);
+    }
+});
+</script>
+</html>

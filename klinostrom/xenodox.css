@@ -1,0 +1,382 @@
+/* Slider */
+.regular-title {
+  display: none !important;
+}
+
+#fix-image
+  .vc_row.wpb_row.vc_row-fluid.no-padding.vc_row-o-content-top.vc_row-flex {
+  background-position: top center !important;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* Custom Product Tabs */
+.custom-hotel-tabs .vc_tta-tabs-list {
+  background: transparent !important;
+  border: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 10px !important;
+}
+
+/* Τα κουμπιά των tabs */
+.custom-hotel-tabs .vc_tta-tab {
+  background-color: #76abbf !important;
+  border: 2px solid transparent !important;
+}
+
+/* Τext inside tabs */
+.custom-hotel-tabs .vc_tta-tab a {
+  color: #ffffff !important;
+  font-weight: bold !important;
+  padding: 15px 25px !important;
+}
+
+/* Active tab */
+.custom-hotel-tabs .vc_tta-tab.vc_active {
+  background-color: #ffffff !important;
+  border: 2px solid #76abbf !important;
+}
+
+.custom-hotel-tabs .vc_tta-tab.vc_active a {
+  color: #76abbf !important;
+}
+
+.wpb-js-composer
+  .vc_tta.vc_general
+  .vc_tta-tabs-container
+  .vc_tta-tab
+  > a:after {
+  content: "";
+  background-color: rgba(104, 104, 104, 0);
+  position: absolute;
+  top: auto !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  height: 2px !important;
+  width: 0 !important;
+  display: block !important;
+}
+
+/* --- NINJA FORM --- */
+
+/* Διάταξη 2 στηλών */
+@media (min-width: 600px) {
+  .nf-form-content nf-field:nth-child(1),
+  .nf-form-content nf-field:nth-child(2),
+  .nf-form-content nf-field:nth-child(3),
+  .nf-form-content nf-field:nth-child(4) {
+    width: 48% !important;
+    display: inline-block !important;
+    margin-right: 2% !important;
+    vertical-align: top !important;
+    clear: none !important;
+  }
+}
+
+/* Underline */
+body .ninja-forms-form .nf-field-element input:not([type="button"]),
+body .ninja-forms-form .nf-field-element textarea {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid #333333 !important;
+  border-radius: 0 !important;
+  padding: 10px 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* ΤΟ ΚΟΥΜΠΙ */
+body .nf-form-cont .nf-form-content .submit-wrap .ninja-forms-field,
+body .ninja-forms-form .nf-field-element input[type="submit"],
+body .ninja-forms-form .nf-field-element input[type="button"] {
+  background-color: #76abbf !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 15px 40px !important;
+  float: right !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  width: auto !important;
+  cursor: pointer !important;
+  -webkit-appearance: none !important;
+}
+
+/*  Clean up για το float */
+.nf-after-form-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 426px) {
+  .custom-font-family {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 426px) {
+  h1,
+  h2 {
+    font-size: 30px !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 426px) {
+  p {
+    text-align: center;
+  }
+}
+
+/* Z-index Gia Spiral IMG */
+.site-footer,
+.site-footer.dark {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+/* Position Of Spiral IMG */
+.move-my-img {
+  position: relative;
+  z-index: 1 !important;
+  width: 500px;
+  height: 500px;
+  rotate: 250deg;
+  transform: translate(-123px, -30px);
+}
+
+@media (max-width: 426px) {
+  .move-my-img {
+    display: none;
+  }
+}
+
+/* Kaleste Mas Button Color */
+
+.vc_btn3.vc_btn3-color-peacoc,
+.vc_btn3.vc_btn3-color-peacoc.vc_btn3-style-flat {
+  color: #ffff;
+  background-color: #76abbf;
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+.fix-sections {
+  border-radius: 12px;
+  margin: 0.01px;
+}
+
+/*img.main-image.et-lazyload.wp-post-image.lazyautosizes.ls-is-cached.lazyloaded {*/
+/*  transform: scale(2);*/
+/*}*/
+.buble-custom {
+  border: 1px solid #79b0b6;
+  padding: 4px 24px;
+  border-radius: 18px;
+  max-width: 261px;
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+p.bubble-title {
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
+}
+
+p.bubble-desc {
+  font-size: 10px;
+  text-align: center;
+}
+#circle-image img {
+  position: absolute;
+  top: 45px;
+  left: 31%;
+  z-index: -1;
+}
+
+.first-bubble {
+  display: flex;
+  position: absolute;
+  top: 38px;
+  left: 37%;
+}
+.first-bubble .wpb_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-bubble {
+  display: flex;
+  position: absolute;
+  top: -120px;
+  left: 56%;
+}
+.second-bubble .wpb_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-bubble .bubble-line img {
+  height: 150px;
+  object-fit: contain;
+  margin-top: 8px;
+}
+.first-bubble .bubble-line img {
+  height: 100px;
+  object-fit: contain;
+  margin-top: 24px;
+}
+
+.third-bubble {
+  display: flex;
+  position: absolute;
+  bottom: 26px;
+  left: 41%;
+}
+.third-bubble .wpb_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third-bubble .bubble-line {
+  transform: scaleX(-1);
+}
+.third-bubble .bubble-line img {
+  height: 150px;
+  object-fit: contain;
+  margin-top: 8px;
+  margin-left: 50px;
+}
+
+.fourth-bubble {
+  display: flex;
+  position: absolute;
+  bottom: -100px;
+  left: 55%;
+}
+.fourth-bubble .wpb_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourth-bubble .bubble-line {
+  transform: rotate(180deg);
+}
+.fourth-bubble .bubble-line img {
+  height: 150px;
+  object-fit: contain;
+  margin-top: 8px;
+  /*margin-right: 50px;*/
+  transform: scaleX(-1);
+}
+
+.fifth-bubble {
+  display: flex;
+  position: absolute;
+  top: 33%;
+  left: 26%;
+  align-items: center;
+  transform: translateY(-50%);
+}
+.fifth-bubble .wpb_wrapper {
+  display: flex;
+  flex-direction: column; /* Βάζει κείμενο και γραμμή στην ίδια σειρά */
+  align-items: center;
+}
+.fifth-bubble .bubble-line {
+  margin-top: 24px;
+  transform: scaleX(-1) rotate(180deg);
+}
+.fifth-bubble .bubble-line img {
+  width: 80px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: -20px;
+  /* height: 150px;
+    object-fit: contain;
+    margin-top:8px;
+    margin-left:50px;*/
+}
+
+.vc_active span.vc_tta-title-text {
+  color: #76abbf;
+}
+.vc_tta-tab:hover .vc_tta-title-text {
+  color: #76abbf;
+}
+.custom-hotel-tabs .vc_tta-tab:hover {
+  background-color: white !important;
+  border: 2px solid #76abbf !important;
+}
+
+.vc_tta-tab .vc_tta-title-text {
+  transition: color 0.4s ease;
+}
+
+.vc_tta-tab:hover .vc_tta-title-text {
+  color: #76abbf;
+}
+@media (min-width: 750px) and (max-width: 1450px) {
+  .fix-text {
+    font-size: 1vw !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .fix-col-width {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 900px) {
+  a.product-link {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+  #fix-text {
+    font-size: 32px !important;
+  }
+  .first-bubble,
+  .second-bubble,
+  .third-bubble,
+  .fourth-bubble,
+  .fifth-bubble {
+    position: relative !important;
+    left: unset !important;
+    right: unset !important;
+    top: unset !important;
+    bottom: unset !important;
+    margin: 12px 0;
+    transform: unset !important;
+  }
+  .bubble-line {
+    display: none !important;
+  }
+
+  .centered-mobile {
+    text-align: center !important;
+  }
+}
+
+p {
+  font-size: 20px;
+}

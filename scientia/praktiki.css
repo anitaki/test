@@ -1,0 +1,17 @@
+/* Calendar view */
+.etn-default-calendar-style table .fc-daygrid-day.fc-day-today,
+.etn-default-calendar-style table tbody > tr:nth-child(2n) > td,
+.etn-default-calendar-style table tbody > tr:nth-child(2n) > th,
+.etn-default-calendar-style table tbody > tr:nth-child(odd) > td,
+.etn-default-calendar-style table tbody > tr:nth-child(odd) > th,
+.etn-default-calendar-style table tbody > tr > td {
+  background-color: #fff;
+  padding: 2px 0;
+}
+
+/* Calendar showing events for date */
+.etn-cal-selected-date span {
+  margin-bottom: 5px;
+}
+
+

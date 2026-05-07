@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pietra Calda Color Palette</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: #fff;
+    }
+
+    .palette {
+        max-width: 900px;
+        margin: 40px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .stripe {
+        padding: 28px 36px;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .code {
+        opacity: 0.8;
+        font-family: monospace;
+    }
+
+    /* Colors */
+    .green-main   { background:#1F3A33; }
+    .green-mid    { background:#2E4A41; }
+    .green-light  { background:#3F5F54; }
+
+    .gold-main    { background:#C7A764; color:#1a1a1a; }
+    .gold-dark    { background:#9C7F45; }
+    .gold-light   { background:#E2C987; color:#1a1a1a; }
+
+    .shadow       { background:#0F1E1A; }
+</style>
+</head>
+<body>
+
+<div class="palette">
+
+    <div class="stripe green-main">
+        Primary Green <span class="code">#1F3A33</span>
+    </div>
+
+    <div class="stripe green-mid">
+        Secondary Green <span class="code">#2E4A41</span>
+    </div>
+
+    <div class="stripe green-light">
+        Highlight Green <span class="code">#3F5F54</span>
+    </div>
+
+    <div class="stripe gold-main">
+        Main Gold <span class="code">#C7A764</span>
+    </div>
+
+    <div class="stripe gold-dark">
+        Gold Shadow <span class="code">#9C7F45</span>
+    </div>
+
+    <div class="stripe gold-light">
+        Gold Highlight <span class="code">#E2C987</span>
+    </div>
+
+    <div class="stripe shadow">
+        Deep Shadow <span class="code">#0F1E1A</span>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+.aspart-text {
+  line-height: 1.5px;
+  font-size: 50px;
+}
+span.vc_tta-title-text {
+  font-family: "Manrope";
+  /* font-size: 45px; */
+  color: black;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  line-height: 1.3;
+}
+
+h2.vc_custom_heading.vc_do_custom_heading.hospitality-title {
+  max-width: 1900px !important;
+  min-width: 800px !important;
+}
+
+/*Section Our Philosophy*/
+h2.vc_custom_heading.vc_do_custom_heading.hospitality-title {
+  font-size: 6rem !important;
+  position: relative;
+  transform: translate(-90px, 40px);
+  z-index: 1;
+}
+
+.our-approach-row {
+  display: flex;
+  align-items: center;
+}
+
+.our-philoshophy-text {
+  width: 60%;
+}
+
+.wpb_text_column.wpb_content_element.vc_custom_1751638233398.our-approach-text {
+  padding-right: 0 !important;
+}
+
+.prefooter {
+  display: none;
+}
+
+.coconut img {
+  width: 80%;
+}
+
+/*Page media queries*/
+@media (max-width: 768px) {
+  h2.vc_custom_heading.vc_do_custom_heading.betitle {
+    font-size: 3rem !important;
+    text-align: center !important;
+  }
+
+  /*hidden-imgs for mobile*/
+  .wpb_single_image.wpb_content_element.vc_align_left.wpb_content_element.hidden-img {
+    display: none;
+  }
+
+  .living-text p,
+  .our-philoshophy-text p,
+  .aspart-text p,
+  .our-service-text p,
+  .living-last-text p,
+  .our-living-text p {
+    /* font-size: 0.8rem; */
+    line-height: 1.5;
+    padding-inline: 1rem;
+  }
+
+  .our-living-text p {
+    text-align: center;
+  }
+
+  /*banner row*/
+  .vc_row.wpb_row.vc_row-fluid.bebanner-row.vc_custom_1751889199635.vc_row-has-fill.et-parallax.et-parallax-center.et_custom_uniqid_new_686bb5201127e {
+    max-height: 19rem;
+  }
+
+  img.vc_single_image-img.attachment-full {
+    margin-bottom: 1rem !important;
+    width: 75%;
+  }
+
+  /*MOBILE TEXTS*/
+  h2.vc_custom_heading.vc_do_custom_heading.hospitality-title {
+    display: none !important;
+  }
+
+  .vc_column-inner.vc_custom_1751630639742 {
+    padding-inline: 2rem !important;
+  }
+
+  div#hospitality-imgs {
+    padding-bottom: 3rem !important;
+  }
+
+  .living-title-end h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.wpb_animate_when_almost_visible.wpb_slideInLeft.slideInLeft.vc_custom_1751969980759.hidden-img2.wpb_start_animation.animated {
+    padding-bottom: 1rem !important;
+  }
+
+  .wpb_text_column.wpb_content_element.vc_custom_1752070403897.our-philoshophy-text {
+    padding-right: 0 !important;
+  }
+
+  .our-philoshophy-text {
+    width: 100%;
+  }
+}
+
+/*Accordeon Title and Text*/
+.betitle .vc_row.wpb_row.vc_row-fluid.et_custom_uniqid_new_6867bf7d6ea01 {
+  padding-inline: 2rem !important;
+}
+
+/*Accordeon Section*/
+.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body {
+  background-color: #ffffff !important;
+  border: none;
+}
+
+/*accordeon texts*/
+.betext-acc li,
+.betext-acc p {
+  line-height: 1.2 !important;
+  /* font-size: 22px !important; */
+  font-weight: 300;
+  color: #000000;
+}
+
+span.vc_tta-title-text {
+  text-transform: none !important;
+  /* font-size: 45px !important; */
+}
+
+.vc_tta-panel-body {
+  margin-left: 5rem;
+}
+
+.betext-acc,
+.our-service-text {
+  width: 85%;
+}
+
+/*Accordeon media queries for pages Hospitality, Events...*/
+@media (max-width: 768px) {
+  h2.vc_custom_heading.vc_do_custom_heading.betitle {
+    font-size: 2.7rem !important;
+    text-align: left !important;
+  }
+
+  /*bannerrow*/
+  .wpb_single_image.wpb_content_element.vc_align_left.wpb_content_element.bebanner-image {
+    margin-bottom: 3rem !important;
+  }
+
+  .vc_row.wpb_row.vc_row-fluid.bebanner-row.vc_custom_1751629136193.vc_row-has-fill.et-parallax.et-parallax-center.et_custom_uniqid_new_6867bd1f1719c {
+    max-height: 270px;
+  }
+
+  .bebanner-image img.vc_single_image-img.attachment-full {
+    width: 100%;
+    margin-bottom: 3rem !important;
+  }
+
+  .betext-acc li,
+  .betext-acc p {
+    line-height: 1.3 !important;
+    font-size: 16px !important;
+    color: #000000;
+    text-align: left;
+  }
+
+  span.vc_tta-title-text {
+    /* font-size: 1.7rem !important; */
+    line-height: 1.2;
+    font-weight: bold;
+  }
+}
+
+/* Margin between footer and last element */
+.vc_row.wpb_row.vc_row-fluid.footer-row.vc_custom_1761747533506.vc_row-has-fill.vc_column-gap-30.vc_row-o-equal-height.vc_row-flex.wd-rs-690222403bf25 {
+  margin-top: 0px !important;
+}

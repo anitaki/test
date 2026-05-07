@@ -1,0 +1,202 @@
+.aspart-text {
+  line-height: 1.5px;
+  font-size: 50px;
+}
+span.vc_tta-title-text {
+  font-family: "Manrope";
+  /* font-size: 45px; */
+  color: black;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  line-height: 1.3;
+}
+
+h2.vc_custom_heading.vc_do_custom_heading.hospitality-title {
+  max-width: 1900px !important;
+  min-width: 800px !important;
+}
+
+/*Section Our Philosophy*/
+h2.vc_custom_heading.vc_do_custom_heading.hospitality-title {
+  font-size: 6rem !important;
+  position: relative;
+  transform: translate(-90px, 40px);
+  z-index: 1;
+}
+
+.our-approach-row {
+  display: flex;
+  align-items: center;
+}
+
+.wpb_text_column.wpb_content_element.vc_custom_1751638233398.our-approach-text {
+  padding-right: 0 !important;
+}
+
+.prefooter {
+  display: none;
+}
+
+/*Page media queries*/
+@media (max-width: 768px) {
+  /*hidden-imgs for mobile*/
+  .wpb_single_image.wpb_content_element.vc_align_left.wpb_content_element.hidden-img {
+    display: none;
+  }
+
+  .living-text p,
+  .our-philoshophy-text p,
+  .aspart-text p,
+  .our-service-text p,
+  .living-last-text p {
+    /* font-size: 1.7rem; */
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .our-philoshophy-text p {
+    text-align: left;
+    padding-inline: 1rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  /*banner row*/
+  .vc_row.wpb_row.vc_row-fluid.bebanner-row.vc_custom_1751889199635.vc_row-has-fill.et-parallax.et-parallax-center.et_custom_uniqid_new_686bb5201127e {
+    max-height: 19rem;
+  }
+
+  img.vc_single_image-img.attachment-full {
+    margin-bottom: 2rem !important;
+  }
+
+  /*MOBILE TEXTS*/
+  h2.vc_custom_heading.vc_do_custom_heading.hospitality-title {
+    display: none !important;
+  }
+
+  .vc_column-inner.vc_custom_1751630639742 {
+    padding-inline: 2rem !important;
+  }
+
+  div#hospitality-imgs {
+    padding-bottom: 3rem !important;
+  }
+
+  .living-title-end h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.wpb_animate_when_almost_visible.wpb_slideInLeft.slideInLeft.vc_custom_1751969980759.hidden-img2.wpb_start_animation.animated {
+    padding-bottom: 1rem !important;
+  }
+
+  .wpb_text_column.wpb_content_element.vc_custom_1752070403897.our-philoshophy-text {
+    padding-right: 0 !important;
+  }
+}
+
+/*Accordeon Title and Text*/
+.betitle .vc_row.wpb_row.vc_row-fluid.et_custom_uniqid_new_6867bf7d6ea01 {
+  padding-inline: 2rem !important;
+}
+
+/*Accordeon Section*/
+.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body {
+  background-color: #ffffff !important;
+  border: none;
+}
+
+/*accordeon texts*/
+.betext-acc li,
+.betext-acc p {
+  line-height: 1.2 !important;
+  /* font-size: 22px !important; */
+  font-weight: 300;
+  color: #000000;
+}
+
+span.vc_tta-title-text {
+  text-transform: none !important;
+  /* font-size: 45px !important; */
+}
+
+.vc_tta-panel-body {
+  margin-left: 5rem;
+}
+
+.betext-acc,
+.our-service-text {
+  width: 85%;
+}
+
+/*Accordeon media queries for pages Hospitality, Events...*/
+@media (max-width: 768px) {
+  h2.vc_custom_heading.vc_do_custom_heading.betitle {
+    /* font-size: 2.7rem !important; */
+  }
+
+  /*bannerrow*/
+  .wpb_single_image.wpb_content_element.vc_align_left.wpb_content_element.bebanner-image {
+    margin-bottom: 3rem !important;
+  }
+
+  .vc_row.wpb_row.vc_row-fluid.bebanner-row.vc_custom_1751629136193.vc_row-has-fill.et-parallax.et-parallax-center.et_custom_uniqid_new_6867bd1f1719c {
+    max-height: 270px;
+  }
+
+  .bebanner-image img.vc_single_image-img.attachment-full {
+    width: 100%;
+    margin-bottom: 3rem !important;
+  }
+
+  .betext-acc li,
+  .betext-acc p {
+    line-height: 1.3 !important;
+    /* font-size: 16px !important; */
+    color: #000000;
+    padding-inline: 1rem;
+  }
+
+  span.vc_tta-title-text {
+    /* font-size: 1.7rem !important; */
+    line-height: 1.2;
+    font-weight: bold;
+  }
+}
+
+.living-last-section {
+  font-weight: 400;
+}
+
+.vc_tta-panels {
+  border-top: 0px solid !important;
+}
+div#\31 751891679747-bbdd38a3-bb19 {
+  border: 0px;
+}
+div#\31 751634667203-bd9245d2-471a {
+  border: 0px;
+}
+div#\31 751631109470-3b06ca53-5f33 {
+  border: 0px;
+}
+
+/* Images carousel */
+@media (max-width: 768px) {
+  .wd-gallery-item img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .wd-gallery-item img {
+    width: 95%;
+  }
+}

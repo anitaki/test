@@ -1,0 +1,41 @@
+/* Icon Boxes */
+
+.icon_alignment_left {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .vc_custom_heading.vc_custom_1765988682118.text_align_left {
+    margin-bottom: 0px !important;
+}
+
+.vc_col-has-fill>.vc_column-inner, .vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_column_container>.vc_column-inner {
+    padding-top: 0px;
+}
+
+.icon_box.vc_custom_1765989897404.stm_icon_box_hover_none.dark.module__8743c715758dc7cb4716afe043856f96.box_align_left.clearfix {
+    border-bottom: 1px solid #e1e2e4 !important;
+}
+
+.icon_box.vc_custom_1765988469952.stm_icon_box_hover_none.dark.module__bd9565e923d10df72c0180f3bf0bd63d.box_align_left.clearfix,
+.icon_box.vc_custom_1765988487212.stm_icon_box_hover_none.dark.module__39232dfa90157f4095893271fd621ee3.box_align_left.clearfix {
+    padding-bottom: 0px !important;
+}
+
+.icon_box.vc_custom_1765988389792.stm_icon_box_hover_none.standart.module__34d61d741ba39515b7109f31ac75b2e0.box_align_left.clearfix {
+    margin-bottom: 17px !important;
+}
+}
+
+
+/* Contact form */
+@media (max-width: 767px) {
+.vc_column-inner.vc_custom_1437478190523 {
+    padding-right: 15px !important;
+}
+
+form.wpcf7-form.init p {
+    text-align: center;
+}
+}

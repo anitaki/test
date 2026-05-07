@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circling word</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+
+
+      .reveal-circle {
+        width: 100px;
+        height: auto;
+        clip-path: inset(100% 100% 100% 100%);
+        animation: circleReveal 2s ease-out forwards;
+      }
+
+      @keyframes circleReveal {
+        0% {
+          clip-path: inset(100% 100% 100% 100% );
+        }
+        25% {
+          clip-path: inset( 100% 100% 100% 0);
+        }
+        50% {
+          clip-path: inset( 100% 100% 0 0);
+        }
+        75% {
+          clip-path: inset(100% 0 0 0 );
+        }
+        100% {
+          clip-path: inset(0 0 0 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <h2>Beyond trends, into timeless impact!</h2>
+      <img class="reveal-circle" src="./img/circles-text.png" alt="" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+/*Articles*/
+.swiper-slide.swiper-slide-visible {
+  width: 50% !important;
+}
+
+.meta-post-timeline,
+.content-article {
+  display: none !important;
+}
+
+.grey-large-title-team h2 {
+  transform: translate(-15%, 55%);
+}
+
+.wpb_text_column.wpb_content_element.grey-large-title.grey-large-title-team,
+.wpb_text_column.wpb_content_element.grey-large-title.grey-large-title-services {
+  margin-top: -5rem;
+}
+
+/* Contact form */
+span.wpcf7-list-item-label a {
+  color: #888888 !important;
+}
+
+/*Articles Grid*/
+.vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_excerpt,
+a.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink.align-left {
+  display: none;
+}
+
+.vc_col-sm-12.vc_gitem-col.vc_gitem-col-align- {
+    background-color: black;
+}
+
+/*Red dot*/
+.red-dot {
+  position: relative;
+}
+
+.red-dot::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: rgb(190, 17, 10);
+  z-index: 1;
+}
+
+.red-dot {
+  text-align: right;
+}
+
+.red-dot::before {
+  right: 0;
+  transform: translate(10%, -98px);
+}
+
+/*Grey large title*/
+
+.grey-large-title-contact h2 {
+  transform: translate(6%, 75%);
+  margin-top: 3rem;
+  font-size: 16rem !important;
+}
+
+.grey-large-title-contact {
+  margin-top: -5rem;
+}
+
+/*RED CIRCLE AROUND TEXT*/
+
+/*Positoning of red circle*/
+span.text-anchor {
+  position: relative;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+  position: absolute;
+  top: 5%;
+  right: 44%;
+  width: 16.3rem;
+}
+
+/*RED DRAWING ARROW*/
+.red-drawing-arrow img {
+  width: 40%;
+  margin: 0;
+  transform: translate(-35%, -15%);
+}
+
+/*Letter Animation */
+
+h5#typewriter {
+  /*font-weight: bold;*/
+  font-weight: 500;
+  text-align: left;
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5em;
+  color: #ffffff;
+  padding: 0;
+  margin-bottom: 1rem;
+  line-height: 0.8em !important;
+  text-transform: none;
+}
+
+h5#typewriter span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  animation-delay: 2s;
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.03em solid #ffffff;
+}
+
+/*Media Queries for page*/
+
+@media (max-width: 1024px) {
+  .grey-large-title-contact h2 {
+    transform: translate(3%, 75%);
+    margin-top: 3rem;
+    font-size: 12rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .grey-large-title-contact h2 {
+    transform: translate(0%, 110%);
+    padding-top: 0;
+    font-size: 8rem !important;
+  }
+
+  .grey-large-title-team h2 {
+    transform: translate(-2%, 95%);
+  }
+
+  .grey-large-title-contact {
+    margin-top: -10rem;
+  }
+
+  .wpb_text_column.wpb_content_element.large-1-header h1 {
+    font-size: 3rem !important;
+}
+
+  .swiper-slide.swiper-slide-visible {
+    width: 100% !important;
+  }
+
+  .contact-text {
+    margin-top: 75px !important;
+  }
+
+  .text-cols {
+    width: 100%;
+}
+}
+
+@media (max-width: 576px) {
+  .grey-large-title-contact {
+    margin-top: -6rem;
+  }
+
+  .grey-large-title-contact h2 {
+    transform: translate(0%, 80%);
+    padding-top: 0;
+    text-align: center !important;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 2%;
+    right: 15%;
+    width: 21.3rem;
+  }
+}

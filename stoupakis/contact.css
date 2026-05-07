@@ -1,0 +1,12 @@
+.page .wd-page-content {
+  background-color: white;
+  background-image: none;
+  /* background-image: url(https://stoupakis.progressnet.gr/wp-content/uploads/2021/08/vertical-bg-line.png);
+    background-repeat: repeat-y;
+    background-position: center top; */
+}
+
+h4.woodmart-title-container.title.wd-font-weight-.wd-fontsize-l {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}

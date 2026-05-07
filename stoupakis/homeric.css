@@ -1,0 +1,230 @@
+/*Main page background and padding-bottom*/
+.wd-page-content.main-page-wrapper {
+  background-image: none;
+}
+
+main#main-content {
+  padding-bottom: 0px;
+}
+
+/* Main slider */
+.title-after_title.reset-last-child.wd-fontsize-s {
+  font-size: 1.3rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Section 1 */
+.homeric-s1-image img {
+  width: 75%;
+}
+
+.homeric-s1-text p {
+  width: 65%;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .homeric-s1-text p {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Section 2 with roses background */
+.roses-row {
+  height: 600px;
+}
+
+.roses-text-col .wpb_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+p.roses-text {
+  color: white;
+  font-size: 1.2rem;
+  width: 70%;
+  line-height: 1.7;
+}
+
+.wpb_column.roses-table-col {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 1024px) {
+  p.roses-text {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .roses-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .roses-row .roses-table-col,
+  .roses-row .roses-row .roses-table-col {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wpb_column.roses-table-col.vc_column_container.vc_col-sm-6.wd-rs-68f7659f13de2 {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Mastic image overlap */
+#mastic-img-overlap {
+  position: absolute;
+  top: -500px;
+  right: -450px;
+  z-index: 9999 !important;
+}
+
+@media (max-width: 1024px) {
+  #mastic-img-overlap {
+    position: absolute;
+    top: -300px;
+    right: -250px;
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #mastic-img-overlap {
+    display: none;
+  }
+}
+
+/**** Distillation table  *****/
+.distillation-table,
+.distillation-header-row,
+.distillation-header-cell {
+  border: 0.5px solid white;
+  border-collapse: separate;
+  color: white;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.distillation-row {
+  height: 5rem;
+}
+
+.distillation-header-cell,
+.distillation-cell {
+  min-width: 6rem;
+  text-align: center;
+}
+
+.distillation-header-icon,
+.distillation-icon {
+  width: 25px;
+}
+
+.distillation-cell {
+  text-align: center;
+  border-bottom: 0.5px solid white;
+}
+
+/* Thermometer header in table */
+.thermo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thermo-div p {
+  font-size: 0.5rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.thermo-div img {
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .distillation-header-cell,
+  .distillation-cell {
+    min-width: 3.2rem;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .thermo-div img {
+    width: 20px;
+  }
+
+  .thermo-div p {
+    font-size: 0.35rem;
+  }
+
+  .distillation-row {
+    height: 3rem;
+  }
+}
+
+/* Section 3 - Products */
+.products-img img {
+  width: 65%;
+  margin-top: 20px;
+}
+
+.product-label-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: -3rem;
+}
+
+@media (max-width: 768px) {
+  .product-label-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Section 4 - Cocktail material */
+.recipe-slide h4.banner-title {
+  font-size: 5rem;
+}
+
+.recipe-slide .banner-inner p {
+  font-size: 1.3rem;
+}
+
+.banner-mask .wrapper-content-banner {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-mask .wrapper-content-banner:hover {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+@media (max-width: 768px) {
+  .recipe-slide h4.banner-title {
+    font-size: 2.5rem;
+  }
+
+  .recipe-slide .banner-inner p {
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 425px) {
+  .recipe-slide h4.banner-title {
+    font-size: 1.5rem;
+  }
+
+  .recipe-slide .banner-inner p {
+    font-size: 0.8rem;
+  }
+}

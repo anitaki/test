@@ -1,0 +1,90 @@
+/* Tour tab navigation */
+
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue
+  .vc_tta-tabs-container
+  .vc_tta-tabs-list
+  li.vc_tta-tab
+  a {
+  /* background-color: #142738; */
+  background-color: #26aac2;
+}
+
+.vc_general.vc_tta.vc_tta-tabs.vc_tta-color-blue.vc_tta-style-flat.vc_tta-shape-square.vc_tta-o-shape-group.vc_tta-o-no-fill.vc_tta-tabs-position-left.vc_tta-controls-align-left.vc_tta-controls-size-sm,
+.vc_tta.vc_general .vc_tta-icon {
+  border-color: #26aac2;
+}
+
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue
+  .vc_tta-tabs-container
+  .vc_tta-tabs-list
+  li.vc_tta-tab.vc_active
+  a
+  span.vc_tta-title-text {
+  color: #142738;
+}
+
+a#tab-1765799094474-5210c5fd-0fe5,
+a#tab-1765799094484-b118c365-dec7,
+a#tab-1765799241068-ecfeabd3-ebe9 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue
+  .vc_tta-panels-container
+  .vc_tta-panels
+  .vc_tta-panel-body,
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue
+  .vc_tta-tabs-container
+  .vc_tta-tabs-list
+  li.vc_tta-tab.vc_active
+  a {
+  background-color: #ffffff;
+}
+
+.stm_lms_courses_grid .showing a.btn.btn-default.stm_lms_load_more_courses,
+.stm_lms_courses_grid
+  .showing
+  a.btn.btn-default.stm_lms_load_more_courses:hover,
+.stm_lms_featured_teacher .featured-teacher-all a.btn.btn-default,
+.stm_lms_featured_teacher .stm_lms_featured_teacher_content a.btn.btn-default {
+  background-color: #142735;
+}
+
+.stm_lms_courses_grid .stm_lms_load_more_courses {
+  margin: 15px 0 0 !important;
+}
+
+.tour-tabs-row .vc_column-inner {
+  padding-inline: 55px !important;
+}
+
+@media (max-width: 767px) {
+  .tour-tabs-row .vc_column-inner {
+    padding-inline: 0px !important;
+  }
+
+  .vc_tta.vc_general .vc_tta-icon:before {
+    display: inline-block !important;
+    transform: rotate(90deg) translateX(2px);
+  }
+
+  h4.vc_tta-panel-title {
+    background-color: #26aac2;
+  }
+
+  .vc_tta-color-blue.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-title > a {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+  }
+
+  .stm_lms_courses__grid.stm_lms_courses__grid_3.stm_lms_courses__grid_right,
+  .stm_lms_courses .stm_lms_load_more_courses,
+  .stm_lms_courses.all_loaded .stm_lms_courses__grid {
+    margin-bottom: 0px !important;
+  }
+}

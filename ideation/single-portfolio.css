@@ -1,0 +1,238 @@
+/* --- 1. ΓΕΝΙΚΟΙ ΚΑΝΟΝΕΣ (DESKTOP) --- */
+.portfolio-services h1 {
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+h5#typewriter {
+  font-weight: 500;
+  text-align: left;
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5em;
+  color: #ffffff;
+  padding: 0;
+  margin-bottom: 1rem;
+  line-height: 0.8em !important;
+  text-transform: none;
+}
+
+h5#typewriter span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  animation-delay: 2s;
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.03em solid #ffffff;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+  position: absolute;
+  top: 5%;
+  right: 45%;
+  width: 16.3rem;
+  z-index: 10; /* Διασφαλίζουμε ότι είναι πάνω από το κείμενο */
+}
+
+.red-drawing-arrow img {
+  width: 40%;
+  margin: 0;
+  transform: translate(-35%, -15%);
+}
+
+.grey-large-title-contact h2 {
+  transform: translate(10%, 70%);
+  font-size: 18rem !important;
+}
+
+.grey-large-title-contact {
+  margin-top: -10rem;
+}
+
+.about-spacing h1 {
+  font-size: 6rem;
+  letter-spacing: 7px;
+  margin-left: -54px;
+}
+
+p.home-section-heading {
+  font-size: 1.5rem;
+  margin-left: 20px !important;
+}
+
+span.wpcf7-list-item-label a {
+  color: #888888 !important;
+}
+
+/* **MEDIA QUERIES** */
+
+/* --- 2. 4K ΟΘΟΝΕΣ (min-width: 2560px) --- */
+@media only screen and (min-width: 2560px) {
+  .about-spacing h1 {
+    font-size: 6rem !important;
+    letter-spacing: 7px;
+    margin-left: -4px;
+  }
+}
+
+/* --- 3. LAPTOP (max-width: 1024px) --- */
+@media only screen and (max-width: 1024px) {
+  .about-spacing h1 {
+    font-size: 5rem !important;
+    letter-spacing: 7px !important;
+    margin-left: 45px !important;
+  }
+
+  .grey-large-title-contact h2 {
+    transform: translate(0%, 74%) !important;
+    font-size: 16rem !important;
+    margin-top: 3rem;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 5% !important;
+    right: 33% !important;
+  }
+
+  .contact-text {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 997px) {
+  .grey-large-title h2 {
+    font-size: 5rem;
+  }
+}
+
+/* --- 4. TABLET (max-width: 768px) --- */
+@media only screen and (max-width: 767px) {
+  .about-spacing h1 {
+    font-size: 4rem !important;
+    letter-spacing: 7px !important;
+    margin-left: 5px !important;
+  }
+
+  .grey-large-title-contact h2 {
+    transform: translate(-5%, 97%) !important;
+    font-size: 10rem !important;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 7% !important;
+    right: 23% !important;
+    width: 14.3rem !important;
+  }
+
+  h5#typewriter {
+    text-align: left !important;
+    font-size: 2rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  /*Carousel navigation arrows*/
+  .swiper-custom-right,
+  .swiper-custom-left,
+  .swiper-entry:hover .swiper-custom-left:hover,
+  .swiper-entry:hover .swiper-custom-right:hover {
+    background-color: black;
+  }
+
+  .about-us-text-col .vc_column-inner {
+    padding-top: 0 !important;
+  }
+
+  .contact-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: -3%;
+    right: 8%;
+    width: 23.3rem;
+  }
+
+  #banner-img {
+    min-height: 45vh !important;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_right.red-drawing-arrow.reveal-clip.animate-on-hover {
+    display: none;
+  }
+
+  .grey-large-title h2 {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* --- ΓΕΝΙΚΟ ΓΙΑ ΟΛΑ ΤΑ MOBILE (Έως 480px) --- */
+@media only screen and (max-width: 480px) {
+  .portfolio-services h1 {
+    color: white !important;
+    font-size: 2.5rem !important;
+    letter-spacing: 1px !important;
+  }
+}
+
+/* --- MOBILE L (Από 376px έως 425px) --- */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .grey-large-title-contact h2 {
+    transform: translate(-18%, 120%) !important;
+    font-size: 6rem !important;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 10% !important;
+    right: 18% !important;
+    width: 14.3rem !important;
+  }
+}
+
+/* --- MOBILE M (Από 321px έως 375px) --- */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .grey-large-title-contact h2 {
+    transform: translate(-15%, 120%) !important;
+    font-size: 6rem !important;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 10% !important;
+    right: 32% !important;
+    width: 14.3rem !important;
+  }
+}
+
+/* --- MOBILE S (Έως 320px) --- */
+@media only screen and (max-width: 320px) {
+  .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 9% !important;
+    right: 22% !important;
+    width: 14.3rem !important;
+  }
+}
+/* --- MOBILE S (Έως 320px) --- */
+@media only screen and (max-width: 320px) {
+  .grey-large-title-contact h2 {
+    transform: translate(-9%, 97%) !important;
+    font-size: 3rem !important;
+  }
+}
+
+/* --- ANIMATIONS --- */
+.reveal-clip {
+  height: auto;
+  -webkit-clip-path: inset(0 0 100% 0);
+  clip-path: inset(0 0 100% 0);
+}
+
+.reveal-clip.animate-on-hover {
+  animation: clipReveal 2s ease-out forwards;
+}
+
+@keyframes clipReveal {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}

@@ -1,0 +1,524 @@
+.custom-linear-green .vc_btn3-style-gradient-custom {
+   background-image: -webkit-linear-gradient(6.54deg, #008C49 -60.97%, #86FFB4 270.1%) !important;
+    background-image: linear-gradient(6.54deg, #008C49 -60.97%, #86FFB4 270.1%)!important;
+    
+}
+
+.custom-linear-green  .vc_btn3.vc_btn3-size-md{
+    padding: .75rem 2rem;
+}
+
+.testimonials-slider .swiper-container:not(.with-grid) blockquote {
+    text-align: center;
+}
+
+
+
+/*HEADINGS*/
+.home-section-heading { 
+     font-size: 1.5rem;
+}
+
+.grey-large-title-services h2 {
+    transform: translate(50%, 55%);
+}
+
+.grey-large-title-team h2 {
+    transform: translate(-15%, 55%);
+}
+
+.wpb_text_column.wpb_content_element.grey-large-title.grey-large-title-team,
+.wpb_text_column.wpb_content_element.grey-large-title.grey-large-title-services {
+    margin-top: -5rem;
+}
+
+/*SECTION 01 - What we do*/
+.home01-heading {
+    font-size: 4rem;
+    letter-spacing: 0.8px !important;
+    line-height: 1.15 !important;
+}
+
+.home01-link {
+    color: #be110a;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-decoration-color: rgba(190,17,10, 0.5);
+}
+
+/*Round button in what-we-do section*/
+.round-arrow-button-1 {
+    margin-right: 14em !important;
+    margin-top: -8em !important;
+}
+
+
+/*ROTATING CIRCLES SECTION*/
+
+.rotating-circles-row {
+    position: relative;
+    height: 200px;
+}
+
+/*Button with arrow, styled as text*/
+.rotating-circle-button {
+    position: absolute;
+}
+
+.rotating-circle-button-1 {
+    top: 115px;
+    left: 75px;
+}
+
+.rotating-circle-button-2 {
+    bottom: 125px;
+    right: 130px;
+}
+
+.rotating-circle-button-3 {
+    bottom: 180px;
+    left: 130px;
+}
+
+.rotating-circle-button .button-wrap a {
+    font-size: 6rem;
+}
+
+.rotating-circle-button .button-wrap i {
+    font-size: 2.5rem;
+    position: relative;
+    transform: rotate(-21deg);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), color 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+    
+.rotating-circle-button-1 .button-wrap i {
+    bottom: -20px;
+    left: 1%;
+}
+
+.rotating-circle-button:hover i.et-icon.et-right-arrow-2 {
+    transform: rotate(0deg);
+    color: #be110a;;
+} 
+
+.rotating-circles-row {
+    display: flex;
+    align-items: center;
+}
+
+/*Rotating image*/
+.rotating-image::before {
+  content: '';
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgb(190, 17, 10);
+  z-index: 1;
+}
+  
+.rotating-image-1::before {
+  bottom: 50px;
+  left: 0;
+}
+
+.rotating-image-2::before {
+    top: 45px;
+    right: -20px;
+}
+
+.rotating-image-3::before {
+    bottom: 10px;
+    left: 230px;
+}
+
+.rotating-image-3::before {
+    bottom: 5px;
+    left: 220px;
+}
+
+
+.rotating-image img {
+    /* width: 30%; */
+    width: 30vw;
+    max-width: 340px;
+    min-width: 240px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: rotateText 100s linear infinite;
+    filter: brightness(70%);
+}
+
+
+@keyframes rotateText {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/*Row of rotating circle - top margin translate*/
+
+/*Middle row*/
+.vc_row.wpb_row.vc_row-fluid.rotating-circles-row-2.et_custom_uniqid_new_6870e4368eac6 {
+    transform: translateY(-45%);
+}
+
+/*Bottom row*/
+.vc_row.wpb_row.vc_row-fluid.rotating-circles-row-3.et_custom_uniqid_new_68710d48230b3 {
+    transform: translate(10%, -55%);
+}
+
+
+
+/*03 - ABOUT US section*/
+.about-us-title h3 {
+    color: white;
+    font-size: 4rem;
+}
+
+.about-us-arrow-button-col > .vc_column-inner  {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    z-index: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 5rem 3rem;
+    
+}
+
+/*Round button in what-we-do section*/
+.round-arrow-button-2 {
+    margin-left: 4rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.about-us-text p {
+    font-size: 1.5rem !important;
+}
+
+
+/*RED CIRCLE AROUND TEXT*/
+
+/*Positoning of red circle*/
+span.text-anchor {
+    position: relative;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    /* transform: translate(235px, -195px) rotate(5deg); */
+    position: absolute;
+    top: 57px;
+    right: 125px;
+    width: 18.3rem;
+}
+
+
+/*RED DRAWING ARROW*/
+.red-drawing-arrow img {
+    transform: translate(-35%, -15%);
+}
+    
+
+
+
+
+
+/*MEDIA QUERY*/
+
+@media (max-width: 1200px) {
+    .wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 125px;
+    right: 230px;
+}
+}
+
+@media (max-width: 1024px) {
+    
+/*Titles    */
+.grey-large-title-team h2 {
+    transform: translate(-5%, 55%);
+}
+
+/*Section 01 - What we do*/
+.home01-heading {
+    font-size: 3.3rem;
+}
+
+a.btn.flex.flex-nowrap.justify-content-center.align-items-center.style-custom.medium {
+    width: 3.5em;
+    height: 3.5em !important;
+}
+
+.round-arrow-button {
+    margin-right: 9em !important;
+    margin-top: -8em !important;
+}
+
+/*Rotating circles section*/
+.rotating-image-1 img {
+    margin-left: 5rem;
+}
+
+.rotating-image-2 img {
+    margin-right: 5rem;
+}
+
+.rotating-circle-button-1 {
+    top: 0px;
+    left: 265px;
+}
+
+.rotating-circle-button-2 {
+    bottom: 20px;
+    right: 220px;
+}
+
+.rotating-circle-button-3 {
+    bottom: 65px;
+    left: 325px;
+}
+
+.rotating-image-1::before {
+    bottom: 50px;
+    left: 40px;
+}
+
+.rotating-image-2::before {
+    top: 45px;
+    right: 35px;
+}
+
+.rotating-image-3::before {
+    bottom: 30px;
+    left: 220px;
+}
+
+/*Row with rotating circle - top margin translate*/
+
+/*Middle row*/
+.vc_row.wpb_row.vc_row-fluid.rotating-circles-row-2.et_custom_uniqid_new_6870e4368eac6 {
+    transform: translateY(0%);
+}
+
+/*Bottom row*/
+.vc_row.wpb_row.vc_row-fluid.rotating-circles-row-3.et_custom_uniqid_new_68710d48230b3 {
+    transform: translate(10%, 0%);
+}
+
+/*Red Circling Text*/
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 49px;
+    right: 31px;
+    width: 18.3rem;
+}
+}
+
+@media (max-width: 992px) {
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 205px;
+    right: 130px;
+    width: 17.5rem;
+}
+}
+
+
+
+@media (max-width: 768px) {
+
+
+p.home-section-heading {
+    margin-left: 0px;
+}
+
+p {
+     text-align: center;
+ }  
+ 
+.wpb_text_column.wpb_content_element.vc_custom_1752754595550.section-01 {
+     padding-top: 0 !important;
+    }
+ 
+/*Titles    */
+.grey-large-title-services h2,
+.grey-large-title-team h2 {
+    transform: translate(0%, 55%);
+}
+
+/*Section 01 - What we do*/
+
+p.home-section-heading {
+    margin-top: 5rem;
+}
+
+.vc_row.wpb_row.vc_row-fluid.\30 1-what-we-do-row.vc_custom_1749136057282.et_custom_uniqid_new_6841b28a56f27 {
+    margin-block: 1em !important;
+}
+
+/*Rotating texts*/
+.rotating-circle-button .button-wrap a {
+    font-size: 3.5rem;
+}
+
+.rotating-image img {
+    filter: brightness(100%);
+}
+
+.rotating-image-1::before {
+    width: 4rem;
+    height: 4rem;
+}
+
+.rotating-image-3::before {
+    bottom: 0px;
+    left: 136px;
+}
+
+.rotating-circle-button-1 {
+    top: 30px;
+    left: 265px;
+}
+
+.rotating-circle-button-3 {
+    bottom: 70px;
+    left: 230px;
+}
+
+.rotating-circle-button-1 .button-wrap i {
+    bottom: -10px;
+    left: 1%;
+}
+
+.about-us-title h3 {
+    text-align: center;
+}
+
+/*Round button in what-we-do section*/
+.vc_row.vc_row-flex>.vc_column_container>.vc_column-inner {
+display: block;
+    margin-top: 0;
+}
+
+.about-us-inner-col.wpb_column.vc_column_container.vc_col-sm-12.et_custom_uniqid_new_687e4b5760224 {
+    padding-top: 50px;
+}
+
+.vc_row.wpb_row.vc_row-fluid.what-we-do-row.vc_custom_1753106559737.et_custom_uniqid_new_687e487c07d01 {
+    margin-top: 0 !important;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 205px;
+    right: 65px;
+}
+
+.vc_row.wpb_row.vc_row-fluid.about-us-row.vc_custom_1753106945954.et_custom_uniqid_new_687e49f64ba7e {
+    margin-top: -3rem !important;
+}
+}
+
+
+@media (max-width: 576px) {
+    
+
+.page-heading-slider {
+    margin-top: -110px;
+    position: relative;
+    z-index: -1;
+}
+
+/*Section 01 - What we do*/
+.wpb_text_column.wpb_content_element.vc_custom_1749133975868.section-01  {
+    padding: 0.5em 0.3em !important;
+    background-image: url("/wp-content/uploads/2025/06/Ideation-Home-Section01-small-devices.png") !important;
+    background-size: 100% 100% !important;
+}
+
+.home01-heading {
+    font-size: 3rem;
+    line-height: 1.3 !important;
+    font-size: 2rem;
+}
+
+.grey-large-title-services {
+    display: none;
+}
+
+/*ROUND BUTTON in what-we-do section*/
+.round-arrow-button {
+    margin-right: 3.5em !important;
+    margin-top: -1em !important;
+    /* margin-bottom: 0.5em; */
+}
+
+
+/*Rotating images*/
+.rotating-image img {
+    width: 70%;
+}
+.rotating-image-1 img {
+    margin-left: 2rem;
+    margin-top: 0rem;
+}
+
+.rotating-image-2 img {
+    margin-right: 2rem;
+    margin-top: 5rem;
+}
+
+.rotating-image-3 img {
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+.rotating-circle-button-1 {
+    top: 60px;
+    left: 155px;
+}
+
+.rotating-circle-button-2 {
+    bottom: 100px;
+    right: 180px;
+}
+
+.rotating-circle-button-3 {
+    bottom: 105px;
+    left: 147px;
+}
+
+.rotating-image-1::before {
+    top: 195px;
+    left: 27px;
+}
+
+.rotating-image-2::before {
+    top: 60px;
+    right: 35px;
+}
+
+.rotating-image-3::before {
+    bottom: 0px;
+    left: 175px;
+}
+
+.rotating-circle-button .button-wrap a {
+    font-size: 3rem;
+}
+
+/*Bottom row top margin*/
+.vc_row.wpb_row.vc_row-fluid.rotating-circles-row-3.et_custom_uniqid_new_68710d48230b3 {
+    transform: translate(0%, 0%);
+}
+
+/*Red arrow moving*/
+.red-drawing-arrow img,
+.reveal-circle img {
+    display: none;
+}
+
+.wpb_column.vc_column_container.vc_col-sm-6.et_custom_uniqid_687e4e4e3c903,
+.about-us-inner-col.wpb_column.vc_column_container.vc_col-sm-12.et_custom_uniqid_new_687e4b5760224 {
+    margin-top: -2rem;
+}
+}

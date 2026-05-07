@@ -1,0 +1,111 @@
+/*Hero Image */
+
+.hero-image-about-us {
+  height: 800px;
+}
+
+@media (max-width: 768px) {
+  .hero-image-about-us {
+    height: 100vh;
+  }
+
+  .vc_row.wpb_row.vc_row-fluid.hero-image-about-us.vc_custom_1756913651809.vc_row-has-fill.vc_row-no-padding.vc_row-o-full-height.vc_row-o-columns-bottom.vc_row-flex.wd-parallax.wd-rs-68b85fecabd11.wd-section-stretch-content {
+    min-height: 450px !important;
+    height: 450px !important;
+  }
+}
+
+/* Hero Title */
+.hero-title {
+  padding-left: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    text-align: center !important;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+}
+
+/* Διάφορα */
+.our-divisions-bckimage {
+  transform: translate(10px, 74px);
+  width: 90%;
+}
+
+.prefooter-img img {
+  transform: translate(-90px, 0px);
+}
+
+.about-us-imgs img {
+  width: 75%;
+}
+
+@media (max-width: 1800px) {
+  .prefooter-img img {
+    transform: translate(-365px, 0px) !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-divisions-bckimage {
+    transform: translate(10px, -20px);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Typewritter row */
+  .vc_row.wpb_row.vc_row-fluid.vc_custom_1756384576960.vc_row-has-fill.wd-rs-68b04d0966cea.wd-section-stretch {
+    padding-top: 2rem !important;
+    padding-bottom: 30px !important;
+  }
+
+  .about-us-text {
+    /* font-size: 0.8rem; */
+    line-height: 1.3;
+    text-align: center !important;
+  }
+
+  .our-divisions-bckimage {
+    transform: none;
+  }
+}
+
+/*Letter Animation */
+
+h5#typewriter {
+  /*font-weight: bold;*/
+  font-weight: 500;
+  text-align: left;
+  font-family: "Manrope", sans-serif;
+  font-size: 3.5em;
+  color: #000;
+  padding: 0;
+  margin-bottom: 1rem;
+  line-height: 0.8em !important;
+  text-transform: none;
+}
+
+h5#typewriter span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  animation-delay: 2s;
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.03em solid #000;
+}
+
+@media (max-width: 768px) {
+  h5#typewriter {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}

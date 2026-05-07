@@ -1,0 +1,1139 @@
+/* !!!!!! Wishlist hide. Remove rule to add whishlist on courses grids and lists */
+.stm-lms-wishlist {
+    display: none;
+}
+
+
+/* Font family */
+body {
+    font-family: 'Manrope', 'Open Sans', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, span,
+.stm_lms_course__title,
+.stm_lms_single_course__title,
+.vc_tta-title-text {
+    font-family: 'Manrope', sans-serif !important;
+}
+
+
+
+/* General classes */
+@media (max-width: 767px) {
+	.hide-mobile {
+	display: none !important;
+}
+	/* Μόνο το language switcher parent */
+.stm_lms_categories_dropdown__parent:has(.wpml-ls-native) .stm_lms_cat_toggle {
+    display: none !important;
+}
+
+.stm_lms_categories_dropdown__parent:has(.wpml-ls-native) .stm_lms_categories_dropdown__childs {
+    display: block !important;
+    position: static !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Εμφάνισε το (Greek) / (Αγγλικά) display text */
+.stm_lms_categories_dropdown__parent:has(.wpml-ls-native) .wpml-ls-display {
+    display: inline !important;
+}
+	.stm_lms_categories_dropdown__parent:has(.wpml-ls-native) > a.sbc_h {
+    margin-bottom: -23px !important;
+}
+	.stm_lms_categories_dropdown__parent:has(.wpml-ls-native) {
+    margin-top: 30px !important;
+}
+	.stm_lms_categories_dropdown__child:has(.wpml-ls-native) {
+    margin-bottom: -28px !important;
+}
+}
+
+@media (min-width: 768px) {
+	.hide-large {
+	display: none;
+}
+}
+
+
+/* ---HEADERS---  */
+
+/* .header_top_bar {
+	border-bottom: 0.5px solid grey;
+} */
+
+/*Entry header για όλες τις σελίδες πχ header ΚΑΛΑΘΙ, header προιόντος*/
+.entry-header {
+	  background-color: #1c8ba0;
+}
+
+
+/* Header Logo + Pulse animation */
+img.img-responsive.logo_transparent_static.visible {
+    margin-top: -15px;
+	  animation: pulseLogo 2.5s ease-in-out infinite;
+}
+
+img.img-responsive.logo_colored_fixed.visible {
+	   margin-top: -5px;
+	  animation: pulseLogo 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* Sticky header */
+div#header {
+	z-index: 100 !important;
+}
+
+#header.sticky_header .header_default.fixed .header-menu>li>a, #header.sticky_header .header_mobile.fixed .header-menu>li>a {
+/*     color: #ffffff; */
+	color: #000;
+}
+
+#header.sticky_header .header_default.fixed .header-menu>li>a:hover, #header.sticky_header .header_mobile.fixed .header-menu>li>a:hover {
+    color: #eab830;
+}
+
+#header.sticky_header .header_default.fixed .header-menu>li>a, #header.sticky_header .header_mobile.fixed .header-menu>li>a {
+    color: #fff;
+}
+
+
+
+/* Sticky transparent header  */
+.header_default.header_default.fixed_invisible_top.fixed {
+    background-color: #132635 !important;
+}
+
+
+/* Header submenu */
+.header_main_menu_wrapper .header-menu>li>ul.sub-menu {
+	background-color: white;
+}
+
+.sub-menu .menu-item.menu-item-type-post_type a,
+.header_main_menu_wrapper .header-menu>li>ul.sub-menu>li a {
+	color: black !important;
+}
+
+
+/*Mobile header*/
+#header-mobile .header_mobile .header_top button.stm_header_top_search .icon-bar,
+#header > div.header_default.header_default > div > div > div.col-md-3.col-sm-12.col-xs-12 > button > span {
+    background-color: rgb(255 255 255) !important;
+}
+
+#header-mobile .header_mobile {
+    background-color: #132635;
+    padding: 25px 0;
+}
+
+@media (max-width: 1025px) {
+    #header-mobile .header_2 * {
+        color: #000 !important;
+    }
+}
+
+
+
+/*Collapsed header */
+.stmlms-cog:before {
+    content: "\ea65";
+    color: white;
+}
+
+.stmlms-case:before {
+    content: "\ea2f";
+    color: white;
+}
+
+#header-mobile > div > div.container > div > div > div > div.center-unit > div.stm_header_links > span > a > span {
+    color: lightgrey !important;
+}
+
+
+
+
+/* Tour tab navigation */
+
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue
+  .vc_tta-tabs-container
+  .vc_tta-tabs-list
+  li.vc_tta-tab
+  a {
+  /* background-color: #142738; */
+  background-color: #26aac2;
+}
+
+.vc_general.vc_tta.vc_tta-tabs.vc_tta-color-blue.vc_tta-style-flat.vc_tta-shape-square.vc_tta-o-shape-group.vc_tta-o-no-fill.vc_tta-tabs-position-left.vc_tta-controls-align-left.vc_tta-controls-size-sm,
+.vc_tta.vc_general .vc_tta-icon {
+  border-color: #26aac2;
+}
+
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue
+  .vc_tta-tabs-container
+  .vc_tta-tabs-list
+  li.vc_tta-tab.vc_active
+  a
+  span.vc_tta-title-text {
+  color: #142738;
+}
+
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue .vc_tta-tabs-container .vc_tta-tabs-list li.vc_tta-tab a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue
+  .vc_tta-panels-container
+  .vc_tta-panels
+  .vc_tta-panel-body,
+.vc_tta-tabs.vc_tta-tabs-position-left.vc_tta-color-blue
+  .vc_tta-tabs-container
+  .vc_tta-tabs-list
+  li.vc_tta-tab.vc_active
+  a {
+  background-color: #ffffff;
+}
+
+.stm_lms_courses_grid .showing a.btn.btn-default.stm_lms_load_more_courses,
+.stm_lms_courses_grid
+  .showing
+  a.btn.btn-default.stm_lms_load_more_courses:hover,
+.stm_lms_featured_teacher .featured-teacher-all a.btn.btn-default,
+.stm_lms_featured_teacher .stm_lms_featured_teacher_content a.btn.btn-default {
+  background-color: #142735;
+}
+
+.stm_lms_courses_grid .stm_lms_load_more_courses {
+  margin: 15px 0 0 !important;
+}
+
+.tour-tabs-row .vc_column-inner {
+  padding-inline: 55px !important;
+}
+
+@media (max-width: 767px) {
+	.header_2 .header_top .stm_lms_categories i{
+		font-size:18px;
+	}
+	.stm_lms_categories_dropdown__child {
+    padding: 12px 0;
+    margin-top: 24px;
+    border: 1px solid #d8d8d8;
+}
+	.mobile_search_courses {
+    display: none !important;
+}
+	.stm_lms_search_popup.active .inner > h2:first-child {
+    display: none !important;
+}
+	sr7-arrow.sr7-leftarrow.sr7-arrows.uranus {
+    transform: translate(-5px, -50px) !important;
+}
+	sr7-arrow.sr7-rightarrow.sr7-arrows.uranus {
+    transform: translate(10px, -50px) !important;
+}
+  .tour-tabs-row .vc_column-inner {
+    padding-inline: 0px !important;
+  }
+
+  .vc_tta.vc_general .vc_tta-icon:before {
+    display: inline-block !important;
+    transform: rotate(90deg) translateX(2px);
+  }
+
+  h4.vc_tta-panel-title {
+    background-color: #26aac2;
+  }
+
+  .vc_tta-color-blue.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-title > a {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+  }
+
+  .stm_lms_courses__grid.stm_lms_courses__grid_3.stm_lms_courses__grid_right,
+  .stm_lms_courses .stm_lms_load_more_courses,
+  .stm_lms_courses.all_loaded .stm_lms_courses__grid {
+    margin-bottom: 0px !important;
+  }
+}
+
+
+
+
+/* FOOTER STYLING */
+
+/* Footer Top */
+aside#media_image-3 {
+	padding: 0px;
+}
+
+
+/* Footer Bottom - Newsletter form */
+#footer_top {
+    background-color: transparent !important;
+	padding: 0px;
+}
+
+/* Signup form button */
+input.sib-default-btn.btn-default.md {
+    height: 45px;
+    background-color: #26aac2;
+    border-radius: 25px;
+    padding-inline: 22px;
+    line-height: 14px;
+    font-size: 14px;
+	  text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    outline: 0 !important;
+	  color: white;
+	  border: 1px solid rgb(38, 170, 194);
+		transition-behavior: normal;
+		transition-delay: 0s;
+		transition-duration: 0.25s;
+		transition-property: all;
+		transition-timing-function: cubic-bezier(0.66, 0.36, 0.17, 0.91);
+}
+
+input.sib-default-btn.btn-default.md:hover {
+	background-color: rgba(38, 170, 194, 0.95);
+	border: 1px solid rgba(38, 170, 194, 0.95);
+}
+
+@media (max-width: 767px) {
+aside#sib_subscribe_form-2 {
+    text-align: center;
+}
+	
+	p.sib-email-area {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+	
+	input.sib-email-area {
+    align-self: center;
+		min-width: 80% !important;
+}
+}
+
+
+/* Footer Bottom - Titles */
+.footer-heading {
+	color: white;
+	font-size: 18px;
+}
+
+.footer-heading {
+	margin-bottom: 21px !important;
+}
+
+/* Column 3 */
+aside#block-22 , #block-25{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav {
+	padding-left: 0px;
+	margin-bottom: 40px !important;
+}
+
+.footer-nav li {
+	list-style: none;
+	margin-bottom: 0px;
+}
+
+.wp-block-group.is-vertical.is-layout-flex.wp-container-core-group-is-layout-8cf370e7.wp-block-group-is-layout-flex {
+    gap: 0;
+}
+
+@media (max-width: 768px) {
+	
+	.stm_lms_courses_categories.style_4 .stm_lms_courses_category
+ {
+    width: 100px;
+    margin: 0px !important;
+}
+
+
+.stm_lms_courses_categories.style_4 .stm_lms_courses_category h4 {
+    display: none !important;
+}
+
+.stm_lms_courses_categories.style_4 .stm_lms_courses_category
+ {
+    height: 100px !important;
+    min-height: 124px !important;
+}
+
+.stm_lms_courses_categories.style_4 .stm_lms_courses_category>a i {
+    font-size: 50px !important;
+}
+.stm_lms_courses_categories.style_4 {
+    margin-top: -71px !important;
+}
+
+.stm_lms_courses_category {
+    width: 100px !important;
+    height: 100px !important;
+}
+.stm_lms_courses_categories.style_4 {
+    display: flex !important;
+}
+    .stm_lms_courses_categories.style_4 .stm_lms_courses_category>a {
+      margin-top: 22px !important;
+    min-height: unset !important;
+    }
+    
+	aside#contacts-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+	
+	.footer-heading,
+	.footer-nav li,
+	.newsletter-text {
+		text-align: center;
+	}
+	
+	.wp-block-group.is-vertical.is-layout-flex.wp-container-core-group-is-layout-8cf370e7.wp-block-group-is-layout-flex {
+    align-items: center;
+}
+	
+	aside#media_image-2 {
+    text-align: center;
+}
+}
+
+
+
+
+/* Cart icon in header menu */
+/* .cart-menu {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  background: #ff3d00;
+  color: #fff;
+  font-size: 13px;       
+  height: 16px;
+  line-height: 16px;     
+  text-align: center;
+  padding: 0 4px;        
+  border-radius: 999px;  
+  box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+	.cart-count {
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+} */
+
+
+.stm_lms_courses_category a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Remove sidebar from product */
+
+@media (min-width: 1200px) {
+    .product-template-default .col-lg-9 {
+        width: 100%;
+    }
+	    .product-template-default .col-lg-3.col-md-3 {
+        display:none !important;
+    }
+}
+
+
+
+
+#parastatiko_field span.select2.select2-container.select2-container--default {
+    width: 200px !important;
+}
+
+
+p#doy_field .optional,
+p#drastiriotita_field .optional,
+p#afm__field .optional,
+p#eponimia__field .optional,
+p#odos_field .optional,
+p#poli_field .optional,
+p#tk_field .optional,
+p#nomos_field .optional,
+p#order_comments_field .optional {
+    display: none !important;
+}
+
+
+/* Cart icon wrapper */
+.menu-item-6169 a {
+    position: relative;
+    display: inline-block;
+}
+
+/* Counter badge - κυκλάκι πάνω δεξιά */
+.cart-counter-badge {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* Κρύβουμε το badge αν είναι 0 */
+.cart-counter-badge:empty,
+.cart-counter-badge:contains('0') {
+    display: none;
+}
+
+/* Animation όταν ενημερώνεται */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.cart-counter-badge.updating {
+    animation: pulse 0.3s ease;
+}
+
+a.checkout-button.button.alt.wc-forward {
+    width: 100%;
+}
+
+
+/* Slider Arrows */
+
+.sr7-arrows:before {
+    color: #777777 !important;
+}
+
+/*Κουμπι αποστολης παρ */
+#place_order {
+    max-width: 220px;
+}
+
+.flatpickr-months .flatpickr-month{
+	height: 85px !important;
+}
+
+/* Κειμενο καθηγητων */
+.masterstudy-instructor-public__description {
+    color: #4d5e6f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+/*Breadcrumbs σε Πρακτική Άσκηση κτλ */
+.custom-breadcrumbs {
+	min-height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -52px;
+}
+
+
+
+/* Εφαρμογή ενιαίας εικόνας background σε όλο το Footer */
+#footer {
+/*     background-image: url('https://scientiaedu.gr/wp-content/uploads/2026/01/Ανώνυμο-σχέδιο-9-scaled.jpg') !important; */
+	background-image: url('https://scientiaedu.gr/wp-content/uploads/2026/01/footer-background-6.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    padding-top: 50px; /* Ρυθμίζει το κενό πάνω από τα widgets */
+}
+
+/* Κάνει το πάνω τμήμα (Widgets) διαφανές */
+.footer_main {
+    background-color: transparent !important;
+}
+
+/* Κάνει το κάτω τμήμα (Copyright) διαφανές και αφαιρεί τυχόν μαύρα φόντα */
+#footer-bottom {
+    background-color: transparent !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; /* Προσθέτει μια πολύ διακριτική γραμμή διαχωρισμού */
+    padding: 20px 0;
+}
+
+/* Εξασφαλίζει ότι τα γράμματα θα είναι λευκά για να διαβάζονται πάνω στην εικόνα */
+#footer, #footer-bottom, #footer-bottom .copyright {
+    color: #ffffff !important;
+}
+
+.col-md-6 {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Κουμπί στην σελίδα cart-s*/
+@media(max-width: 440px) {
+	.actions input.button.update-cart {
+    min-width: 80% !important;
+}
+}
+
+
+/* Form buttons ie newsletter */
+.widget_mailchimp .stm_mailchimp_unit .button {
+    background-color: #132635!important;
+}
+
+
+
+
+
+/* INSTRUCTORS CUSTOM PAGES  */
+
+
+/* ** Instructor CV ** */
+
+/*Banner*/
+.instructor-public__cover-image img.vc_single_image-img.attachment-full {
+  display: flex;
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*Avatar*/
+.instructor-public__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.instructor-public__cover-image
+  img {
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+/*Instructor Name*/
+.instructor-public__name {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #001931;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+/*Instuctor position and title*/
+.instructor-public__position {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #4d5e6f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+/*Instructor bio description*/
+.instructor-public__description {
+  color: #4d5e6f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.instructor-public__description {
+  padding-bottom: 20px;
+}
+
+.instructor-public__description p {
+  text-align: justify;
+  padding-inline: 20px;
+}
+
+
+
+/* ============================================
+   MEDICAL CATEGORIES CAROUSEL - CUSTOM CSS
+   PASTE THIS IN: Appearance → Customize → Additional CSS
+   ============================================ */
+
+/* Main Section Styling */
+
+.categories-track-container {
+    touch-action: pan-y; /* allow vertical scroll while enabling horizontal swipe */
+    overflow: hidden;
+}
+
+.medical-categories-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Carousel Container */
+.categories-carousel {
+  position: relative;
+  padding: 0 50px;
+}
+
+/* Category Card Styling */
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Category Icon */
+.category-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+  background: transparent !important;
+}
+
+.category-icon img {
+  width: 65px;
+  height: 65px;
+  filter: brightness(0) invert(1) !important;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover .category-icon img {
+  filter: brightness(0) invert(1) !important;
+  transform: scale(1.5);
+}
+
+/* Category Title */
+.category-card span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.category-card:hover span {
+  color: #ffffff;
+}
+
+/* Swiper Navigation Buttons */
+.categories-carousel .swiper-button-next,
+.categories-carousel .swiper-button-prev {
+  color: #000000;
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories-carousel .swiper-button-next:after,
+.categories-carousel .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.categories-carousel .swiper-button-next:hover,
+.categories-carousel .swiper-button-prev:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.categories-carousel .swiper-button-disabled {
+  opacity: 0.35;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .categories-carousel {
+    padding: 0 40px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .medical-categories-section {
+    padding: 40px 0;
+  }
+
+  .categories-carousel {
+    padding: 0 35px;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .section-title p {
+    font-size: 16px;
+  }
+
+  .category-card {
+    padding: 25px 15px;
+  }
+
+  .category-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .category-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .category-card span {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .categories-carousel {
+    padding: 0 30px;
+  }
+
+  .categories-carousel .swiper-button-next,
+  .categories-carousel .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+  }
+
+  .categories-carousel .swiper-button-next:after,
+  .categories-carousel .swiper-button-prev:after {
+    font-size: 16px;
+  }
+}
+
+
+/*Instructor bio borders + margins*/
+.vc_column-inner.vc_custom_1770310525337 > .wpb_wrapper:first-of-type {
+    border-inline: 1px solid #dbe0e9;
+    border-bottom: 1px solid #dbe0e9;
+}
+
+.instructor-public__profile .vc_column-inner:first-of-type {
+    padding-top: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.instructor-public__name {
+		font-size: 20px;
+	}
+}
+
+/* **Instructor page tabs section** */
+
+.teacher-tabs span.vc_tta-title-text {
+    color: #4d5e6f;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.vc_tta-tabs.vc_tta-tabs-position-top .vc_tta-tabs-container .vc_tta-tabs-list li.vc_tta-tab a {
+   min-height: 100%
+}
+}
+
+/* Instructor courses and seminars grid */
+h2.woocommerce-loop-product__title {
+    font-size: 15px;
+}
+
+.instructor-grid-titles h4 {
+	  color: #001931;
+	  font-size: 1.5rem;
+}
+
+.woocommerce.columns-3 ul.stm-courses.row.list-unstyled li {
+    margin: 0 15px;
+	  padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+    box-shadow: 0 7px 15px rgba(0,0,0,.1);
+    border-radius: 10px;
+    border: 0;
+}
+
+@media (max-width: 767px) {
+.woocommerce.columns-3 ul.stm-courses.row.list-unstyled li  {
+	margin: 0px;
+	padding-inline: 0px;
+}
+	
+.instructor-grid-titles h4 {
+margin-top: 15px;
+}
+}
+
+
+/*** CUSTOM CATEGORY SINGLE PAGES*/
+
+/* Courses grid */
+.stm_lms_courses .stm_lms_load_more_courses, .stm_lms_courses.all_loaded .stm_lms_courses__grid {
+    margin-bottom: 0px !important;
+	  justify-content: flex-start;
+}
+
+ul.stm-courses.row.list-unstyled {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+/* Events woocommerce grid*/
+
+.woocommerce.columns-3 ul.stm-courses.row.list-unstyled .course-col.product.type-product,
+.woocommerce.columns-2 ul.stm-courses.row.list-unstyled li {
+	padding-top: 0px;
+	padding-bottom: 20px;	
+	margin-top: 20px;
+	margin-right: 0px;
+	border-radius: 0;
+	padding-inline: 0px;
+	box-shadow: none;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 0;
+}
+
+/*Category pages cards large screen*/
+.woocommerce.columns-3 ul.stm-courses.row.list-unstyled .course-col.product.type-product {
+		width: 31%;
+}
+
+/*Instructors page cards screen*/
+ul.stm-courses.row.list-unstyled li,
+.teacher-tabs .woocommerce.columns-3 ul.stm-courses.row.list-unstyled .course-col.product.type-product {
+		width: 30.6%;
+}
+
+@media (max-width: 912px) {
+		/*Instructors page cards*/
+	ul.stm-courses.row.list-unstyled {
+	justify-content: center;
+}
+	
+ul.stm-courses.row.list-unstyled li,
+.teacher-tabs .woocommerce.columns-3 ul.stm-courses.row.list-unstyled .course-col.product.type-product {
+		width: 45%;
+	margin-inline: 10px;
+}
+}
+
+
+
+@media (max-width: 856px) {
+	/*Category pages cards*/
+.woocommerce.columns-3 ul.stm-courses.row.list-unstyled .course-col.product.type-product {
+	width: 30%;
+}
+}
+
+@media (max-width: 768px) {
+	/*Category pages cards*/
+.woocommerce.columns-3 ul.stm-courses.row.list-unstyled .course-col.product.type-product {
+	width: 46%;
+}
+}
+
+
+@media (max-width: 550px) {
+	/*Category pages cards*/
+.woocommerce.columns-3 ul.stm-courses.row.list-unstyled .course-col.product.type-product {
+	width: 100%;
+	margin-inline: 15px;
+}
+	
+	
+	/*Instructors page cards*/
+ul.stm-courses.row.list-unstyled li,
+.teacher-tabs .woocommerce.columns-3 ul.stm-courses.row.list-unstyled .course-col.product.type-product {
+		width: 100%;
+		margin-inline: 15px;
+}
+}
+
+
+/*Product image*/
+.woocommerce.columns-3 ul.stm-courses.row.list-unstyled li img,
+a.woocommerce-LoopProduct-link.woocommerce-loop-product__link img{
+	max-height: 160px;
+}
+
+/*Category pages button προσθηκη στο καλάθι */
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart,
+a.button.product_type_simple {
+    display: block;
+    margin: 5px 1.2em 0;
+}
+
+/*Card Product title */
+h2.woocommerce-loop-product__title {
+   margin-bottom: 15px;
+	 margin-inline: 20px;
+	padding-bottom: 19px;
+	border-bottom: 1px solid rgb(224, 224, 224);
+		 line-height: 1.5;
+}
+
+/*Category page title*/
+h2.woocommerce-loop-product__title {
+	min-height: 65px;
+}
+
+/*Instructor page title*/
+.teacher-tabs  h2.woocommerce-loop-product__title {
+	min-height: 87.5px;
+}
+
+span.woocommerce-Price-amount.amount,
+span.price {
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+.teacher-tabs a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart, a.button.product_type_simple {
+	margin: 5px 0.5em 0;
+	padding: 10px 0px;
+	}
+	
+	/*Instructor page title*/
+.teacher-tabs  h2.woocommerce-loop-product__title {
+	min-height: 110px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.teacher-tabs span.vc_tta-title-text {
+    font-size: 12px;
+} 
+}
+
+@media (max-width:568px) {
+.teacher-tabs a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart, a.button.product_type_simple {
+	margin: 5px 2em 0;
+	padding: 10px 0px;
+	}
+	
+	/*Instructor page title*/
+.teacher-tabs  h2.woocommerce-loop-product__title {
+	min-height: 55px;
+}
+}
+
+
+

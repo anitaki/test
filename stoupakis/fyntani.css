@@ -1,0 +1,226 @@
+/*Main page background and padding-bottom*/
+.wd-page-content.main-page-wrapper {
+  background-image: none;
+}
+
+main#main-content {
+  padding-bottom: 0;
+}
+
+/* Section 1 - Crafted in Chios*/
+
+.ginger-title h4 {
+  font-size: 3.5rem;
+}
+
+.homeric-s1-text p {
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+.miss-tic-s1-image1 img,
+.miss-tic-s1-image2 img {
+  width: 70%;
+}
+
+@media (max-width: 1024px) {
+  .ginger-title h4 {
+    width: 100%;
+    margin-left: 3rem;
+    font-size: 3rem;
+  }
+
+  .homeric-s1-text p {
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ginger-title h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .homeric-s1-text p {
+    width: 100%;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_right.miss-tic-s1-image1 {
+    margin-bottom: 0;
+  }
+
+  #big-bottle-mobile {
+    width: 80%;
+  }
+
+.vc_row.wpb_row.vc_row-fluid.vc_custom_1765279650204.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-rs-69380791ad0b3.wd-section-stretch {
+    padding-bottom: 30px !important;
+}
+}
+
+@media (max-width: 425px) {
+  .ginger-title h4 {
+    font-size: 2rem !important;
+  }
+}
+
+/* Section 2- with big bottle */
+.bottle-col img.vc_single_image-img.attachment-full {
+  width: 100%;
+  transform: rotate(347deg) scale(2.1) translate(20px, 50px);
+}
+
+/* Section 2b - Central bottle bottom part */
+div#big-bottle-overlap-image {
+  transform: rotate(338deg) scale(2) translate(75px, 0px) !important;
+}
+
+/* Section 2 media queries */
+@media (max-width: 1440px) {
+  .bottle-col img.vc_single_image-img.attachment-full {
+    width: 100%;
+    transform: rotate(347deg) scale(2.1) translate(20px, 40px);
+  }
+
+  div#big-bottle-overlap-image {
+    transform: rotate(338deg) scale(2.2) translate(75px, 0px) !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bottle-left-col {
+    padding: 50px 0 50px 50px;
+  }
+
+  div#big-bottle-overlap-image {
+    transform: rotate(338deg) scale(1.9) translate(50px, -0px) !important;
+  }
+
+  .vc_empty_space.tic-empty-space {
+    height: 50px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .big-bottle-text {
+    text-align: center;
+  }
+
+  .bottle-col img.vc_single_image-img.attachment-full {
+    transform: scale(1.2) translateX(-50px);
+  }
+
+  #big-bottle-mobile {
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 50px;
+  }
+
+  div#big-bottle-overlap-image {
+    transform: rotate(338deg) scale(1.9) translate(0px, -20px) !important;
+  }
+
+  .vc_row.wpb_row.vc_row-fluid.hide-mobile.vc_custom_1765276805987.vc_row-o-full-height.vc_row-o-columns-middle.vc_row-o-content-middle.vc_row-flex.wd-rs-6937fc79b127f {
+    display: none;
+}
+}
+
+
+
+
+/* Section 4 - Fyntani bridge */
+.fyntani-bridge {
+    width: 80%;
+}
+
+
+/**** Distillation table  *****/
+table td {
+  border-bottom: 0.5px solid black !important;
+}
+
+.distillation-table,
+.distillation-header-row,
+.distillation-header-cell {
+  border: 0.5px solid black !important;
+  /* border-collapse: separate; */
+  color: black;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.distillation-row {
+  height: 5rem;
+}
+
+.distillation-header-cell,
+.distillation-cell {
+  min-width: 6rem;
+  text-align: center;
+}
+
+.distillation-header-icon,
+.distillation-icon {
+  width: 25px;
+}
+
+.distillation-cell {
+  text-align: center;
+}
+
+/* Thermometer header in table */
+.thermo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thermo-div p {
+  font-size: 0.5rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.thermo-div img {
+  width: 40px;
+}
+
+@media (max-width: 1225px) {
+  .distillation-table {
+    margin: 0 0 0 30px !important;
+  }
+
+  .distillation-header-cell,
+  .distillation-cell {
+    min-width: 3.2rem;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .thermo-div img {
+    width: 20px;
+  }
+
+  .thermo-div p {
+    font-size: 0.35rem;
+  }
+
+  .distillation-row {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .distillation-table {
+    margin: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .distillation-table {
+    margin: 0px !important;
+  }
+}

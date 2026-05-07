@@ -1,0 +1,111 @@
+.all-portfolio-gallery-row {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.all-portfolio-gallery-row .vc_column_container > .vc_column-inner {
+  width: 100%;
+}
+
+h2.vc_custom_heading.vc_do_custom_heading.banner-title {
+  text-align: left;
+  margin-top: 1rem;
+  text-transform: none;
+  font-weight: 600 !important;
+  font-size: 1.5rem;
+}
+
+h2.vc_custom_heading.vc_do_custom_heading.current-title {
+  line-height: 94px;
+}
+
+h2#slider-heading {
+  line-height: 1;
+}
+
+#all-portfolio-big-title {
+  transform: translate(-2%, 25%);
+}
+
+a.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-classic.vc_btn3-color-white {
+  text-decoration: underline;
+}
+
+.prefooter {
+  display: none;
+}
+
+/* Portfolio items */
+
+.vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_excerpt {
+  display: none !important;
+}
+
+a.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink {
+  display: none !important;
+}
+
+.vc_col-sm-12.vc_gitem-col.vc_gitem-col-align- {
+  background-color: white !important;
+  padding-left: 0 !important;
+}
+
+img.vc_gitem-zone-img {
+  aspect-ratio: 6 / 9 !important;
+}
+
+.vc_gitem-zone.vc_gitem-zone-a.vc-gitem-zone-height-mode-auto.vc-gitem-zone-height-mode-auto-1-1.vc_gitem-is-link {
+  aspect-ratio: 6 / 7;
+}
+
+@media (max-width: 2560px) {
+  p.vc_custom_heading.vc_do_custom_heading.banner-title {
+    padding-left: 8.8rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 1920px) {
+  p.vc_custom_heading.vc_do_custom_heading.banner-title {
+    padding-left: 0rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  #all-portfolio-big-title {
+    transform: translate(-4%, 27%);
+    font-size: 5.3rem !important;
+  }
+
+  h2.vc_custom_heading.vc_do_custom_heading.banner-title {
+    font-size: 1.2rem;
+  }
+
+  sr7-txt#SR7_11_1-35-2 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #all-portfolio-big-title {
+    margin-top: 5rem;
+    font-size: 3rem !important;
+    /* transform: translate(0%, 35%); */
+    text-align: center !important;
+  }
+  .vc_row.wpb_row.vc_row-fluid.all-portfolio-gallery-row.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex {
+    padding-inline: 1rem !important;
+    gap: 3rem;
+  }
+
+  h2#slider-heading {
+    display: none;
+  }
+
+  .vc_grid.vc_grid-owl-theme .vc_grid-owl-dots.vc_grid-radio_dots {
+    display: block;
+    margin-top: -20px;
+  }
+}

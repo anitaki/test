@@ -1,0 +1,253 @@
+.portfolio-text p {
+    font-size: 20px;
+}
+
+/*header text*/
+.wpb_raw_code.wpb_raw_html.wpb_content_element {
+    margin-bottom: 0px;
+}
+
+.contact-row {
+    margin: 0 0 0 60px;
+}
+
+.contact-text {
+    padding-right: 40px;
+}
+
+.grey-large-title h2 {
+    font-size: 19rem !important;
+    transform: translate(-0%, 50%);
+}
+
+.portfolio-image-caption-large {
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.portfolio-image-caption-small {
+    width: 455px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.portfolio-image-caption-large h4,
+.portfolio-image-caption-small h4,
+.portfolio-image-caption-large h4 a {
+color: white;
+font-size: 2.5rem;
+margin-bottom: 0.2rem;
+}
+
+.portfolio-image-caption-large h4 a:hover {
+    color: #888888;
+}
+
+/*Handle hover of images */
+.portfolio-page-photo {
+    filter: grayscale(1);
+    transition: filter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-page-photo:hover {
+    filter: grayscale(0);
+}
+
+/*Grey large title*/
+
+.grey-large-title-contact h2 {
+    transform: translate(6%, 71%);
+    font-size: 16rem !important;
+}
+
+.grey-large-title-contact {
+    margin-top: -10rem;
+}
+
+
+
+
+/*RED CIRCLE AROUND TEXT*/
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    position: absolute;
+    top: 5%;
+    right: 44%;
+    width: 16.3rem;
+}
+
+
+
+/*RED DRAWING ARROW*/
+.red-drawing-arrow img {
+    width: 40%;
+    margin: 0;
+    transform: translate(-35%, -15%);
+}
+    
+ .reveal-clip {
+  height: auto;
+  -webkit-clip-path: inset(0 0 100% 0); /* Initial state: hidden for WebKit browsers */
+  clip-path: inset(0 0 100% 0); /* Initial state: hidden */
+}
+
+/* New class to trigger the animation */
+.reveal-clip.animate-on-hover {
+animation: clipReveal 2s ease-out forwards;
+}
+
+@keyframes clipReveal {
+  to {
+    clip-path: inset(0 0 0 0); /* Final state: revealed */
+  }
+}
+
+
+
+
+
+/*Page media queries*/
+
+@media(max-width: 1024px) {
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 6%;
+    right: 34%;
+}
+
+.grey-large-title-contact h2 {
+    transform: translate(3%, 85%);
+    margin-top: 3rem;
+    font-size: 12rem !important;
+}   
+}
+
+
+@media(max-width: 768px) {
+    .grey-large-title h1 {
+    transform: translate(0%, 50%);
+}
+
+/*Contact row*/
+.contact-row {
+    padding: 60px 0 60px 0 !important;
+}
+
+.contact-text {
+    padding-top: 80px !important;
+    padding-right: 0 !important;
+    text-align: center;
+}
+    
+.contact-text h1 {
+    font-size: 3rem !important;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_right.red-drawing-arrow.reveal-clip.animate-on-hover {
+    display: none;
+}
+
+.wpb_single_image.vc_align_right {
+    display: none;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 1%;
+    right: 8%;
+    width: 20.3rem;
+}
+
+.contact-text {
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+      text-align: center;
+}
+
+.contact-text h1 {
+    font-size: 2rem !important;
+}
+
+.wpb_text_column.wpb_content_element.vc_custom_1752490311200.contact-text {
+    padding: 0px !important;
+}
+
+/*Contact row*/
+.contact-row {
+    padding: 60px 0 60px 100px;
+}
+
+.contact-text {
+    padding-top: 80px;
+    padding-right: 40px ;
+}
+.grey-large-title h2 {
+    font-size: 8rem !important;
+    transform: translate(-5%, 50%);
+}
+.portfolio-text p {
+    font-size: 22px;
+    text-align:center !important;
+}
+.grey-large-title-contact h2 {
+    transform: translate(0%, 151%);
+    padding-top: 0;
+    font-size: 8rem !important;
+}
+}
+
+
+
+@media(max-width: 576px) {
+.wpb_single_image.wpb_content_element.vc_align_center.wpb_content_element.reveal-circle {
+    top: 2%;
+    right: 19%;
+}
+
+
+.grey-large-title-contact {
+    margin-top: -6rem;
+}    
+    
+.grey-large-title-contact h2 {
+    transform: translate(0%, 96%);
+    padding-top: 0;
+    font-size: 6rem !important;
+}
+}
+
+
+
+
+
+/*Letter Animation */
+
+h5#typewriter {
+        /*font-weight: bold;*/
+        font-weight: 500; 
+        text-align: left;
+        font-family: "Manrope", sans-serif;
+        font-size: 3.5em;
+        color: #FFFFFF;
+        padding: 0;
+        margin-bottom: 1rem;
+        line-height: 0.8em !important;
+        text-transform: none;
+      }
+
+h5#typewriter span {
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        animation-delay: 2s;
+      }
+
+      .txt-rotate > .wrap {
+        border-right: 0.03em solid #FFFFFF;
+      }
+      
+@media(max-width: 768px) {
+    h5#typewriter {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+}
+}

@@ -1,0 +1,314 @@
+main#main-content {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/* Whole page background image */
+.page .wd-page-content {
+  background-color: white;
+  background-image: none;
+  /* background-image: url(https://stoupakis.progressnet.gr/wp-content/uploads/2021/08/vertical-bg-line.png);
+    background-repeat: repeat-y;
+    background-position: center top; */
+}
+
+h4.woodmart-title-container.title.wd-font-weight-600.wd-fontsize-xxxl::before {
+  margin-top: -15px;
+}
+
+/*Our ranges button*/
+span.wd-btn-icon {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5px 8px;
+}
+
+@media (max-width: 768px) {
+  .our-ranges-title {
+    margin-bottom: 45px;
+  }
+}
+
+/*Our heritage section*/
+.our-heritage-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-inline: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, fill 0.3s ease;
+}
+
+.our-heritage-button:hover {
+  background-color: rgba(202, 199, 180, 0.4);
+  border: 1px solid rgba(202, 199, 180, 0.4);
+}
+
+.our-heritage-row {
+  position: relative;
+  height: 700px;
+}
+
+#our-heritage-title {
+  font-family: Alex Brush, Manrope, Arial;
+  font-size: 10rem;
+  text-align: center;
+  color: white;
+}
+
+/* Explore our history button */
+.vc_row.wpb_row.vc_row-fluid.our-heritage-row.vc_custom_1760365345706.vc_row-has-fill.vc_row-o-full-height.vc_row-o-columns-middle.vc_row-o-content-middle.vc_row-flex.wd-parallax.wd-bg-center-center.wd-rs-68ed0b15e22e1.wd-section-stretch-content {
+  position: relative;
+}
+
+.services-slider-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  position: absolute;
+  bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .our-heritage-row {
+    position: relative;
+    height: 500px;
+  }
+
+  #our-heritage-title {
+    font-size: 3rem;
+  }
+
+  .services-slider-button-wrapper {
+    justify-content: center;
+    font-size: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    bottom: 15px;
+  }
+
+  .our-heritage-button {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    margin-inline: 12px;
+  }
+
+  .our-heritage-button svg {
+    height: 12px;
+  }
+}
+
+/* Chios map timeline section */
+
+.woodmart-timeline-line,
+.woodmart-timeline-dot {
+  display: none;
+}
+
+.chios-timeline span.font-alt {
+  font-size: 2rem;
+}
+
+.chios-timeline p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.chios-timeline-l1 .timeline-col.timeline-col-primary {
+  transform: translate(-7rem, 6rem);
+}
+
+.chios-timeline-l2 .timeline-col.timeline-col-primary {
+  transform: translate(12rem, -2rem);
+}
+
+.chios-timeline-r1 .timeline-col.timeline-col-primary {
+  transform: translate(8rem, 0rem);
+}
+
+.chios-timeline-r2 .timeline-col.timeline-col-primary {
+  transform: translate(-8rem, -8rem);
+}
+
+/* Chios timeline up to 1500px */
+.timeline-col.timeline-col-primary {
+  display: flex;
+  align-items: baseline;
+}
+
+.wd-timeline-image {
+  display: flex;
+  align-content: center;
+  padding-inline: 1rem;
+}
+
+.chios-timeline-l1 .timeline-col.timeline-col-primary,
+.chios-timeline-r2 .timeline-col.timeline-col-primary {
+  flex-direction: row-reverse;
+}
+
+/* Chios map timeline section - Media Queries*/
+@media (min-width: 1500px) {
+  .vc_row.wpb_row.vc_row-fluid.chios-timeline-row.hide-mobile.vc_custom_1760706079407.vc_row-has-fill.wd-bg-center-center.wd-rs-68f23e17a7ca7.wd-section-stretch {
+    display: none;
+  }
+}
+
+@media (max-width: 2200px) {
+  .vc_row.wpb_row.vc_row-fluid.chios-timeline-row {
+    padding-block: 200px !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .vc_row.wpb_row.vc_row-fluid.xl-chios-map.vc_custom_1760706126267.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-disable-overflow.wd-bg-center-center.wd-rs-68f23e3ddd3c1.wd-section-stretch {
+    display: none;
+  }
+
+  .vc_row.wpb_row.vc_row-fluid.chios-timeline-row {
+    padding-block: 0px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .chios-timeline-l2 .timeline-col.timeline-col-primary {
+    transform: translate(8rem, -2rem);
+  }
+
+  .chios-timeline-r2 .timeline-col.timeline-col-primary {
+    transform: translate(-5rem, -8rem);
+  }
+
+  .wd-timeline-image {
+    display: none !important;
+  }
+
+  .wd-timeline-wrapper {
+    padding-block: 0px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .chios-timeline-l2 .timeline-col.timeline-col-primary {
+    transform: translate(3rem, -2rem);
+  }
+
+  .chios-timeline-r1 .timeline-col.timeline-col-primary {
+    transform: translate(6rem, 0rem);
+  }
+
+  .chios-timeline-r2 .timeline-col.timeline-col-primary {
+    transform: translate(-3rem, -8rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .chios-timeline p {
+    line-height: 1;
+  }
+
+  .chios-timeline-l1 .timeline-col.timeline-col-primary {
+    transform: translate(12rem, -3rem);
+  }
+
+  .chios-timeline-l2 .timeline-col.timeline-col-primary {
+    transform: translate(16rem, -8rem);
+  }
+
+  .chios-timeline-r1 .timeline-col.timeline-col-primary {
+    transform: translate(2rem, -1rem);
+  }
+
+  .chios-timeline-r2 .timeline-col.timeline-col-primary {
+    transform: translate(-13rem, -14rem);
+  }
+
+  span.font-alt {
+    font-size: 1.5rem;
+  }
+}
+
+/* Chios map mobile version */
+#mobile-only img {
+  width: 70%;
+}
+
+@media (max-width: 425px) {
+  #mobile-only img {
+    width: 85%;
+    margin-top: -2rem;
+  }
+}
+
+/* Numbers last section on Chios maps */
+
+.woodmart-counter .counter-value {
+  line-height: 0.5;
+  letter-spacing: 15px;
+  padding-left: 10px;
+}
+
+.woodmart-counter .counter-label {
+  font-size: 2rem !important;
+  font-family: "Manrope", sans-serif !important;
+}
+
+.counter-text {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+/* Mandarin image */
+#mandarin-img-overlap {
+  position: absolute;
+  top: -300px;
+  left: 0px;
+  z-index: 9999 !important;
+}
+
+@media (max-width: 768px) {
+  #mandarin-img-overlap {
+    display: none;
+  }
+}
+
+/* OLD TIMELINE */
+/* .timiline-numbers-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.timiline-numbers-col p {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.timiline-number {
+  font-size: 6rem;
+  line-height: 0.5;
+  letter-spacing: 15px;
+  padding-left: 10px;
+}
+
+.timiline-title {
+  font-size: 2rem;
+}
+
+.timiline-text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.3;
+} */

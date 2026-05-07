@@ -1,0 +1,63 @@
+/*Section with 4 Promo Banners*/
+
+.content-banner {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.banner-title {
+    margin-top: 2rem;
+    font-size: 42px !important;
+}
+
+.prefooter-img img {
+	  transform: translate(-90px, -90px);
+}
+
+
+
+/* Visibility of content */
+.banner-mask .wrapper-content-banner {
+    /*background-color: rgba(0,0,0,0.3) !important;*/
+    background-color: rgba(0,0,0,0.1) !important;
+    transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18);
+}
+
+.promo-banner:hover.banner-mask .wrapper-content-banner {
+    background-color: rgba(0,0,0,0.5) !important;
+    transition: background-color 0.5s cubic-bezier(0, 0, 0.44, 1.18);
+}
+
+.promo-banner .content-banner .banner-inner {
+ opacity: 0;
+ transition: opacity 300ms ease-in-out;
+}
+
+.promo-banner:hover .content-banner .banner-inner {
+ opacity: 1
+}
+
+@media (max-width: 768px) {
+.vc_column-inner {
+padding-bottom: 1rem;
+}
+
+.vc_row.wpb_row.vc_row-fluid.vc_custom_1756479142437.wd-rs-68b1bea0b888c {
+    margin-top: 0px !important;
+}
+
+/* Content of boxes */
+.wrapper-content-banner.wd-fill.wd-items-bottom.wd-justify-left {
+    padding: 10px;
+    line-height: 1;
+    padding-bottom: 1rem;
+}
+
+.promo-banner .content-banner .banner-inner {
+  opacity: 0;
+}
+
+.promo-banner .content-banner .banner-inner:hover {
+  opacity: 1;
+}
+}

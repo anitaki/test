@@ -1,0 +1,204 @@
+/* .https://scientiaedu.gr/wp-admin/admin.php?action=duplicate_post_new_draft&post=936&_wpnonce=c8ecad9c39vc_carousel-slideline img {
+width: 70%;
+margin: auto;
+} */
+
+/* Κατηγοριες αρχικης κατω απο main slider
+
+.stm_lms_courses_categories.style_4 {
+    justify-content: center !important;
+    gap: 20px;
+    
+} */
+
+/* ============================================
+   MEDICAL CATEGORIES CAROUSEL - CUSTOM CSS
+   PASTE THIS IN: Appearance → Customize → Additional CSS
+   ============================================ */
+
+/* Main Section Styling */
+.medical-categories-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Carousel Container */
+.categories-carousel {
+  position: relative;
+  padding: 0 50px;
+}
+
+/* Category Card Styling */
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Category Icon */
+.category-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+  background: transparent !important;
+}
+
+.category-icon img {
+  width: 65px;
+  height: 65px;
+  filter: brightness(0) invert(1) !important;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover .category-icon img {
+  filter: brightness(0) invert(1) !important;
+  transform: scale(1.5);
+}
+
+/* Category Title */
+.category-card span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.category-card:hover span {
+  color: #ffffff;
+}
+
+/* Swiper Navigation Buttons */
+.categories-carousel .swiper-button-next,
+.categories-carousel .swiper-button-prev {
+  color: #000000;
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories-carousel .swiper-button-next:after,
+.categories-carousel .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.categories-carousel .swiper-button-next:hover,
+.categories-carousel .swiper-button-prev:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.categories-carousel .swiper-button-disabled {
+  opacity: 0.35;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .categories-carousel {
+    padding: 0 40px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .medical-categories-section {
+    padding: 40px 0;
+  }
+
+  .categories-carousel {
+    padding: 0 35px;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .section-title p {
+    font-size: 16px;
+  }
+
+  .category-card {
+    padding: 25px 15px;
+  }
+
+  .category-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .category-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .category-card span {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .categories-carousel {
+    padding: 0 30px;
+  }
+
+  .categories-carousel .swiper-button-next,
+  .categories-carousel .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+  }
+
+  .categories-carousel .swiper-button-next:after,
+  .categories-carousel .swiper-button-prev:after {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+  .hide-large {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+.main-page-wrapper {
+  margin-bottom: -40px;
+}
+
+/* Footer */
+.footer-widget ul li a {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+li#footer-address {
+  display: flex;
+}
+
+li#footer-address a {
+  line-height: 1.4;
+  margin-bottom: -8px;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-widget
+  ul.social-icons.text-center.icons-design-default.icons-size-default.social-follow {
+  text-align: left;
+}

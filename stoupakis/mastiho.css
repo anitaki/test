@@ -1,0 +1,255 @@
+/*Main page background and padding-bottom*/
+.wd-page-content.main-page-wrapper {
+  background-image: none;
+}
+
+/* Mastic image overlap */
+#mastic-img-overlap {
+  position: absolute;
+  top: -500px;
+  right: -450px;
+  z-index: 9999 !important;
+}
+
+@media (max-width: 1024px) {
+  #mastic-img-overlap {
+    position: absolute;
+    top: -300px;
+    right: -250px;
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #div#mastic {
+    display: none;
+  }
+}
+
+/* Section 1 - From the heart of Chios*/
+
+.ginger-title h4 {
+  width: 65%;
+  margin-left: 7rem;
+  font-size: 3.5rem;
+}
+
+.ginger-s1-text p {
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+.mastiho-s1-image2 {
+  width: 60%;
+}
+
+@media (max-width: 1024px) {
+  .ginger-title h4 {
+    width: 100%;
+    margin-left: 3rem;
+    font-size: 3rem;
+  }
+
+  .ginger-s1-text p {
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ginger-title h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .ginger-s1-text p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .ginger-title h4 {
+    font-size: 2rem !important;
+  }
+}
+
+/* Section 2 - Products */
+.products-img img {
+  width: 65%;
+  margin-top: 20px;
+}
+
+.product-label-text,
+.drinks-carousel .figcaption.vc_figure-caption {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: -3rem;
+}
+
+@media (max-width: 768px) {
+  .product-label-text {
+    padding-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .products-carousel {
+    display: none !important;
+  }
+
+  .drinks-carousel img {
+    width: 50%;
+  }
+
+  #mobile-screen .wpb_single_image .vc_figure-caption {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.8em;
+    margin-top: 0.2em;
+  }
+}
+
+/* Section 3a - Central bottle top part */
+p.font-alt.flavors {
+  color: white;
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+p.font-alt.flavors.flavors-bottom {
+  padding-left: 18rem;
+}
+
+.white-line-img img {
+  margin: -1rem;
+}
+
+/* Section 3- middle part - with big bottle */
+.bottle-col img {
+  width: 50%;
+  position: absolute;
+  bottom: -400px;
+  right: 25%;
+  /* transform: translateY(-50%); */
+}
+
+/* Section 3b - Central bottle bottom part */
+div#big-bottle-overlap-image {
+  transform: translate(200px, -310px);
+}
+
+/* Section 3 media queries */
+@media (max-width: 1024px) {
+  .bottle-col img {
+    bottom: -200px;
+  }
+
+  div#big-bottle-overlap-image {
+    transform: translate(100px, -310px);
+  }
+}
+
+@media (max-width: 768px) {
+  .bottle-col img {
+    bottom: -0px;
+  }
+
+  p.font-alt.flavors {
+    font-size: 2.5rem;
+  }
+
+  p.font-alt.flavors.flavors-bottom {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .roses-text-col {
+    padding-bottom: 0;
+  }
+
+  .bottle-col img {
+    bottom: -0px;
+    width: 60%;
+  }
+
+  p.font-alt.flavors {
+    font-size: 2.5rem;
+  }
+
+  p.font-alt.flavors.flavors-bottom {
+    padding-left: 5rem;
+  }
+
+  .white-line-img {
+    display: none;
+  }
+
+  .vc_row.wpb_row.vc_row-fluid.roses-row.vc_custom_1761225875853.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-rs-68fa2c8b8390d.wd-section-stretch {
+    height: 450px;
+  }
+}
+
+/* Section 4 - Cocktail Material */
+
+#mobile-screen {
+  display: none;
+}
+
+.cocktails
+  h4.woodmart-title-container.title.wd-font-weight-600.wd-fontsize-xxxl::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 100px;
+  height: 1px;
+  margin-top: 23px;
+  background-color: #000000;
+}
+
+@media (min-width: 1800px) {
+  .vc_column-inner.vc_custom_1563966657765 {
+    margin-right: 50px;
+  }
+
+  .vc_column-inner.vc_custom_1629129290006 {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .vc_row.wpb_row.vc_row-fluid.ginger-lemon-recipe-row.vc_custom_1761227227264.vc_row-has-fill.vc_row-o-full-height.vc_row-o-columns-middle.vc_row-o-content-middle.vc_row-flex.wd-disable-overflow.wd-bg-center-center.wd-rs-68fa31d28b1d6.wd-section-stretch {
+    background-image: none !important;
+  }
+
+  .box-icon-wrapper.box-with-icon.box-icon-simple {
+    display: none;
+  }
+
+  .vc_custom_1761209285527 {
+    margin-bottom: 0px !important;
+  }
+
+  .cocktails
+    h4.woodmart-title-container.title.wd-font-weight-600.wd-fontsize-xxxl::before {
+    display: none;
+  }
+
+  #large-screen-only {
+    display: none;
+  }
+
+  #mobile-screen {
+    display: block;
+  }
+}
+
+/* Mandarin overlap */
+
+#mandarin-overlap {
+  width: 50%;
+}

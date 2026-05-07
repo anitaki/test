@@ -1,0 +1,54 @@
+/* HEADER */
+
+/*Account icon color */
+.wd-tools-element > a {
+  color: #737373 !important;
+}
+
+/* Change tools icons color on hover */
+.wd-header-wishlist:hover .wd-tools-icon,
+.wd-header-compare:hover .wd-tools-icon,
+.wd-header-cart:hover .wd-tools-icon {
+    color: #E5A11C; /* gold color */
+    fill: #E5A11C;  /* for SVG icons */
+}
+
+
+/* Center header text */
+.whb-column.whb-col-center.whb-column9.whb-visible-lg {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+.whb-column.whb-col-center.whb-column9.whb-visible-lg {
+    display: none;
+}
+}
+
+/* All categories menu button */
+html .wd-nav.wd-nav-secondary > li > a {
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  border-radius: 5px;
+  padding-inline: 20px;
+}
+
+
+/* Home Slider mobile */
+@media (max-width: 767px) {
+    #slider-300 .wd-slide {
+        min-height: 390px !important;
+    }
+}
+
+
+@media (max-width:768px){
+	.better-cats .wd-cat-thumb {
+    padding: 8px;
+    border: 1.5px dashed #e3ba7b;
+    border-radius: 50% !important;
+    transition: border-color 1s ease;
+    width: 65% !important;
+}
+}

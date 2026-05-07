@@ -1,0 +1,226 @@
+/*--Κενό μεταξύ body και footer--*/
+main#main-content {
+  padding-bottom: 0px;
+}
+
+/*--Κίτρινο Κουτάκι--*/
+.yellow-box {
+  background-color: #d1a12c !important;
+  color: white !important;
+  padding: 20px !important;
+  width: 204px !important;
+  height: 112px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  border-radius: 8px !important;
+  position: relative !important;
+  z-index: 10;
+  margin-top: -100px !important;
+  margin-left: -25px !important;
+}
+
+.yellow-box h3 {
+  font-size: 2.5rem;
+}
+
+.yellow-box p {
+  font-size: 0.9em;
+}
+
+/*-- Κείμενο μέσα στο κουτάκι-- */
+.yellow-box p,
+.yellow-box h3 {
+  margin: 0 !important;
+  line-height: 1.2 !important;
+  color: white !important;
+}
+
+/*-- Κουμπιά -- */
+.home-button,
+.text-button {
+  text-transform: none;
+}
+
+/*Κουμπί / Link: Χρυσό με βελάκι */
+.my-event-grid .vc_gitem-link {
+  color: #e2b347 !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+}
+
+h1 {
+  color: #ffff !important;
+  font-size: 72px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.wd-post .wd-post-title {
+  font-size: 22px;
+  color: black;
+}
+
+a {
+  color: #c9a227;
+}
+
+/*BLOGS */
+
+.single-blog .wd-post .wd-post-title {
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #0000007d;
+}
+
+.multiple-blog .wd-post-author,
+.wd-post-share:after,
+.single-blog .wd-post-author,
+.single-blog .wd-post-share:after {
+  display: none !important;
+}
+
+/*Article category tag*/
+.multiple-blog .wd-post-cat.wd-style-with-bg.meta-post-categories,
+.single-blog .wd-post-cat.wd-style-with-bg.meta-post-categories {
+  /*border-radius: 5px;*/
+  border-radius: 50px;
+  padding-inline: 12px;
+  text-transform: none;
+}
+
+.single-blog .wd-post-cat.wd-style-with-bg.meta-post-categories {
+  background-color: #c9a227;
+}
+
+.single-blog .wd-post-cat.wd-style-with-bg.meta-post-categories a {
+  color: white;
+}
+
+.multiple-blog .wd-post-cat.wd-style-with-bg.meta-post-categories {
+  color: white;
+  background-color: #c9a2271a;
+}
+
+.multiple-blog .wd-post-cat.wd-style-with-bg.meta-post-categories a:hover {
+  color: #c9a227;
+}
+
+/*Article titles*/
+
+.multiple-blog .wd-post .wd-post-title {
+  font-size: 16px;
+}
+
+.wd-entities-title a:hover,
+.multiple-blog .wd-post .wd-post-title:hover {
+  color: #c9a227;
+}
+
+.multiple-blog .wd-post-inner article-inner {
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.08) 0px 7.75031px 11.6255px -2.32509px,
+    rgba(0, 0, 0, 0.08) 0px 3.10012px 4.65019px -3.10012px;
+  background-color: rgb(254, 253, 253);
+}
+
+/*--Προσεχώς grid-- */
+
+/*Εξαφάνιση του κόκκινου κουμπιού */
+.my-event-grid .vc_btn3-container {
+  display: none;
+}
+
+/*Badge "Προσεχώς" πάνω στην εικόνα */
+.my-event-grid .vc_grid-item-mini::before {
+  content: "Προσεχώς";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #e2b347;
+  color: #fff;
+  padding: 4px 12px;
+  /*border-radius: 5px;*/
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/*Χρώματα: Χρυσό για Τίτλο και Ημερομηνία */
+.my-event-grid h4,
+.my-event-grid .vc_gitem-post-date {
+  color: #e2b347;
+  font-weight: bold;
+  margin: 0 0 8px 0 !important;
+  text-align: left;
+}
+
+/*Κύριο σώμα της κάρτας: Κλειδωμένο ύψος και σωστό Navy Blue */
+
+.my-event-grid .vc_grid-item-mini {
+  display: flex !important;
+  flex-direction: row !important;
+  height: 250px !important;
+  background-color: #1f2937 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  margin-bottom: 25px !important;
+  border: none !important;
+  position: relative !important;
+}
+
+.my-event-grid .vc_gitem-zone-c {
+  background: transparent !important;
+}
+
+.my-event-grid
+  .vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_date {
+  color: white;
+}
+
+.my-event-grid
+  .vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_excerpt {
+  display: none;
+}
+
+/*Support Orchestra*/
+.support-orchestra-row .support-orchestra-button {
+  text-transform: none;
+}
+
+/*Coming soon card title*/
+.custom_vc_title {
+  color: #c9a227;
+}
+
+/* Yellow Box */
+@media (max-width: 768px) {
+  .yellow-box {
+    background-color: #d1a12c !important;
+    color: white !important;
+    padding: 20px !important;
+    width: 204px !important;
+    height: 112px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+    position: relative !important;
+    z-index: 10;
+    margin-top: -70px !important;
+    margin-left: 42px !important;
+  }
+}
+
+/* Category on Blog Posts */
+@media (max-width: 767px) {
+  .blog-design-small-images.blog-style-bg .wd-post-cat {
+    margin-top: 0px;
+  }
+}

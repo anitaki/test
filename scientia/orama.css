@@ -1,0 +1,12 @@
+/* Icon box  */
+.icon_box p {
+  margin-bottom: 10px !important;
+  opacity: 1 !important;
+}
+
+p.icon-box-m0 {
+    margin-bottom: 0 !important;
+}
+
+/* Tabs */
+

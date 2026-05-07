@@ -1,0 +1,3 @@
+.wd-accordion:where(.wd-style-default)>.wd-accordion-item:first-of-type, .wd-accordion:where(.wd-style-default)>.wd-nav-wrapper+.wd-accordion-item{
+    border-top:none !important;
+}

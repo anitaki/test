@@ -1,0 +1,429 @@
+/*Header*/
+/* .basel-header-overlap .main-header:not(.header-split) {
+    background-color: transparent;
+} */
+
+.team-row {
+  border-top-color: transparent !important;
+}
+
+/*What i offer*/
+.what-i-offer-text ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.what-i-offer-text ul li::marker {
+  color: #ccae93;
+  font-size: 1.2em;
+}
+
+a.btn.btn-style-link.btn-color-primary.info-box-btn {
+  background: #333c1a !important;
+  border-color: #596100 !important;
+}
+/* ::after {
+    background-color: #E6EBC6 !important;
+} */
+
+.my-services-info-box {
+  padding: 20px;
+}
+
+.my-services-info-box svg {
+  fill: #ccae93;
+  stroke: #596100;
+}
+
+.basel-info-box2.text-left.icon-alignment-top.box-style-border.color-scheme-dark.my-services-info-box.with-btn.btn-position-static.vc_custom_1739812580956,
+.basel-info-box2.text-left.icon-alignment-top.box-style-border.color-scheme-dark.my-services-info-box.with-btn.btn-position-static.vc_custom_1744368309411 {
+  border: 1px solid #ccae93;
+  padding-block: 40px;
+}
+
+/*Titloi */
+
+.my-services h4 {
+  font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.color-primary,
+.mobile-nav ul li.current-menu-item > a,
+.main-nav .menu > li.current-menu-item > a,
+.main-nav .menu > li.onepage-link.current-menu-item > a,
+.main-nav .menu > li > a:hover,
+.basel-navigation .menu > li.menu-item-design-default ul li:hover > a,
+.basel-navigation .menu > li.menu-item-design-full-width .sub-menu li a:hover,
+.basel-navigation .menu > li.menu-item-design-sized .sub-menu li a:hover,
+.basel-product-categories.responsive-cateogires li.current-cat > a,
+.basel-product-categories.responsive-cateogires li.current-cat-parent > a,
+.basel-product-categories.responsive-cateogires li.current-cat-ancestor > a,
+.basel-my-account-links a:hover:before,
+.mega-menu-list > li > a:hover,
+.mega-menu-list .sub-sub-menu li a:hover,
+a[href^="tel"],
+.topbar-menu ul > li > .sub-menu-dropdown li > a:hover,
+.btn.btn-color-primary.btn-style-bordered,
+.button.btn-color-primary.btn-style-bordered,
+button.btn-color-primary.btn-style-bordered,
+.added_to_cart.btn-color-primary.btn-style-bordered,
+input[type="submit"].btn-color-primary.btn-style-bordered,
+a.login-to-prices-msg,
+a.login-to-prices-msg:hover,
+.basel-dark
+  .single-product-content
+  .entry-summary
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistaddedbrowse
+  a:before,
+.basel-dark
+  .single-product-content
+  .entry-summary
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistexistsbrowse
+  a:before,
+.basel-dark .read-more-section .btn-read-more,
+.basel-dark .basel-load-more,
+.basel-dark .color-primary,
+.basel-hover-link .swap-elements .btn-add a,
+.basel-hover-link .swap-elements .btn-add a:hover,
+.blog-post-loop .entry-title a:hover,
+.blog-post-loop.sticky .entry-title:before,
+.post-slide .entry-title a:hover,
+.comments-area .reply a,
+.single-post-navigation a:hover,
+blockquote footer:before,
+blockquote cite,
+.format-quote .entry-content blockquote cite,
+.format-quote .entry-content blockquote cite a,
+.basel-entry-meta .meta-author a,
+.search-no-results.woocommerce .site-content:before,
+.search-no-results .not-found .entry-header:before,
+.login-form-footer .lost_password:hover,
+.error404 .page-title,
+.menu-label-new:after,
+.widget_shopping_cart .product_list_widget li .quantity .amount,
+.product_list_widget li ins .amount,
+.price ins > .amount,
+.price ins,
+.single-product .price,
+.single-product .price .amount,
+.popup-quick-view .price,
+.popup-quick-view .price .amount,
+.basel-products-nav .product-short .price,
+.basel-products-nav .product-short .price .amount,
+.star-rating span:before,
+.comment-respond .stars a:hover:after,
+.comment-respond .stars a.active:after,
+.single-product-content .comment-form .stars span a:hover,
+.single-product-content .comment-form .stars span a.active,
+.tabs-layout-accordion .basel-tab-wrapper .basel-accordion-title:hover,
+.tabs-layout-accordion .basel-tab-wrapper .basel-accordion-title.active,
+.single-product-content
+  .woocommerce-product-details__short-description
+  ul
+  > li:before,
+.single-product-content #tab-description ul > li:before,
+.blog-post-loop .entry-content ul > li:before,
+.comments-area .comment-list li ul > li:before,
+.brands-list .brand-item a:hover,
+.footer-container
+  .footer-widget-collapse.footer-widget-opened
+  .widget-title:after,
+.sidebar-widget li a:hover,
+.filter-widget li a:hover,
+.sidebar-widget li > ul li a:hover,
+.filter-widget li > ul li a:hover,
+.basel-price-filter ul li a:hover .amount,
+.basel-hover-effect-4 .swap-elements > a,
+.basel-hover-effect-4 .swap-elements > a:hover,
+.product-grid-item .basel-product-cats a:hover,
+.product-grid-item .basel-product-brands-links a:hover,
+.wishlist_table tr td.product-price ins .amount,
+.basel-buttons .product-compare-button > a.added:before,
+.basel-buttons .basel-wishlist-btn > a.added:before,
+.single-product-content .entry-summary .yith-wcwl-add-to-wishlist a:hover,
+.single-product-content
+  .container
+  .entry-summary
+  .yith-wcwl-add-to-wishlist
+  a:hover:before,
+.single-product-content
+  .entry-summary
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistaddedbrowse
+  a:before,
+.single-product-content
+  .entry-summary
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-wishlistexistsbrowse
+  a:before,
+.single-product-content
+  .entry-summary
+  .yith-wcwl-add-to-wishlist
+  .yith-wcwl-add-button.feid-in
+  > a:before,
+.basel-sticky-btn .basel-sticky-btn-wishlist a.added,
+.basel-sticky-btn .basel-sticky-btn-wishlist a:hover,
+.single-product-content .entry-summary .wishlist-btn-wrapper a:hover,
+.single-product-content .entry-summary .wishlist-btn-wrapper a:hover:before,
+.single-product-content .entry-summary .wishlist-btn-wrapper a.added:before,
+.vendors-list ul li a:hover,
+.product-list-item .product-list-buttons .basel-wishlist-btn a:hover,
+.product-list-item .product-list-buttons .product-compare-button a:hover,
+.product-list-item .product-list-buttons .basel-wishlist-btn > a.added:before,
+.product-list-item
+  .product-list-buttons
+  .product-compare-button
+  > a.added:before,
+.basel-sticky-btn .basel-sticky-btn-compare a.added,
+.basel-sticky-btn .basel-sticky-btn-compare a:hover,
+.single-product-content .entry-summary .compare-btn-wrapper a:hover,
+.single-product-content .entry-summary .compare-btn-wrapper a:hover:before,
+.single-product-content .entry-summary .compare-btn-wrapper a.added:before,
+.single-product-content .entry-summary .basel-sizeguide-btn:hover,
+.single-product-content .entry-summary .basel-sizeguide-btn:hover:before,
+.blog-post-loop .entry-content ul li:before,
+.basel-menu-price .menu-price-price,
+.basel-menu-price.cursor-pointer:hover .menu-price-title,
+.comments-area #cancel-comment-reply-link:hover,
+.comments-area .comment-body .comment-edit-link:hover,
+.popup-quick-view .entry-summary .entry-title a:hover,
+.wpb_text_column ul:not(.social-icons) > li:before,
+.widget_product_categories .basel-cats-toggle:hover,
+.widget_product_categories .toggle-active,
+.widget_product_categories li.current-cat-parent > a,
+.widget_product_categories li.current-cat > a,
+.woocommerce-checkout-review-order-table tfoot .order-total td .amount,
+.widget_shopping_cart .product_list_widget li .remove:hover,
+.basel-active-filters .widget_layered_nav_filters ul li a .amount,
+.title-wrapper.basel-title-color-primary .title-subtitle,
+.widget_shopping_cart .widget_shopping_cart_content > .total .amount,
+.color-scheme-light
+  .vc_tta-tabs.vc_tta-tabs-position-top.vc_tta-style-classic
+  .vc_tta-tab.vc_active
+  > a,
+.wpb-js-composer
+  .vc_tta.vc_general.vc_tta-style-classic
+  .vc_tta-tab.vc_active
+  > a,
+.basel-free-progress-bar .amount {
+  color: #ccae93 !important;
+}
+
+.home-about-me-title h4 {
+  font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;
+  padding-top: 0px;
+  margin-right: 20px;
+  /*color: #475420;*/
+  color: #5a6e34;
+}
+
+.therapy-process-title h4 {
+  /*color: #475420;*/
+  color: #5a6e34;
+  font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;
+}
+
+.therapeytiki-diadikasia-text h4 {
+  /*color: #475420;*/
+  color: #5a6e34;
+}
+
+/*Therapeftiki diadikasia on hover*/
+
+#therapeytiki-diadikasia-box-1,
+#therapeytiki-diadikasia-box-2,
+#therapeytiki-diadikasia-box-3,
+#therapeytiki-diadikasia-box-4,
+#therapeytiki-diadikasia-box-5,
+#therapeytiki-diadikasia-box-6 {
+  min-height: 350px;
+  transition:
+    transform 330ms ease-in-out,
+    background-color 330ms ease-in-out,
+    box-shadow 330ms ease-in-out;
+}
+
+#therapeytiki-diadikasia-box-1:hover,
+#therapeytiki-diadikasia-box-2:hover,
+#therapeytiki-diadikasia-box-3:hover,
+#therapeytiki-diadikasia-box-4:hover,
+#therapeytiki-diadikasia-box-5:hover,
+#therapeytiki-diadikasia-box-6:hover {
+  transform: scale(1.02);
+  border-radius: 8px;
+  background-color: rgba(243, 238, 230, 0.7);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);*/
+}
+
+.wpb_text_column.wpb_content_element.vc_custom_1744300528591.my-office-text {
+  padding-top: 0px;
+}
+
+.basel-info-box2.text-left.icon-alignment-left.box-style-shadow.color-scheme-dark.home-about-me-iconbox {
+  padding: 8px;
+}
+
+/* Quotation section */
+
+.quote-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image */
+.quote-image {
+  width: 30%;
+  max-width: 200px;
+}
+
+/* Content */
+.quote-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Quote */
+.quote-content blockquote {
+  color: #ffffff;
+  margin: 0;
+}
+
+.quote-author {
+  color: #d0db99;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .quote-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote-image {
+    width: 65%;
+  }
+}
+
+/* .quote-text,
+.green-divider {
+background: linear-gradient(
+    160deg,
+    #5a6e34 0%,
+    #6b7e38 55%,
+    #aebf6f 85%,
+    #d0db99 100%
+);
+} */
+
+/*Image gallery Ο χώρος μας*/
+
+.my-office-title h4 {
+  /*color: #475420;*/
+  color: #5a6e34;
+}
+
+.my-office-title .title-subtitle span {
+  color: #855a17 !important;
+}
+
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+/*Members carousel*/
+.members-banner [class*="basel-info-box"].box-style-border .info-box-content {
+  padding: 50px 20px 20px 20px;
+  border: 0.5px solid rgba(97, 97, 97, 0.09);
+}
+
+.members-banner a.btn.btn-style-link.btn-color-primary.info-box-btn {
+  /* background: #333c1a !important; */
+  background-color: #5a6e34 !important;
+  border-color: #596100 !important;
+  margin-top: -5pxpx;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.members-banner .info-btn-wrapper {
+    padding-top: 6px !important;
+}
+
+.members-banner .info-box-inner p {
+    min-height: 103px;
+}
+
+/*Διάφορα*/
+.showonmobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .vc_column-inner.vc_custom_1739982249088 {
+    padding: 0px 15px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .vc_column_container > .vc_column-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (width: 768px) {
+  .my-services-info-box {
+    padding-inline: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vc_column_container > .vc_column-inner {
+    padding-left: 18px !important;
+    padding-right: 18px;
+  }
+
+  .wpb_text_column.wpb_content_element.vc_custom_1744300528591.my-office-text {
+    padding-right: 0px !important;
+  }
+
+  .hideonmobile {
+    display: none;
+  }
+  .showonmobile {
+    display: block;
+  }
+}
+
+@media (max-width: 620px) {
+  .cursor-pointer.basel-info-box2.text-center.icon-alignment-top.box-style-base.color-scheme-dark.what-i-offer-text.vc_custom_1739891142890 {
+    padding-top: 0px !important;
+  }
+
+  .my-services h4.title,
+  .home-about-me-title h4,
+  .therapy-process-title h4 {
+    font-size: 2.2em !important;
+    padding-block: 5px;
+  }
+
+  .my-services-info-box,
+  .my-services-info-box h3,
+  .my-services-info-box p {
+    text-align: center !important;
+  }
+
+  .home-about-me-text h4,
+  .my-office-text h4 {
+    text-align: center !important;
+  }
+}

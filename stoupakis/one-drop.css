@@ -1,0 +1,258 @@
+/*Main page background and padding-bottom*/
+.wd-page-content.main-page-wrapper {
+  background-image: none;
+}
+
+main#main-content {
+  padding-bottom: 0;
+}
+
+/* Section 1 - From the heart of Chios*/
+
+.ginger-title h4 {
+  font-size: 3.5rem;
+}
+
+.ginger-s1-text p {
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+.miss-tic-s1-image1 img,
+.miss-tic-s1-image2 img {
+  width: 70%;
+}
+
+@media (max-width: 1024px) {
+  .ginger-title h4 {
+    width: 100%;
+    margin-left: 3rem;
+    font-size: 3rem;
+  }
+
+  .ginger-s1-text p {
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ginger-title h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .ginger-s1-text p {
+    width: 100%;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_right.miss-tic-s1-image1 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .ginger-title h4 {
+    font-size: 2rem !important;
+  }
+}
+
+/* Section 2- with big bottle */
+.bottle-col img.vc_single_image-img.attachment-full {
+  width: 100%;
+  position: absolute;
+  top: -150px;
+  right: -15%;
+  transform: scale(1.2);
+}
+
+/* Section 2b - Central bottle bottom part */
+div#big-bottle-overlap-image {
+    transform: rotate(350deg) scale(1.3) translate(50px, -80px) !important;
+}
+
+/* Section 2 media queries */
+@media (max-width: 1440px) {
+  .bottle-col img.vc_single_image-img.attachment-full {
+    width: 100%;
+    position: absolute;
+    top: -200px;
+    right: 0%;
+    transform: scale(1.2);
+  }
+
+  div#big-bottle-overlap-image {
+  transform: rotate(350deg) scale(1.1) translate(80px, -140px) !important;
+}
+}
+
+@media (max-width: 1024px) {
+   .bottle-col img.vc_single_image-img.attachment-full  {
+    top: -150px;
+  }
+
+  div#big-bottle-overlap-image {
+    transform: rotate(343deg) scale(1.2) translate(70px, -125px) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottle-col img {
+    top: 0px;
+  }
+
+  .big-bottle-text {
+    text-align: center;
+  }
+
+  .bottle-col img.vc_single_image-img.attachment-full {
+        top: 0px;
+        right: -10%;
+    }
+
+    div#big-bottle-overlap-image {
+        transform: rotate(343deg) scale(1.2) translate(20px, -25px) !important;
+    }
+}
+
+@media (max-width: 425px) {
+  .bottle-col img {
+    bottom: -0px;
+    width: 60%;
+  }
+}
+
+/* Section 3 - Cocktail Material title */
+
+h4.woodmart-title-container.title.wd-font-weight-600.wd-fontsize-xxxl::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 100px;
+  height: 1px;
+  margin-top: -10px;
+  background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .vc_row.wpb_row.vc_row-fluid.vc_custom_1761315239135.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-rs-68fb899418ce2.wd-section-stretch,
+  .vc_row.wpb_row.vc_row-fluid.vc_custom_1761317085659.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-rs-68fb90d898199.wd-section-stretch,
+  .vc_row.wpb_row.vc_row-fluid.vc_custom_1761317085659.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-rs-68fb90d898199.wd-section-stretch {
+    padding-bottom: 50px !important;
+  }
+}
+
+/* Section 3 - Cocktail material slider */
+.recipe-slide h4.banner-title {
+  font-size: 5rem;
+}
+
+.recipe-slide .banner-inner p {
+  font-size: 1.3rem;
+}
+
+.banner-mask .wrapper-content-banner:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .recipe-slide h4.banner-title {
+    font-size: 2.5rem;
+  }
+
+  .recipe-slide .banner-inner p {
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 425px) {
+  .recipe-slide h4.banner-title {
+    font-size: 1.5rem;
+  }
+
+  .recipe-slide .banner-inner p {
+    font-size: 0.8rem;
+  }
+}
+
+/**** Distillation table  *****/
+table td {
+  border-bottom: 0.5px solid black !important;
+}
+
+.distillation-table,
+.distillation-header-row,
+.distillation-header-cell {
+  border: 0.5px solid black !important;
+  /* border-collapse: separate; */
+  color: black;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.distillation-row {
+  height: 5rem;
+}
+
+.distillation-header-cell,
+.distillation-cell {
+  min-width: 6rem;
+  text-align: center;
+}
+
+.distillation-header-icon,
+.distillation-icon {
+  width: 25px;
+}
+
+.distillation-cell {
+  text-align: center;
+}
+
+/* Thermometer header in table */
+.thermo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thermo-div p {
+  font-size: 0.5rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.thermo-div img {
+  width: 40px;
+}
+
+@media (max-width: 1225px) {
+  .distillation-header-cell,
+  .distillation-cell {
+    min-width: 3.2rem;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .thermo-div img {
+    width: 20px;
+  }
+
+  .thermo-div p {
+    font-size: 0.35rem;
+  }
+
+  .distillation-row {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .distillation-table {
+    margin: 0px;
+  }
+}

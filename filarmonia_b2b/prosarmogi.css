@@ -1,0 +1,42 @@
+
+/* General css */
+@media(min-width: 668px) {
+	#hide-large {
+	display: none;
+}
+}
+
+@media(max-width: 667px) {
+	#hide-mobile {
+	display: none;
+}
+}
+
+
+/*  romvoi rotate   */ 
+.vc_icon_element-inner.vc_icon_element-color-orange.vc_icon_element-size-xs.vc_icon_element-style-.vc_icon_element-background-color-grey {
+    transform: rotate(45deg);
+}
+
+/* copyrights footer*/
+.wd-social-icons.wd-style-default {
+    gap: 0;
+    --wd-social-color: #fff9 !important;
+    --wd-social-color-hover: #C9A227 !important;
+}
+.wd-copyrights.copyrights-wrapper.wd-layout-two-columns {
+    color: #fff9;
+}
+
+.wd-copyrights,
+.wd-copyrights.copyrights-wrapper.wd-layout-two-columns {
+    border-top: 0.5px solid rgba(259, 259, 259, 0.1)
+}
+
+
+/* Buttons */
+a.btn.btn-style-default {
+    padding: 14px 32px;
+    font-family: 'Manrope', sans-serif;
+	border-radius: 5px;
+}

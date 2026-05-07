@@ -1,0 +1,32 @@
+.vc_column-inner.vc_custom_1756453094889 {
+  padding-top: 0 !important;
+}
+
+.our-approach-text {
+  width: 40%;
+}
+
+.our-approach-img img {
+  width: 80%;
+}
+
+/* Hide margin between footer and last element */
+.vc_row.wpb_row.vc_row-fluid.footer-row.vc_custom_1761747533506.vc_row-has-fill.vc_column-gap-30.vc_row-o-equal-height.vc_row-flex.wd-rs-690222403bf25 {
+  margin-top: 0px !important;
+}
+
+@media (max-width: 1024px) {
+  .our-approach-text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wpb_text_column.wpb_content_element.vc_custom_1756474094800.our-service-text {
+    margin-left: 20px !important;
+  }
+
+  .our-approach-text {
+    width: 100%;
+  }
+}

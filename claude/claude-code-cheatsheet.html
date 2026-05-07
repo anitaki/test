@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Code — Cheatsheet</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f9f8f6;
+    --surface: #ffffff;
+    --border: #e5e3dc;
+    --border-strong: #ccc9bf;
+    --text: #1a1917;
+    --muted: #6b6860;
+    --mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    --blue-bg: #e8f0fb; --blue-txt: #1a4a9e;
+    --green-bg: #e6f4ea; --green-txt: #1a6e35;
+    --amber-bg: #fef3dc; --amber-txt: #7a4f00;
+    --purple-bg: #ede9fb; --purple-txt: #4a2da0;
+    --coral-bg: #fdecea; --coral-txt: #9a2c1a;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 32px 24px 64px;
+  }
+
+  .page { max-width: 960px; margin: 0 auto; }
+
+  /* Header */
+  header { margin-bottom: 28px; border-bottom: 1px solid var(--border-strong); padding-bottom: 20px; }
+  header h1 { font-family: var(--mono); font-size: 22px; font-weight: 600; letter-spacing: -0.5px; }
+  header h1 span { color: var(--muted); font-weight: 400; }
+  header p { color: var(--muted); font-size: 12px; margin-top: 6px; }
+
+  /* Legend */
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 14px; margin-bottom: 24px;
+    font-size: 11px;
+  }
+  .legend-item { display: flex; align-items: center; gap: 5px; }
+
+  /* Section */
+  section { margin-bottom: 28px; }
+  section h2 {
+    font-family: var(--mono);
+    font-size: 10px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 8px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 6px;
+  }
+  .grid-sm { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+
+  /* Card */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 10px 12px;
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+  .card:hover { border-color: var(--border-strong); }
+
+  .cmd {
+    font-family: var(--mono);
+    font-size: 11.5px; font-weight: 600;
+    color: #185fa5;
+    white-space: nowrap;
+    min-width: 120px;
+    padding-top: 1px;
+    flex-shrink: 0;
+  }
+
+  .skill-cmd { color: #1a6e35; min-width: 110px; }
+  .pattern-cmd { color: #7a4f00; min-width: 120px; }
+  .custom-cmd { color: #4a2da0; min-width: 120px; }
+
+  .desc { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+
+  /* Badges */
+  .badge {
+    display: inline-block; font-size: 9px; font-weight: 600;
+    padding: 1px 5px; border-radius: 4px;
+    margin-left: 3px; vertical-align: middle;
+    font-family: var(--sans); letter-spacing: 0.03em;
+  }
+  .b-undoc { background: var(--amber-bg); color: var(--amber-txt); }
+  .b-custom { background: var(--purple-bg); color: var(--purple-txt); }
+  .b-skill  { background: var(--green-bg);  color: var(--green-txt); }
+  .b-pinokio { background: var(--coral-bg); color: var(--coral-txt); }
+
+  /* Info box */
+  .info {
+    background: var(--blue-bg); border-left: 3px solid #378add;
+    border-radius: 0 7px 7px 0; padding: 9px 13px;
+    font-size: 11.5px; color: #1a2e5a; line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .info code, code {
+    font-family: var(--mono); font-size: 10.5px;
+    background: rgba(0,0,0,0.06); padding: 1px 4px; border-radius: 3px;
+  }
+
+  /* Tip row */
+  .tip-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .tip-pill {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px; padding: 6px 10px; font-size: 11px; color: var(--muted);
+  }
+  .tip-pill strong { color: var(--text); font-weight: 600; }
+
+  /* Footer */
+  footer {
+    margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border);
+    font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer a { color: #185fa5; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { padding: 16px; background: white; }
+    .card:hover { border-color: var(--border); }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>claude code <span>/ cheatsheet</span></h1>
+  <p>Built-in slash commands · Custom commands · Pinokio / Gepeto · Skills — April 2026</p>
+</header>
+
+<div class="legend">
+  <span style="font-size:11px;color:#6b6860;margin-right:4px;">Legend:</span>
+  <span class="legend-item"><span class="badge b-undoc">undoc</span> Works but not in official docs</span>
+  <span class="legend-item"><span class="badge b-custom">custom</span> Your own command file</span>
+  <span class="legend-item"><span class="badge b-skill">skill</span> NL-triggered skill (no slash needed)</span>
+  <span class="legend-item"><span class="badge b-pinokio">pinokio</span> From Pinokio / Gepeto ecosystem</span>
+</div>
+
+<!-- SESSION CONTROL -->
+<section>
+  <h2>Session control</h2>
+  <div class="grid">
+    <div class="card"><span class="cmd">/help</span><span class="desc">List all commands including custom & MCP ones</span></div>
+    <div class="card"><span class="cmd">/clear</span><span class="desc">Reset conversation history, keep session alive — use between tasks</span></div>
+    <div class="card"><span class="cmd">/compact</span><span class="desc">Summarise old context to free tokens. Optionally pass instructions: <code>/compact keep auth logic</code></span></div>
+    <div class="card"><span class="cmd">/cost</span><span class="desc">Show token usage and estimated $ cost for the current session</span></div>
+    <div class="card"><span class="cmd">/exit</span><span class="desc">End session cleanly (vs just closing terminal)</span></div>
+    <div class="card"><span class="cmd">/context <span class="badge b-undoc">undoc</span></span><span class="desc">Visualise context window usage — see what's eating your tokens</span></div>
+    <div class="card"><span class="cmd">/export <span class="badge b-undoc">undoc</span></span><span class="desc">Export conversation to file or clipboard for docs / sharing</span></div>
+    <div class="card"><span class="cmd">/bashes <span class="badge b-undoc">undoc</span></span><span class="desc">List & manage background bash shells spawned in session</span></div>
+  </div>
+</section>
+
+<!-- CONFIGURATION -->
+<section>
+  <h2>Configuration &amp; setup</h2>
+  <div class="grid">
+    <div class="card"><span class="cmd">/init</span><span class="desc">Generate <code>CLAUDE.md</code> — Claude's persistent memory for your project</span></div>
+    <div class="card"><span class="cmd">/config</span><span class="desc">Open config UI — permissions, default behaviours</span></div>
+    <div class="card"><span class="cmd">/model</span><span class="desc">Switch model mid-session: Sonnet (default), Haiku (fast/cheap), Opus (complex)</span></div>
+    <div class="card"><span class="cmd">/permissions</span><span class="desc">Change tool permissions without restarting</span></div>
+    <div class="card"><span class="cmd">/login</span><span class="desc">Switch Anthropic accounts or re-authenticate</span></div>
+    <div class="card"><span class="cmd">/doctor</span><span class="desc">Run diagnostics — identify install or connectivity issues</span></div>
+    <div class="card"><span class="cmd">/hooks</span><span class="desc">Configure lifecycle hooks: <code>PreToolUse</code> / <code>PostToolUse</code> shell commands</span></div>
+    <div class="card"><span class="cmd">/ide</span><span class="desc">Connect to your IDE — lets Claude see open files & linter warnings</span></div>
+  </div>
+</section>
+
+<!-- MCP -->
+<section>
+  <h2>MCP &amp; integrations</h2>
+  <div class="grid">
+    <div class="card"><span class="cmd">/mcp</span><span class="desc">Add / remove / configure MCP servers (GitHub, databases, browser automation…)</span></div>
+    <div class="card"><span class="cmd">/agents</span><span class="desc">Create & manage subagents with their own system prompts & tool permissions</span></div>
+    <div class="card"><span class="cmd">/install-github-app</span><span class="desc">Set up automated PR reviews via Claude Code GitHub App</span></div>
+    <div class="card"><span class="cmd">/mcp__[srv]__[cmd]</span><span class="desc">Dynamic commands from connected MCP servers, e.g. <code>/mcp__github__create-pr</code></span></div>
+  </div>
+</section>
+
+<!-- PINOKIO / GEPETO -->
+<section>
+  <h2>Pinokio &amp; Gepeto</h2>
+  <div class="info">
+    <strong>Pinokio</strong> is an open-source local AI browser — a 1-click launcher for any AI app. <strong>Gepeto</strong> is Pinokio's built-in script generator that auto-creates install, run, update, and reset launcher scripts. These appear as <code>/pinokio</code> and <code>/gepeto</code> custom commands in Claude Code when you've set up the integration. They are <em>not</em> native Claude Code built-ins — they live in your <code>~/.claude/commands/</code> as Markdown files injected by the Pinokio environment.
+  </div>
+  <div class="grid">
+    <div class="card">
+      <span class="cmd custom-cmd">/pinokio <span class="badge b-pinokio">pinokio</span></span>
+      <span class="desc">Interface with the Pinokio local AI browser — install, launch, and control locally-running AI apps. Pinokio is agent-ready: any AI (Claude, Codex, Gemini…) can control apps with zero config.</span>
+    </div>
+    <div class="card">
+      <span class="cmd custom-cmd">/gepeto <span class="badge b-pinokio">pinokio</span></span>
+      <span class="desc">Gepeto is Pinokio's app-launcher generator. Give it a GitHub/HuggingFace repo and it instantly generates install + run + update + reset scripts. UV is the default Python package manager.</span>
+    </div>
+  </div>
+  <div class="tip-row" style="margin-top:8px;">
+    <div class="tip-pill"><strong>Pinokio home:</strong> <code>~/pinokio/</code> — all apps isolated here</div>
+    <div class="tip-pill"><strong>Gepeto output:</strong> <code>install.js</code> · <code>start.js</code> · <code>reset.js</code> · <code>update.js</code></div>
+    <div class="tip-pill"><strong>Package manager:</strong> UV (replaces pip in v3.0+)</div>
+    <div class="tip-pill"><strong>Works with:</strong> Claude, Cursor, Codex, Gemini, Openclaw</div>
+  </div>
+</section>
+
+<!-- CUSTOM COMMANDS -->
+<section>
+  <h2>Custom commands <span class="badge b-custom">custom</span></h2>
+  <div class="info">
+    Store <code>.md</code> files in <code>~/.claude/commands/</code> (global) or <code>.claude/commands/</code> (project).
+    Use <code>$ARGUMENTS</code> for dynamic args, <code>$1 $2</code> for positional args. They appear in <code>/help</code> instantly.
+  </div>
+  <div class="grid">
+    <div class="card"><span class="cmd custom-cmd">/cmd $ARGUMENTS</span><span class="desc">Pass a dynamic value to any custom command</span></div>
+    <div class="card"><span class="cmd custom-cmd">/cmd $1 $2</span><span class="desc">Positional args in custom commands</span></div>
+    <div class="card"><span class="cmd custom-cmd">@src/main.js</span><span class="desc">Include a file's full content in your prompt context</span></div>
+    <div class="card"><span class="cmd custom-cmd">!git status</span><span class="desc">Run shell command directly — bypasses conversational mode, saves tokens</span></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills — natural language triggers <span class="badge b-skill">skill</span></h2>
+  <div class="info">
+    Skills live in <code>~/.claude/skills/</code> (global) or <code>.claude/skills/</code> (project) as Markdown files with a <code>description:</code> frontmatter field.
+    Claude reads the description and decides autonomously when to invoke them — no slash needed. Say <strong>"make this quieter"</strong> or <strong>"overdrive this layout"</strong> and the right skill fires.
+  </div>
+  <div class="grid grid-sm">
+    <div class="card"><span class="cmd skill-cmd">adapt</span><span class="desc">Adjust tone / style to context</span></div>
+    <div class="card"><span class="cmd skill-cmd">animate</span><span class="desc">Add motion / animation</span></div>
+    <div class="card"><span class="cmd skill-cmd">arrange</span><span class="desc">Layout & composition</span></div>
+    <div class="card"><span class="cmd skill-cmd">audit</span><span class="desc">Review for issues / compliance</span></div>
+    <div class="card"><span class="cmd skill-cmd">bolder</span><span class="desc">Make design / type more assertive</span></div>
+    <div class="card"><span class="cmd skill-cmd">clarify</span><span class="desc">Simplify or disambiguate content</span></div>
+    <div class="card"><span class="cmd skill-cmd">colorize</span><span class="desc">Apply or improve colour</span></div>
+    <div class="card"><span class="cmd skill-cmd">critique</span><span class="desc">Structured feedback on output</span></div>
+    <div class="card"><span class="cmd skill-cmd">delight</span><span class="desc">Add moments of joy / polish</span></div>
+    <div class="card"><span class="cmd skill-cmd">distill</span><span class="desc">Extract the essential core</span></div>
+    <div class="card"><span class="cmd skill-cmd">extract</span><span class="desc">Pull structured data from content</span></div>
+    <div class="card"><span class="cmd skill-cmd">find-skills</span><span class="desc">Discover available skills</span></div>
+    <div class="card"><span class="cmd skill-cmd">frontend-design</span><span class="desc">High-quality UI / component code</span></div>
+    <div class="card"><span class="cmd skill-cmd">gepeto <span class="badge b-pinokio">pinokio</span></span><span class="desc">Pinokio launcher generator skill</span></div>
+    <div class="card"><span class="cmd skill-cmd">harden</span><span class="desc">Security hardening pass</span></div>
+    <div class="card"><span class="cmd skill-cmd">normalize</span><span class="desc">Standardise / clean data or style</span></div>
+    <div class="card"><span class="cmd skill-cmd">onboard</span><span class="desc">New-user or project onboarding</span></div>
+    <div class="card"><span class="cmd skill-cmd">optimize</span><span class="desc">Performance or efficiency pass</span></div>
+    <div class="card"><span class="cmd skill-cmd">overdrive</span><span class="desc">Maximum effort — push beyond normal</span></div>
+    <div class="card"><span class="cmd skill-cmd">pinokio <span class="badge b-pinokio">pinokio</span></span><span class="desc">Local AI browser control skill</span></div>
+    <div class="card"><span class="cmd skill-cmd">polish</span><span class="desc">Final refinement pass</span></div>
+    <div class="card"><span class="cmd skill-cmd">quieter</span><span class="desc">Reduce visual or verbal noise</span></div>
+    <div class="card"><span class="cmd skill-cmd">teach-impeccable</span><span class="desc">Explain with precision & care</span></div>
+    <div class="card"><span class="cmd skill-cmd">typeset</span><span class="desc">Typography refinement</span></div>
+    <div class="card"><span class="cmd skill-cmd">ui-ux-pro-max-skill</span><span class="desc">Full-stack UX review</span></div>
+    <div class="card"><span class="cmd skill-cmd">web-design-guidelines</span><span class="desc">Apply web design standards</span></div>
+  </div>
+</section>
+
+<!-- FILE LOCATIONS -->
+<section>
+  <h2>Key file locations</h2>
+  <div class="tip-row">
+    <div class="tip-pill"><strong>Global commands:</strong> <code>~/.claude/commands/*.md</code></div>
+    <div class="tip-pill"><strong>Project commands:</strong> <code>.claude/commands/*.md</code></div>
+    <div class="tip-pill"><strong>Global skills:</strong> <code>~/.claude/skills/*.md</code></div>
+    <div class="tip-pill"><strong>Project skills:</strong> <code>.claude/skills/*.md</code></div>
+    <div class="tip-pill"><strong>Project memory:</strong> <code>CLAUDE.md</code> (run <code>/init</code>)</div>
+    <div class="tip-pill"><strong>Pinokio home:</strong> <code>~/pinokio/api/</code></div>
+    <div class="tip-pill"><strong>Session config:</strong> <code>~/.claude/config.json</code></div>
+  </div>
+</section>
+
+<!-- QUICK TIPS -->
+<section>
+  <h2>Quick tips</h2>
+  <div class="grid">
+    <div class="card"><span class="cmd pattern-cmd">Ctrl+C</span><span class="desc">Interrupt current response — keeps session alive</span></div>
+    <div class="card"><span class="cmd pattern-cmd">Ctrl+D</span><span class="desc">End session (same as <code>/exit</code>)</span></div>
+    <div class="card"><span class="cmd pattern-cmd">/clear often</span><span class="desc">Reset context between unrelated tasks to avoid confusion</span></div>
+    <div class="card"><span class="cmd pattern-cmd">/compact early</span><span class="desc">Compact before hitting limits, not after — pass custom instructions</span></div>
+    <div class="card"><span class="cmd pattern-cmd">!cmd bypass</span><span class="desc">Prefix shell commands with <code>!</code> to skip conversational overhead</span></div>
+    <div class="card"><span class="cmd pattern-cmd">CLAUDE.md</span><span class="desc">Put coding conventions, architecture notes & preferences here for persistent context</span></div>
+    <div class="card"><span class="cmd pattern-cmd">/model haiku</span><span class="desc">Switch to Haiku for simple tasks — saves tokens fast</span></div>
+    <div class="card"><span class="cmd pattern-cmd">/cost check</span><span class="desc">Monitor session cost — especially during long multi-file sessions</span></div>
+  </div>
+</section>
+
+<footer>
+  <span>Official docs: <a href="https://docs.claude.com/en/docs/claude-code/overview">docs.claude.com</a> &nbsp;·&nbsp; <a href="https://gepeto.pinokio.computer">gepeto.pinokio.computer</a> &nbsp;·&nbsp; <a href="https://pinokio.computer">pinokio.computer</a></span>
+  <span>Claude Code cheatsheet · April 2026</span>
+</footer>
+
+</div>
+</body>
+</html>

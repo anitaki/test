@@ -1,0 +1,240 @@
+/* General styling */
+
+main#main-content {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/* Whole page background image */
+.page .wd-page-content {
+  background-color: white;
+  background-image: none;
+  /* background-image: url(https://stoupakis.progressnet.gr/wp-content/uploads/2021/08/vertical-bg-line.png);
+    background-repeat: repeat-y;
+    background-position: center top; */
+}
+
+/* Section 1 - Non alcoholic section */
+.ginger-title h4 {
+  font-size: 3.5rem;
+  margin-left: 5rem;
+}
+
+h4.woodmart-title-container.title.wd-font-weight-600.wd-fontsize-xxxl::before {
+  display: none;
+}
+
+.non-alc-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  text-align: center;
+}
+
+.non-alc-a {
+  padding: 10px 25px !important;
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #000;
+  background-color: #00000000;
+  transition: all 200ms ease;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.non-alc-a:hover {
+  background-color: #b88a6d;
+  color: #000;
+  border-color: #000;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+  transform: translateY(2px);
+}
+
+#non-alc-p {
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .ginger-title h4 {
+    width: 100%;
+    margin-left: 3rem;
+    font-size: 3rem;
+  }
+
+  .non-alc-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ginger-title h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .non-alc-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .non-alc-a {
+    padding: 10px 10px !important;
+  }
+}
+
+/*Section 2 - Our heritage*/
+
+.vc_row.wpb_row.vc_row-fluid.our-heritage-row.vc_custom_1761735169053.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-parallax.wd-bg-center-bottom.wd-rs-6901f1eca232a.wd-section-stretch {
+  margin-top: -40px;
+}
+
+.our-heritage-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-inline: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, fill 0.3s ease;
+}
+
+.our-heritage-button:hover {
+  background-color: rgba(202, 199, 180, 0.4);
+  border: 1px solid rgba(202, 199, 180, 0.4);
+}
+
+.our-heritage-row {
+  position: relative;
+  height: 700px;
+}
+
+#our-heritage-title {
+  font-family: Alex Brush, Manrope, Arial;
+  font-size: 10rem;
+  text-align: center;
+  color: white;
+}
+
+/* Explore our history button */
+.vc_row.wpb_row.vc_row-fluid.our-heritage-row.vc_custom_1760365345706.vc_row-has-fill.vc_row-o-full-height.vc_row-o-columns-middle.vc_row-o-content-middle.vc_row-flex.wd-parallax.wd-bg-center-center.wd-rs-68ed0b15e22e1.wd-section-stretch-content {
+  position: relative;
+}
+
+.services-slider-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  position: absolute;
+  bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .our-heritage-row {
+    position: relative;
+    height: 500px;
+  }
+
+  #our-heritage-title {
+    font-size: 3rem;
+  }
+
+  .services-slider-button-wrapper {
+    justify-content: center;
+    font-size: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    padding-bottom: 15px;
+  }
+
+  .our-heritage-button {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    margin-inline: 12px;
+  }
+
+  .our-heritage-button svg {
+    height: 12px;
+  }
+}
+
+/* Section 3 */
+.homeric-s1-image img {
+  width: 100%;
+}
+
+.homeric-s1-text p {
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.signature-image img {
+  width: 90%;
+}
+
+@media (min-width: 1800px) {
+  .vc_row.wpb_row.vc_row-fluid.non-alcoholic-s3.vc_custom_1762874327636.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-bg-right-bottom.wd-rs-691353c41abeb.wd-section-stretch {
+    background-size: initial !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .homeric-s1-text p {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .signature-image img {
+    width: 70%;
+  }
+
+  .wpb_single_image.wpb_content_element.vc_align_left.signature-image {
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .non-alcoholic-s3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .signature-image img {
+    width: 40%;
+  }
+
+  .non-alcoholic-s3 .vc_col-has-fill > .vc_column-inner,
+  .vc_row-has-fill
+    + .vc_row-full-width
+    + .vc_row
+    > .vc_column_container
+    > .vc_column-inner,
+  .vc_row-has-fill + .vc_row > .vc_column_container > .vc_column-inner,
+  .vc_row-has-fill > .vc_column_container > .vc_column-inner {
+    padding-top: 0px;
+  }
+
+  .vc_row.wpb_row.vc_row-fluid.non-alcoholic-s3.vc_custom_1762874327636.vc_row-has-fill.vc_row-o-content-middle.vc_row-flex.wd-bg-right-bottom.wd-rs-691353c41abeb.wd-section-stretch {
+    background-image: none !important;
+  }
+}

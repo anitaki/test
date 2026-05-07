@@ -1,0 +1,232 @@
+/*** IDEFY STATS SLIDER ***/
+
+.stats-slider {
+  --teal: #5bc0be;
+  --grey-bg: #ececec;
+  --dark: #111;
+  --ring-circumference: 283;
+  --ring-offset: 283;
+
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.stats-slider * { font-family: inherit; }
+
+.stats-track {
+  display: flex;
+  width: 100%;
+  height: 640px;
+}
+
+/* CARD ------------------------------------------------------------ */
+.stat-card {
+  flex: 1 1 0;
+  min-width: 0;
+  position: relative;
+  perspective: 1400px;
+  cursor: pointer;
+  transition: flex-grow 0.8s cubic-bezier(.6,.05,.4,1);
+}
+
+.stat-card.is-active {
+  flex-grow: 1.7;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.9s cubic-bezier(.6,.05,.4,1);
+}
+
+.stat-card.is-active .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* FRONT ----------------------------------------------------------- */
+.card-front {
+  background-color: var(--grey-bg);
+  background-size: cover;
+  background-position: center;
+  padding: 36px 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-front::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.45) 100%);
+  pointer-events: none;
+}
+
+.card-front > * { position: relative; z-index: 1; }
+
+/* BACK ------------------------------------------------------------ */
+.card-back {
+  background: var(--grey-bg);
+  padding: 56px 36px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: var(--dark);
+}
+
+/* TITLES ---------------------------------------------------------- */
+.card-title {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  line-height: 1.05;
+  margin: 0;
+}
+
+.card-title--dark { color: var(--dark); }
+
+.back-title {
+  color: var(--dark);
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  text-align: center;
+  align-self: stretch;
+}
+
+/* CIRCLE / COUNTER ----------------------------------------------- */
+.circle-wrap {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-wrap--big {
+  width: 170px;
+  height: 170px;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.ring circle {
+  fill: none;
+  stroke-width: 3;
+}
+
+.ring-bg {
+  stroke: rgba(255,255,255,0.35);
+}
+
+.card-back .ring-bg,
+.card-title--dark ~ * .ring-bg {
+  stroke: rgba(0,0,0,0.08);
+}
+
+.ring-fg {
+  stroke: var(--teal);
+  stroke-linecap: round;
+  stroke-dasharray: var(--ring-circumference);
+  stroke-dashoffset: var(--ring-circumference);
+  transition: stroke-dashoffset 1.6s cubic-bezier(.4,0,.2,1);
+}
+
+.stat-card.is-revealed .ring-fg {
+  stroke-dashoffset: var(--ring-offset);
+}
+
+.counter {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+  color: #fff;
+}
+
+.card-title--dark ~ .circle-wrap .counter,
+.card-front:not([style*="background-image"]) .counter {
+  color: var(--dark);
+}
+
+.back-counter {
+  color: var(--dark);
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+}
+
+/* DESCRIPTION ---------------------------------------------------- */
+.card-desc {
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
+  line-height: 1.6;
+  font-weight: 500;
+  color: #444;
+  max-width: 32ch;
+  margin: 0;
+}
+
+/* MOBILE --------------------------------------------------------- */
+@media (max-width: 768px) {
+  .stats-track {
+    height: 420px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .stats-track::-webkit-scrollbar { display: none; }
+
+  .stat-card {
+    flex: 0 0 50%;
+    scroll-snap-align: start;
+    transition: none;
+  }
+
+  .stat-card.is-active { flex-grow: 0; }
+
+  .card-front { padding: 22px 18px; }
+  .card-back  { padding: 32px 20px; }
+
+  .circle-wrap     { width: 70px;  height: 70px; }
+  .circle-wrap--big{ width: 130px; height: 130px; }
+
+  .card-title { font-size: 1.05rem; }
+  .back-title { font-size: 0.95rem; }
+  .back-counter { font-size: 1.6rem; }
+  .card-desc { font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+  .stat-card { flex: 0 0 70%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-inner,
+  .ring-fg,
+  .stat-card { transition: none !important; }
+}

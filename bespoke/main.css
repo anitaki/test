@@ -1,0 +1,472 @@
+/* IMPORTANT !!! 
+Hide of Languages nav menu στο μενού γιατί δεν ανταποκρινόταν μέσα από το Header builder - Show WPML languages.
+
+Σε περίπτωση που μπει WPML να διαγραφεί το παρακάτω CSS rule !! */
+li.menu-item.menu-item-languages.menu-item-has-children.item-level-0 {
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* Generic classes */
+@media (min-width: 769px) {
+  .hide-large {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* General styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nav menu */
+.menu-link-book-now a span {
+  color: #5e573d;
+  text-decoration: underline;
+}
+
+.menu-link-book-now a {
+  margin-top: 1rem;
+  border-bottom-width: 0px !important;
+}
+
+span.nav-link-text {
+  font-size: 1rem;
+}
+
+/*social-icons & Header */
+.whb-top-bar .custom-social-icons img {
+  width: 1.6rem !important;
+  transition: transform 0.2s ease;
+}
+
+.custom-social-icons {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.whb-top-bar {
+  height: 40px;
+  border-right: 0px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.whb-top-bar .custom-social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.custom-social-icons {
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.whb-general-header {
+  border-bottom-width: 0px;
+}
+
+@media (max-width: 768px) {
+  .whb-row.whb-top-bar.whb-not-sticky-row.whb-with-bg.whb-border-fullwidth.whb-color-dark.whb-flex-flex-middle {
+    max-height: 30px;
+  }
+  .whb-top-bar .custom-social-icons img {
+    width: 1.3rem !important;
+    transition: transform 0.2s ease;
+  }
+}
+
+/* social footer */
+.socials-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.socials-wrapper {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  font-weight: 200;
+}
+
+.socials-wrapper span {
+  font-size: 0.8rem;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.socials li {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2rem;
+  font-weight: 800 !important;
+}
+
+.socials li a {
+  margin-right: 0.2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .socials-wrapper span,
+  .social-icon a {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .socials-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+    line-height: 1;
+  }
+
+  .socials-wrapper span,
+  .social-icon a {
+    font-size: 0.8rem !important;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
+
+/* accordeon gray lines */
+.vc_tta-panels {
+  border-top: 0px solid !important;
+}
+div#\31 751891679747-bbdd38a3-bb19 {
+  border: 0px;
+}
+div#\31 751634667203-bd9245d2-471a {
+  border: 0px;
+}
+div#\31 751631109470-3b06ca53-5f33 {
+  border: 0px;
+}
+div#\31 751891754252-a13013fc-f978 {
+  border: 0px;
+}
+
+/* Banner for categories pages ie Hospitality, Events, etc */
+.bebanner-row {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bebanner-image img.vc_single_image-img.attachment-full {
+  width: 100%;
+}
+
+/* accordeon txts/titles etc */
+span.vc_tta-title-text {
+  font-size: 2rem;
+  color: black;
+}
+
+@media (max-width: 1600px) {
+  span.vc_tta-title-text {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .vc_tta-panel-body {
+    margin-left: 1rem;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 768px) {
+  h2#our-services {
+    font-size: 1.5rem !important;
+    padding: 0px !important;
+  }
+	
+  h2#our-philosophy {
+    font-size: 1.5rem !important;
+    padding: 0px !important;
+  }
+
+  .bebanner-image img.vc_single_image-img.attachment-full {
+    margin-bottom: 0 !important;
+  }
+
+  span.vc_tta-title-text {
+    font-size: 1rem !important;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  .vc_tta-panel-body {
+    margin-left: 1rem;
+    text-align: left !important;
+  }
+
+  .betext-acc {
+/*     font-size: 0.8rem !important; */
+    line-height: 1.3;
+  }
+}
+
+/* Titles (.betititle) for pages Living, Events etc */
+
+.hero-image-pages {
+  height: 800px;
+}
+
+@media (max-width: 1400px) {
+  h2.betitle#our-services,
+  h2.betitle#our-philosophy,
+  h2.betitle#our-approach {
+    font-size: 4rem !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  h2.betitle#our-services,
+  h2.betitle#our-philosophy,
+  h2.betitle#our-approach {
+    font-size: 3rem !important ;
+    /*     text-align: center; */
+  }
+}
+
+@media (max-width: 768px) {
+  h2.betitle#our-services,
+  h2.betitle#our-philosophy,
+  h2.betitle#our-approach {
+    font-size: 2.5rem !important ;
+    margin-left: 0 !important;
+  }
+
+  .our-service-text p,
+  .our-approach-text p,
+  .our-philoshophy-text p,
+	.our-living-text p {
+/*     font-size: 0.8rem !important; */
+		line-height: 1.5 !important;
+		 padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image-pages {
+    height: 500px !important;
+  }
+}
+
+/* FOOTER */
+/* Logo in footer */
+.footer-logo img {
+  width: 100%;
+  padding-left: 1.2rem;
+}
+
+.footer-text {
+  letter-spacing: 1px !important;
+  font-size: 0.8rem !important;
+}
+
+/* Copyright text */
+.wd-copyrights.copyrights-wrapper.wd-layout-centered {
+  font-size: 0.7rem;
+  letter-spacing: 1.4px;
+}
+
+@media (max-width: 768px) {
+  /* Text container in footer */
+  .vc_row.wpb_row.vc_row-fluid.footer-row.vc_custom_1752059858602.vc_row-has-fill.vc_column-gap-30.vc_row-o-equal-height.vc_row-flex {
+    padding-inline: 5px !important;
+  }
+
+  /* Footer logo */
+  .wpb_single_image.wpb_content_element.vc_align_left.vc_custom_1756723464262 {
+    padding-left: 0px !important;
+  }
+
+  .footer-logo img {
+    width: 70%;
+    padding-left: 1.2rem;
+  }
+
+  .footer-text p,
+  .footer-text p a,
+  .footer-text span {
+    line-height: 1;
+    text-align: left !important;
+  }
+
+  p.vc_custom_heading.vc_do_custom_heading.footer-text.vc_custom_1756724446225 {
+    text-align: center !important;
+  }
+  p.vc_custom_heading.vc_do_custom_heading.footer-text.vc_custom_1756724117985 {
+    text-align: center !important;
+  }
+  p.vc_custom_heading.vc_do_custom_heading.footer-text.vc_custom_1756724099401 {
+    text-align: center !important;
+  }
+  p.vc_custom_heading.vc_do_custom_heading.footer-text.vc_custom_1756724109588 {
+    text-align: center !important;
+  }
+  p.vc_custom_heading.vc_do_custom_heading.footer-text {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-text {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    letter-spacing: 1px !important;
+    font-size: 0.8rem !important;
+    text-align: center;
+  }
+}
+
+/* Prefooter */
+.wd-prefooter {
+  padding-bottom: 0px;
+  margin-bottom: -200px;
+  margin-top: -200px;
+}
+
+.wpb_single_image.wpb_content_element.vc_align_left.prefooter-img {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .wpb_single_image.wpb_content_element.vc_align_left.vc_custom_1756723464262 {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+    padding: 0 !important;
+    width: 10rem;
+  }
+
+  .wd-prefooter {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  h2.betitle#our-services,
+  h2.betitle#our-philosophy,
+  h2.betitle#our-approach {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Mobile footer size and paddings */
+@media (max-width: 768px) {
+  .vc_column-inner.vc_custom_1750682806248 {
+    padding-top: 0px !important;
+  }
+
+  .vc_row.vc_column-gap-30 > .vc_column_container {
+    padding: 0px;
+  }
+
+  .footer-info .vc_column-inner {
+    padding-top: 0px !important;
+  }
+}
+
+/* CSS FOR SINGLE PORTFOLIO PAGE */
+/*Hero Image for Single Portfolio page*/
+
+.portfolio-hero-image {
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/*Single Portfolio title and text*/
+h2.portfolio-title {
+  font-weight: 800;
+  margin-left: 2rem;
+}
+
+.single-portfolio-text p {
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: normal;
+}
+
+/* Portfolio nav bar at the bottom */
+.wd-page-nav.wd-design-1 {
+  margin-bottom: 250px;
+}
+
+/*Media Queries for single portfolio page except accordeon*/
+
+@media (max-width: 768px) {
+  .portfolio-hero-image {
+    height: 100vh;
+  }
+
+  .portfolio-hero-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-hero-title {
+    font-size: 3rem !important;
+    text-align: center !important;
+    width: 100%;
+    margin: 0;
+  }
+
+  h2.portfolio-betitle {
+    padding-right: 0 !important ;
+    font-size: 2.5rem !important;
+    text-align: center !important;
+  }
+
+  .single-portfolio-text p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    text-align: center !important;
+  }
+
+  /* Portfolio nav bar at the bottom */
+  .wd-page-nav.wd-design-1 {
+    margin-bottom: 0px;
+  }
+}
+
+.wd-toolbar.wd-toolbar-label-show {
+  display: none;
+}
+main#main-content {
+  padding-bottom: 0px;
+}

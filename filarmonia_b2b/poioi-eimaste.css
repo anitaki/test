@@ -1,0 +1,79 @@
+main#main-content {
+    padding-bottom: 0;
+}
+
+
+/*Section Ρεπερτόριο και Αποστολή*/
+.music-features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;
+}
+
+.music-box{
+  background:#fff;
+  padding:40px 36px;
+}
+
+.music-box h3{
+  font-size:16px;
+  font-weight:600;
+  color:#0a1628;
+  margin-bottom:14px;
+  font-family:Manrope, sans-serif;
+}
+
+.music-box p{
+  font-size:15px;
+  line-height:1.8;
+  color:rgba(10,22,40,0.55);
+}
+
+/* top borders */
+
+.box-gold{
+  border-top:3px solid #c9a227;
+}
+
+.box-green{
+  border-top:3px solid #72aea2;
+}
+
+.box-dark{
+  border-top: 3px solid rgb(10, 22, 40);
+}
+
+/* tablet */
+
+@media (max-width:1024px){
+  .music-features{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+/* mobile */
+
+@media (max-width:640px){
+  .music-features{
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* Section Γνωρίστε την ορχήστρα */
+.aboutus-contact h4 {
+    color: #C4A246;
+    font-family: manrope, sans-serif;
+}
+
+.box-gold-left {
+  border-left:3px solid #c9a227;
+}
+
+.box-green-left {
+  border-left:3px solid #72aea2;
+}
+
+.box-dark-left {
+  border-left: 3px solid rgba(255, 255, 255, 0.15);
+}

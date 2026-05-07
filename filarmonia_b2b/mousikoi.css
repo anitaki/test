@@ -1,0 +1,77 @@
+/*Τι Αναζητούμε List*/
+.requirements-list{
+  width:100%;
+}
+
+.requirement-item{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  padding:16px 0;
+  border-bottom:1px solid rgba(10,22,40,0.06);
+}
+
+.requirement-item .bullet{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#c9a227;
+  margin-top:8px;
+  flex-shrink:0;
+}
+
+.requirement-item .text{
+  font-size:16px;
+  line-height:1.6;
+  color:rgba(10,22,40,0.8);
+}
+
+
+/*Εκτιμάται ιδιαίτερα list*/
+.experience-section{
+  width:100%;
+}
+
+.experience-list{
+  margin-bottom:40px;
+}
+
+.experience-item{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  padding:16px 0;
+  border-bottom:1px solid rgba(10,22,40,0.03);
+}
+
+.bullet-outline{
+  width:6px;
+  height:6px;
+  border:1px solid #c9a227;
+  border-radius:50%;
+  margin-top:8px;
+  flex-shrink:0;
+}
+
+.experience-item .text{
+  font-size:16px;
+  line-height:1.6;
+  color:rgba(10,22,40,0.53);
+}
+
+/* orchestra note box */
+
+.orchestra-note{
+  margin-top:40px;
+  background:#0a1628;
+  padding:32px;
+  border-left:4px solid #c9a227;
+}
+
+.orchestra-note p{
+  font-size:14px;
+  line-height:1.7;
+  color:rgba(245,245,245,0.7);
+  font-style:italic;
+  margin:0;
+}
