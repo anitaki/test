@@ -2,6 +2,12 @@
   const slider = document.querySelector('.stats-slider');
   if (!slider) return;
 
+  // iOS Safari cannot reliably render preserve-3d / backface-visibility when
+  // overflow:hidden exists in the ancestor chain. Flag it so CSS uses a fade instead.
+  const isIOS = /iP(ad|hone|od)/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (isIOS) slider.classList.add('is-ios');
+
   const track = slider.querySelector('.stats-track');
   const cards = Array.from(slider.querySelectorAll('.stat-card'));
   if (!cards.length) return;

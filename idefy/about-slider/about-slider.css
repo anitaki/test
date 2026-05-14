@@ -1,0 +1,253 @@
+/*** IDEFY SERVICES SLIDER ***/
+
+.svc-slider {
+  --teal: #5bc0be;
+  --grey-bg: #ececec;
+  --dark: #111;
+
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.svc-slider * { font-family: inherit; }
+
+.svc-track {
+  display: flex;
+  width: 100%;
+  height: 580px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/* CARD ------------------------------------------------------------ */
+.svc-card {
+  flex: 1 1 0;
+  min-width: 60px;
+  position: relative;
+  cursor: pointer;
+  transition: flex-grow 0.55s cubic-bezier(.6,.05,.4,1);
+  border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+.svc-card:first-child { border-left: none; }
+
+.svc-card.is-active {
+  flex-grow: 8;
+  cursor: default;
+}
+
+.svc-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.svc-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* FRONT ----------------------------------------------------------- */
+.svc-front {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0 36px;
+  transition: opacity 0.2s ease;
+  z-index: 2;
+}
+
+.svc-card.is-active .svc-front {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.svc-open-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--dark);
+  line-height: 1;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.svc-open-btn:hover { color: var(--teal); }
+
+.svc-front-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 0.9rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 80%;
+}
+
+/* BACK ------------------------------------------------------------ */
+.svc-back {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+/* --- Image: slides in from left as card opens --- */
+.svc-back-image {
+  flex: 0 0 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--grey-bg);
+  transform: translateX(-28px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.svc-card.is-active .svc-back-image {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.7s cubic-bezier(.2,.8,.3,1) 0.05s,
+              opacity   0.35s ease                    0.05s;
+}
+
+.svc-back-content {
+  flex: 1;
+  background: #fff;
+  padding: 56px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+}
+
+/* TYPOGRAPHY — staggered cascade on open --------------------------*/
+.svc-heading {
+  font-weight: 300;
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--dark);
+  transform: translateY(22px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.svc-heading strong {
+  display: block;
+  font-weight: 800;
+}
+
+.svc-lead {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.55;
+  margin: 0;
+  transform: translateY(22px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.svc-desc {
+  font-size: clamp(0.88rem, 1vw, 0.97rem);
+  font-weight: 400;
+  color: #555;
+  line-height: 1.75;
+  margin: 0;
+  transform: translateY(22px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Active state: staggered entrance */
+.svc-card.is-active .svc-heading {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s cubic-bezier(.2,.8,.3,1) 0.55s,
+              opacity   0.5s ease                     0.55s;
+}
+
+.svc-card.is-active .svc-lead {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s cubic-bezier(.2,.8,.3,1) 0.65s,
+              opacity   0.5s ease                     0.65s;
+}
+
+.svc-card.is-active .svc-desc {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s cubic-bezier(.2,.8,.3,1) 0.73s,
+              opacity   0.5s ease                     0.73s;
+}
+
+/* TABLET --------------------------------------------------------- */
+@media (max-width: 768px) {
+  .svc-track { height: 460px; }
+
+  .svc-card { min-width: 50px; }
+
+  .svc-back-image { flex: 0 0 36%; }
+
+  .svc-front-title { font-size: 0.6rem; }
+
+  .svc-back-content {
+    padding: 28px 24px;
+    gap: 14px;
+  }
+
+  .svc-heading { font-size: 1.15rem; }
+  .svc-lead    { font-size: 0.88rem; }
+  .svc-desc    { font-size: 0.83rem; }
+}
+
+/* MOBILE --------------------------------------------------------- */
+@media (max-width: 480px) {
+  .svc-track { height: 400px; }
+
+  .svc-card { min-width: 44px; }
+
+  .svc-front { padding: 20px 0 28px; }
+
+  .svc-open-btn { font-size: 1.6rem; }
+
+  .svc-front-title { font-size: 0.6rem; }
+
+  .svc-back-image { flex: 0 0 32%; }
+
+  .svc-back-content {
+    padding: 20px 16px;
+    gap: 10px;
+  }
+
+  .svc-heading { font-size: 1rem; }
+  .svc-lead    { font-size: 0.83rem; }
+  .svc-desc    { font-size: 0.78rem; line-height: 1.6; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svc-card,
+  .svc-back-image,
+  .svc-heading,
+  .svc-lead,
+  .svc-desc,
+  .svc-front { transition: none !important; }
+}

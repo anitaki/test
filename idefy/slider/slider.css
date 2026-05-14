@@ -40,6 +40,7 @@
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: transform 0.9s cubic-bezier(.6,.05,.4,1);
 }
 
@@ -229,4 +230,34 @@
   .card-inner,
   .ring-fg,
   .stat-card { transition: none !important; }
+}
+
+/* iOS Safari: preserve-3d breaks with overflow:hidden in ancestor chain.
+   Uses opacity fade instead — same tap-to-reveal result, no 3D needed. */
+.stats-slider.is-ios .card-inner {
+  transform-style: flat;
+  -webkit-transform-style: flat;
+}
+
+.stats-slider.is-ios .card-face {
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.45s ease;
+}
+
+.stats-slider.is-ios .card-back {
+  transform: none;
+  opacity: 0;
+}
+
+.stats-slider.is-ios .stat-card.is-active .card-inner {
+  transform: none;
+}
+
+.stats-slider.is-ios .stat-card.is-active .card-front {
+  opacity: 0;
+}
+
+.stats-slider.is-ios .stat-card.is-active .card-back {
+  opacity: 1;
 }
