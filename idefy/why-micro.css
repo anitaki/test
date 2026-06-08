@@ -1,0 +1,142 @@
+main#main-content {
+    padding-bottom: 0;
+}
+
+
+/* --- BUTTONS: GENERAL STYLES --- */
+.my-teal-button {
+    background-color: #6fc8c4;
+    color: #000 !important;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    /* Vertical & Horizontal Centering for Text */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    max-width: 300px; 
+    height: 48px;
+    text-align: center;
+    text-decoration: none;
+}
+.wd-rs-6a0ed1c25c164 .btn {
+    font-size: 25px !important;
+}
+.my-teal-button:hover {
+    filter: brightness(0.95);
+    transform: translateY(-1px);
+}
+
+
+@media (max-width: 767px){
+.my-teal-button {
+        /* Increased width for mobile to ensure they aren't too short */
+        min-width: 145px !important;
+        max-width: 180px !important;
+        font-size: 13px !important;
+        height: 44px;
+        white-space: nowrap;
+        padding: 0 15px !important;
+    }
+    
+    .wd-rs-6a0ed167699c3 .btn {
+    font-size: 18px !important;
+}
+    
+    .my-teal-button {
+        min-width: 135px !important; /* Prevents buttons from being too small */
+        font-size: 11px !important;
+        height: 42px;
+    }
+}
+
+
+@media (max-width: 767px){
+    .wpb_single_image img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+    margin-top: 50px;
+}
+
+h1.vc_custom_heading.vc_do_custom_heading.why-micro-title {
+    font-size: 52px !important;
+    text-align: center !important;
+}
+}
+
+
+.vc_do_custom_heading {
+    font-weight: 800;
+}
+
+@media (max-width:768px) and (min-width: 767px){
+    .vc_do_custom_heading{
+        font-size: 28px !important;
+    }
+    
+}
+
+
+
+
+/**
+Menu items underline animation*
+*/
+
+/* 1. Disable WoodMart's default underline animation logic */
+.wd-nav-main.wd-style-underline .nav-link-text:after {
+    transition: none !important;
+    transform: none !important;
+    width: 0;
+    left: 0;
+    height: 2px;
+    opacity: 1;
+}
+
+/* 2. Set the starting state for text */
+#menu-main-menu .woodmart-nav-link {
+    transition: color 0.05s ease !important;
+}
+
+/* 3. The Sync: Animate both at once */
+#menu-main-menu .menu-item:hover > a .nav-link-text:after {
+    width: 100%;
+    background-color: white !important;
+    transition: width 0.25s ease !important;
+}
+
+#menu-main-menu .menu-item:hover > a {
+    color: white !important;
+}
+
+/* 4. Keep the 'Active' page underlined and teal */
+#menu-main-menu .current-menu-item .nav-link-text:after {
+    width: 100%;
+    background-color: #6fc8c4 !important;
+}
+
+#menu-main-menu .current-menu-item > a {
+    color: #6fc8c4 !important;
+}
+
+/* 5. Fix for your 'WHY MICRO' black item */
+#menu-main-menu .menu-item:last-child > a {
+    background-color: black !important;
+    /* Ensure no underline inside the black button if you prefer */
+}
+
+/*Why Micro - last menu item*/
+#menu-main-menu .menu-item:last-child {
+    margin-bottom: 0;
+    background-color: black;
+}
+
+#menu-main-menu .menu-item:last-child a {
+    color: #6fc8c4;
+}

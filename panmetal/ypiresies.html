@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html><html class="light" lang="el" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Υπηρεσίες | PANMETAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#45464d",
+                    "on-primary-container": "#7c839b",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-container": "#e5eeff",
+                    "inverse-primary": "#bec6e0",
+                    "primary-container": "#131b2e",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "error": "#ba1a1a",
+                    "background": "#f8f9ff",
+                    "on-tertiary-container": "#818486",
+                    "surface-bright": "#f8f9ff",
+                    "on-secondary-fixed-variant": "#004395",
+                    "inverse-surface": "#213145",
+                    "on-secondary-container": "#fefcff",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#e0e3e5",
+                    "on-tertiary-fixed": "#191c1e",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "primary-fixed-dim": "#bec6e0",
+                    "secondary-container": "#2170e4",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-container-highest": "#d3e4fe",
+                    "surface": "#f8f9ff",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "primary": "#000000",
+                    "on-background": "#0b1c30",
+                    "on-surface": "#0b1c30",
+                    "outline": "#76777d",
+                    "tertiary-container": "#191c1e",
+                    "outline-variant": "#c6c6cd",
+                    "secondary": "#0058be",
+                    "tertiary": "#000000",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#dce9ff",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "surface-dim": "#cbdbf5",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#d3e4fe",
+                    "primary-fixed": "#dae2fd",
+                    "steel-dark": "#1a1c1e",
+                    "industrial-gray": "#909094",
+                    "accent-orange": "#b85c10"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "margin-mobile": "16px",
+                    "sm": "12px",
+                    "xs": "4px",
+                    "xl": "80px",
+                    "lg": "48px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "margin-desktop": "32px",
+                    "section-padding": "64px",
+                    "section-padding-sm": "32px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Manrope"],
+                    "headline-md": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "headline-display": ["Manrope"],
+                    "headline-xl": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "body-sm": ["Manrope"],
+                    "label-md": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "label-sm": ["Manrope"],
+                    "label-caps": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        header .material-symbols-outlined {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .nav-item-active {
+            border-bottom: 2px solid #000000;
+            font-weight: 700;
+            padding-bottom: 0.25rem;
+        }
+        .industrial-blur {
+            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Utility Top Bar -->
+<div class="bg-steel-dark text-white py-2">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center">
+<div class="flex gap-6 font-label-caps text-label-caps">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">call</span> +30 23210 50000-5</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">mail</span> info@panmetal.gr</span>
+</div>
+</div>
+</div>
+<!-- Main Navigation Header -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<a class="flex items-center" href="home.html" aria-label="PANMETAL home">
+<img alt="PANMETAL Logo" class="h-14 w-auto object-contain" src="images/logo-black.jpg">
+</a>
+<nav class="hidden md:flex gap-8 font-label-caps text-label-caps">
+<a class="text-[#565f68] hover:text-[#b85c10] transition-colors" href="home.html">Αρχική</a>
+<div class="relative group h-full flex items-center">
+<span class="text-[#565f68] hover:text-[#b85c10] transition-colors flex items-center gap-1 cursor-default" role="button">
+    Η Εταιρεία
+    <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+</span>
+<div class="absolute left-0 top-full pt-0 hidden group-hover:block z-50">
+<div class="bg-white border border-[#dec1b2] shadow-xl min-w-[240px] py-2">
+<a class="block px-6 py-3 text-[#565f68] hover:bg-[#F4F5F6] hover:text-[#b85c10] transition-colors font-label-caps text-label-caps" href="etaireia.html">Εταιρικό Προφίλ</a>
+<a class="block px-6 py-3 text-[#565f68] hover:bg-[#F4F5F6] hover:text-[#b85c10] transition-colors font-label-caps text-label-caps" href="quality.html">Ποιότητα &amp; Πιστοποίηση</a>
+<a class="block px-6 py-3 text-[#565f68] hover:bg-[#F4F5F6] hover:text-[#b85c10] transition-colors font-label-caps text-label-caps" href="financial.html">Οικονομικά Στοιχεία</a>
+</div>
+</div>
+</div>
+<div class="relative group h-full flex items-center">
+<span class="text-[#565f68] hover:text-[#b85c10] transition-colors flex items-center gap-1 cursor-default" role="button">
+    Προϊόντα
+    <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+</span>
+<div class="absolute left-0 top-full pt-0 hidden group-hover:block z-50">
+<div class="bg-white border border-[#dec1b2] shadow-xl min-w-[240px] py-2">
+<a class="block px-6 py-3 text-[#565f68] hover:bg-[#F4F5F6] hover:text-[#b85c10] transition-colors font-label-caps text-label-caps" href="sirmata.html">Προϊόντα Σύρματος</a>
+<a class="block px-6 py-3 text-[#565f68] hover:bg-[#F4F5F6] hover:text-[#b85c10] transition-colors font-label-caps text-label-caps" href="lamarines.html">Προϊόντα Λαμαρίνας</a>
+<a class="block px-6 py-3 text-[#565f68] hover:bg-[#F4F5F6] hover:text-[#b85c10] transition-colors font-label-caps text-label-caps" href="solines.html">Προϊόντα Σωληνουργίας</a>
+<a class="block px-6 py-3 text-[#565f68] hover:bg-[#F4F5F6] hover:text-[#b85c10] transition-colors font-label-caps text-label-caps" href="inox.html">Ανοξείδωτα Προϊόντα</a>
+</div>
+</div>
+</div>
+<a class="text-[#b85c10] border-b-2 border-[#b85c10] font-bold" href="ypiresies.html">Υπηρεσίες</a>
+<a class="text-[#565f68] hover:text-[#b85c10] transition-colors" href="blog.html">Νέα</a>
+<a class="text-[#565f68] hover:text-[#b85c10] transition-colors" href="contact.html">Επικοινωνία</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[60vh] min-h-[400px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover" src="images/image-1.png">
+<div class="absolute inset-0 bg-primary/40 backdrop-brightness-75"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-gutter max-w-[1440px] mx-auto">
+<div class="max-w-2xl text-on-primary">
+<span class="font-label-caps text-label-caps text-accent-orange uppercase tracking-widest block mb-4">STEEL SERVICE CENTER</span>
+<h1 class="font-headline-display text-headline-lg-mobile md:text-headline-display mb-6">Υπηρεσίες</h1>
+<p class="font-body-lg text-body-lg opacity-90 leading-relaxed">
+                        Ολοκληρωμένες υπηρεσίες βιομηχανικής κατεργασίας &amp; εμπορίας χαλυβουργικών προϊόντων
+                    </p>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-xl bg-background">
+<div class="px-margin-mobile md:px-gutter max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm hover:shadow-md transition-all border border-outline-variant group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded-lg mb-md group-hover:bg-accent-orange transition-colors">
+<span class="material-symbols-outlined text-on-primary" data-icon="content_cut">content_cut</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm text-primary">Κοπή &amp; Διαμόρφωση Χάλυβα</h3>
+<p class="font-body-md text-on-surface-variant mb-md">
+                            Ακριβής κοπή χαλυβουργικών προϊόντων στις επιθυμητές διαστάσεις με ελάχιστες απώλειες υλικού. Διαθέτουμε σύγχρονο μηχανολογικό εξοπλισμό για κοπή λαμαρίνας, δοκών και σωλήνων.
+                        </p>
+<ul class="space-y-2 border-t border-outline-variant pt-md text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Ακριβής κοπή κατά παραγγελία</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Σύγχρονος εξοπλισμός</li>
+</ul>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm hover:shadow-md transition-all border border-outline-variant group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded-lg mb-md group-hover:bg-accent-orange transition-colors">
+<span class="material-symbols-outlined text-on-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm text-primary">Επεξεργασία Λαμαρίνας</h3>
+<p class="font-body-md text-on-surface-variant mb-md">
+                            Βιομηχανική επεξεργασία πλατέων και επιμηκών προϊόντων χάλυβα βάσει ευρωπαϊκών προτύπων. Προσφέρουμε έτοιμα προϊόντα σε ακριβείς διαστάσεις μετά από παραγγελία.
+                        </p>
+<ul class="space-y-2 border-t border-outline-variant pt-md text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Ευρωπαϊκά πρότυπα ΕΝ</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Διαστάσεις κατά παραγγελία</li>
+</ul>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm hover:shadow-md transition-all border border-outline-variant group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded-lg mb-md group-hover:bg-accent-orange transition-colors">
+<span class="material-symbols-outlined text-on-primary" data-icon="grid_view">grid_view</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm text-primary">Κατεργασία Σύρματος &amp; Πλεγμάτων</h3>
+<p class="font-body-md text-on-surface-variant mb-md">
+                            Παραγωγή συρματοπλεγμάτων, συρματοκιβωτίων (gabions) και αντιπλημμυρικών πλεγμάτων κατά παραγγελία. Ειδίκευση στο εξαγωνικό αντιπλημμυρικό πλέγμα διπλής πλέξης.
+                        </p>
+<ul class="space-y-2 border-t border-outline-variant pt-md text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Gabions &amp; συρματοκιβώτια</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Γαλβανιζέ &amp; PVC</li>
+</ul>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm hover:shadow-md transition-all border border-outline-variant group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded-lg mb-md group-hover:bg-accent-orange transition-colors">
+<span class="material-symbols-outlined text-on-primary" data-icon="factory">factory</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm text-primary">Steel Service Center</h3>
+<p class="font-body-md text-on-surface-variant mb-md">
+                            Λειτουργία καθετοποιημένου κέντρου εμπορίας και βιομηχανικής κατεργασίας χαλυβουργικών προϊόντων. Ολοκληρωμένη εξυπηρέτηση από την παραγωγή έως την παράδοση.
+                        </p>
+<ul class="space-y-2 border-t border-outline-variant pt-md text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Ολοκληρωμένη εξυπηρέτηση</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Βιομηχανικές εγκαταστάσεις</li>
+</ul>
+</div>
+<!-- Service 5 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm hover:shadow-md transition-all border border-outline-variant group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded-lg mb-md group-hover:bg-accent-orange transition-colors">
+<span class="material-symbols-outlined text-on-primary" data-icon="verified_user" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">verified_user</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm text-primary">Ποιοτικός Έλεγχος</h3>
+<p class="font-body-md text-on-surface-variant mb-md">
+                            Εφαρμογή αυστηρών διαδικασιών ποιοτικού ελέγχου σε όλα τα στάδια παραγωγής. Τα προϊόντα μας πληρούν τις απαιτήσεις ευρωπαϊκών και διεθνών προτύπων (ISO 9001).
+                        </p>
+<ul class="space-y-2 border-t border-outline-variant pt-md text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Ευρωπαϊκά πρότυπα</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Πιστοποιήσεις προϊόντων</li>
+</ul>
+</div>
+<!-- Service 6 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-sm hover:shadow-md transition-all border border-outline-variant group">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded-lg mb-md group-hover:bg-accent-orange transition-colors">
+<span class="material-symbols-outlined text-on-primary" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm text-primary">Διανομή &amp; Εξαγωγές</h3>
+<p class="font-body-md text-on-surface-variant mb-md">
+                            Άμεση παράδοση σε Ελλάδα και εξαγωγές σε Βαλκάνια. Συνεργαζόμαστε με εταιρείες σε Βουλγαρία, Ρουμανία, Τουρκία, FYROM και άλλες χώρες Νοτιοανατολικής Ευρώπης.
+                        </p>
+<ul class="space-y-2 border-t border-outline-variant pt-md text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Πανελλαδική κάλυψη</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Εξαγωγές Βαλκανίων</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative py-xl overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover" src="images/image-2.png">
+<div class="absolute inset-0 bg-primary/80"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-gutter max-w-[1440px] mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-4">Χρειάζεστε Προσφορά;</h2>
+<p class="font-body-lg text-on-primary/80 mb-lg max-w-xl mx-auto">
+                    Επικοινωνήστε μαζί μας για μια εξατομικευμένη προσφορά βάσει των αναγκών σας.
+                </p>
+<button class="bg-accent-orange text-white px-xl py-md rounded-lg font-bold text-label-md uppercase tracking-wider hover:bg-accent-orange/90 transition-all flex items-center gap-2 mx-auto active:scale-95">
+                    Αποστολή Αιτήματος
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-steel-dark text-white pt-section-padding-sm pb-8 border-t border-white/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto mb-16">
+<!-- Company Info -->
+<div>
+<img alt="PANMETAL Logo" class="h-16 w-auto object-contain mb-6" src="images/logo-light-2.png">
+<p class="font-body-md text-body-md text-industrial-gray mb-6">Πρωτοπόρος βιομηχανία επεξεργασίας χάλυβα και εμπορίας μετάλλων. Εγγύηση ποιότητας και αξιοπιστίας από το 6ο χλμ Σερρών-Δράμας.</p>
+<div class="flex gap-4">
+<a href="https://www.facebook.com/profile.php?id=100063501614919" target="_blank" rel="nofollow" class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-accent-orange hover:border-accent-orange transition-colors">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+</a>
+<a href="https://www.linkedin.com/company/panmetal" target="_blank" rel="nofollow" class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-accent-orange hover:border-accent-orange transition-colors">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="font-label-caps text-label-caps text-[#b85c10] mb-6">ΠΡΟΪΟΝΤΑ</h4>
+<ul class="space-y-4 font-body-md text-body-md text-industrial-gray">
+<li><a class="hover:text-on-primary transition-colors" href="lamarines.html">Λαμαρίνες Coils &amp; Τραπεζοειδείς</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="sirmata.html">Συρματοκιβώτια &amp; Πλέγματα</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="solines.html">Κοίλοι Δοκοί &amp; Σωλήνες</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="inox.html">Ανοξείδωτα &amp; Inox Προϊόντα</a></li>
+</ul>
+</div>
+<!-- Support -->
+<div>
+<h4 class="font-label-caps text-label-caps text-[#b85c10] mb-6">ΕΤΑΙΡΕΙΑ</h4>
+<ul class="space-y-4 font-body-md text-body-md text-industrial-gray">
+<li><a class="hover:text-on-primary transition-colors" href="quality.html">Ποιότητα &amp; Πολιτική</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="financial.html">Οικονομικά Στοιχεία</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="blog.html">Νέα &amp; Εκθέσεις</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="contact.html">Επικοινωνία</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div>
+<h4 class="font-label-caps text-label-caps text-[#b85c10] mb-6">ΕΠΙΚΟΙΝΩΝΙΑ</h4>
+<div class="space-y-4 font-body-md text-body-md text-industrial-gray mb-6">
+<p class="flex gap-3"><span class="material-symbols-outlined text-[#b85c10]">location_on</span> 6ο χλμ Σερρών - Δράμας, Τ.Κ. 62122 Σέρρες</p>
+<p class="flex gap-3"><span class="material-symbols-outlined text-[#b85c10]">call</span> +30 23210 74499</p>
+<p class="flex gap-3"><span class="material-symbols-outlined text-[#b85c10]">mail</span> info@panmetal.gr</p>
+</div>
+<a href="https://www.google.com/maps/place/Panmetal-+%CE%A0%CE%B1%CE%BD%CE%BC%CE%B5%CF%84%CE%B1%CE%BB/@41.069774,23.631248,15z" target="_blank" rel="nofollow" class="w-[280px] h-24 overflow-hidden relative group block">
+<img src="images/footer-map.png" alt="Panmetal location map" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" style="transition: filter 0.5s ease, transform 0.5s ease;">
+<div class="absolute inset-0 pointer-events-none" style="background: rgba(230, 126, 34, 0.07);"></div>
+</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-industrial-gray font-label-caps text-[10px] tracking-widest opacity-60">
+<div class="flex items-center gap-2">Powered by <a href="https://progressnet.gr/" target="_blank" rel="nofollow" class="inline-flex items-center gap-1 hover:opacity-80 transition-opacity">Progress Net<img src="images/sima.png" alt="Progress Net" style="height:16px;vertical-align:middle;display:inline;"></a></div>
+<div class="flex gap-6">
+<span>Πολιτική Απορρήτου</span>
+<span>Όροι Χρήσης</span>
+<span>Πολιτική Cookies</span>
+</div>
+</div>
+</footer>
+<!-- FAB for quick contact -->
+<button class="fixed bottom-8 right-8 bg-primary text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-transform z-50">
+<span class="material-symbols-outlined">mail</span>
+</button>
+<!-- Cookie Consent (Floating) -->
+
+
+
+</body></html>

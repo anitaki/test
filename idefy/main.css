@@ -1,0 +1,98 @@
+.portfolio-card-excerpt {
+    font-size: 13px;
+    color: inherit;
+    margin-top: 6px;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+/* GENERAL-CLASSES */
+@media (max-width: 1199px) {
+	#hide-medium-down {
+		display: none !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	#hide-medium-up {
+		display: none !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.hide-mobile {
+		display: none !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.hide-desktop {
+		display: none !important;
+	}
+}
+
+/*--- CONTACT FORM ---*/
+
+.custom-contact-form .wpcf7-form-control-wrap {
+    display: block;
+}
+
+.custom-contact-form .form-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.custom-contact-form .form-group {
+    flex: 1;
+}
+
+.custom-contact-form input[type="text"],
+.custom-contact-form input[type="email"],
+.custom-contact-form input[type="tel"],
+.custom-contact-form textarea {
+    width: 100% !important;
+    border: none !important;
+    border-bottom: 1px solid #000 !important; 
+    background: transparent !important;
+    padding: 10px 0 !important;
+    border-radius: 0 !important;
+    font-size: 14px;
+}
+
+/* Το κουμπί SEND MESSAGE */
+.custom-contact-form .form-submit {
+    text-align: right;
+
+}
+
+.custom-contact-form input[type="submit"] {
+    background-color: #6fc8c4 !important; 
+    color: #000 !important;
+    border: none !important;
+    padding: 12px 35px !important;
+    font-size: 20px;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .custom-contact-form .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Media Query For Contact Text*/
+ .contact-text{
+     font-size: 46px !important;
+ }
+}
+
+
+/* HEADER */
+.wd-logo img {
+    margin-top: 10px;
+}

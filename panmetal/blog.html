@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html><html class="light" lang="el"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Νέα &amp; Εκθέσεις | PANMETAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#001e30",
+                    "on-primary-container": "#4d1f00",
+                    "surface-tint": "#b85c10",
+                    "tertiary": "#006495",
+                    "tertiary-fixed-dim": "#8fcdff",
+                    "outline": "#8b7265",
+                    "outline-variant": "#dec1b2",
+                    "surface-container-high": "#fae4da",
+                    "surface-container-low": "#fff1eb",
+                    "secondary-fixed": "#dae3ee",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#574237",
+                    "surface": "#ffffff",
+                    "surface-dim": "#ebd6cc",
+                    "primary-fixed-dim": "#ffb68e",
+                    "inverse-surface": "#3a2e27",
+                    "on-secondary": "#ffffff",
+                    "primary": "#b85c10",
+                    "steel-dark": "#1A1F24",
+                    "error": "#ba1a1a",
+                    "on-surface": "#241913",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#ffb68e",
+                    "on-primary-fixed": "#331200",
+                    "secondary-fixed-dim": "#bec7d2",
+                    "on-secondary-container": "#5c656e",
+                    "tertiary-container": "#009ce5",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "on-background": "#241913",
+                    "tertiary-fixed": "#cbe6ff",
+                    "surface-container": "#ffeae0",
+                    "inverse-on-surface": "#ffede5",
+                    "primary-container": "#e87220",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#dae3ee",
+                    "on-secondary-fixed": "#141d24",
+                    "background": "#ffffff",
+                    "primary-fixed": "#ffdbca",
+                    "industrial-gray": "#F4F5F6",
+                    "surface-container-highest": "#f4ded4",
+                    "on-secondary-fixed-variant": "#3f4850",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#f4ded4",
+                    "on-tertiary-container": "#002f4a",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#763300",
+                    "secondary": "#565f68",
+                    "surface-container-lowest": "#ffffff",
+                    "warning-orange": "#b85c10",
+                    "accent-orange": "#b85c10"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "section-padding-lg": "120px",
+                    "section-padding-sm": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "32px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "headline-display": ["Manrope"],
+                    "headline-sm": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "label-caps": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Utility Top Bar -->
+<div class="bg-steel-dark text-white py-2">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center">
+<div class="flex gap-6 font-label-caps text-label-caps">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">call</span> +30 23210 50000-5</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">mail</span> info@panmetal.gr</span>
+</div>
+</div>
+</div>
+<!-- Main Navigation Header -->
+<header class="sticky top-0 z-50 bg-industrial-gray dark:bg-surface-dim border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<a class="flex items-center" href="home.html" aria-label="PANMETAL home">
+<img alt="PANMETAL Logo" class="h-14 w-auto object-contain" src="images/logo-black.jpg">
+</a>
+<nav class="hidden md:flex gap-8 font-label-caps text-label-caps">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="home.html">Αρχική</a>
+<div class="relative group h-full flex items-center">
+<span class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors flex items-center gap-1 cursor-default" role="button">
+    Η Εταιρεία
+    <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+</span>
+<div class="absolute left-0 top-full pt-0 hidden group-hover:block z-50">
+<div class="bg-surface dark:bg-surface-dim border border-outline-variant dark:border-outline shadow-xl min-w-[240px] py-2">
+<a class="block px-6 py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-industrial-gray hover:text-primary transition-colors font-label-caps text-label-caps" href="etaireia.html">Εταιρικό Προφίλ</a>
+<a class="block px-6 py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-industrial-gray hover:text-primary transition-colors font-label-caps text-label-caps" href="quality.html">Ποιότητα &amp; Πιστοποίηση</a>
+<a class="block px-6 py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-industrial-gray hover:text-primary transition-colors font-label-caps text-label-caps" href="financial.html">Οικονομικά Στοιχεία</a>
+</div>
+</div>
+</div>
+<div class="relative group h-full flex items-center">
+<span class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors flex items-center gap-1 cursor-default" role="button">
+    Προϊόντα
+    <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+</span>
+<div class="absolute left-0 top-full pt-0 hidden group-hover:block z-50">
+<div class="bg-surface dark:bg-surface-dim border border-outline-variant dark:border-outline shadow-xl min-w-[240px] py-2">
+<a class="block px-6 py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-industrial-gray hover:text-primary transition-colors font-label-caps text-label-caps" href="sirmata.html">Προϊόντα Σύρματος</a>
+<a class="block px-6 py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-industrial-gray hover:text-primary transition-colors font-label-caps text-label-caps" href="lamarines.html">Προϊόντα Λαμαρίνας</a>
+<a class="block px-6 py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-industrial-gray hover:text-primary transition-colors font-label-caps text-label-caps" href="solines.html">Προϊόντα Σωληνουργίας</a>
+<a class="block px-6 py-3 text-secondary dark:text-secondary-fixed-dim hover:bg-industrial-gray hover:text-primary transition-colors font-label-caps text-label-caps" href="inox.html">Ανοξείδωτα Προϊόντα</a>
+</div>
+</div>
+</div>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="ypiresies.html">Υπηρεσίες</a>
+<a class="text-primary border-b-2 border-primary font-bold" href="blog.html">Νέα</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="contact.html">Επικοινωνία</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="bg-steel-dark text-on-primary py-section-padding-sm overflow-hidden relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+<div class="max-w-3xl">
+<span class="font-label-caps text-label-caps text-accent-orange uppercase tracking-widest block mb-4">PANMETAL SACI</span>
+<h1 class="font-headline-lg text-headline-lg mb-6 md:text-headline-lg lg:text-headline-display">Νέα &amp; Εκδηλώσεις</h1>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim opacity-90">Ενημερωθείτε για τη συμμετοχή της Panmetal στις μεγαλύτερες διεθνείς εκθέσεις και τις δράσεις μας για την προώθηση της ελληνικής μεταλλουργίας.</p>
+</div>
+</div>
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="A wide angle shot of a bustling international trade fair floor with modern exhibition stands, metallic structures, and professional lighting. The focus is on the scale and international reach of industrial events." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd5TfeHt8eMgdPBCnphNRbqZEeiZAmlLwiISg75gQNjOENzXjgdMaKLD_lYcckTiDvR0DAvl5EzHdhdAaq6qjZyhhInZHjW46JDZgC2V-R6QLh0JOYEiP39Pe05rSZbdFo3Wbk5ttyr6mPnBZrdeuLMB8H8c4A25gYTGxDoWUWqEbL6x2ykY2QaMh0J2gz4HbBcLBaOIMYCFdF5VCjUX2IPIiTTjzM4sF1YGoQ-ZwLyqipMC0z6eVmWYjBjW75wTHcawfjJok87SLf">
+</div>
+</section>
+<!-- Blog Content Area -->
+<section class="py-section-padding-sm max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col lg:flex-row gap-gutter">
+<!-- Main Grid -->
+<div class="flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Featured Article (Helexpo) -->
+<div class="col-span-1 md:col-span-2 group">
+<article class="bg-white border border-outline-variant overflow-hidden flex flex-col md:flex-row h-full transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="md:w-1/2 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="The exterior of the Helexpo exhibition center in Thessaloniki, featuring iconic architecture and event banners under a clear sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtH7_YcXv7Qa0txcWhdGpIfYvKL0pBSPcpUF1pZZqmtItuGOZDYK9T2f48Kgh1mcDz4daq2kXi6Mmv2hfCts4Ya9PJg4_ekrhcs12WS8LgdF-dDv132v2r6rq_cSnj9wBNy-eco73PotbH9B70ZUt1fCERwsnUHPqJCFgkB18tDf-e8kqrsib5ASUr-1OSqxubWKncXRwUzhb0g_fv_NUVzhnJHe7ivdlQLIzzO9h2obNK-wwqZ5YsShC92eYNcQWle7T0LkDDi2nq">
+</div>
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-primary mb-4">ΕΓΧΩΡΙΑ ΠΑΡΟΥΣΙΑ</span>
+<h2 class="font-headline-md text-headline-md mb-4 text-on-surface">Συμμετοχή στην HELEXPO Θεσσαλονίκης</h2>
+<p class="font-body-md text-body-md text-secondary mb-6">Η Panmetal δίνει δυναμικό παρόν στη μεγαλύτερη έκθεση της Βόρειας Ελλάδας, παρουσιάζοντας λύσεις για τον κατασκευαστικό κλάδο και τη βιομηχανία.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-caps text-label-caps text-outline">ΣΕΠΤΕΜΒΡΙΟΣ 2024</span>
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1 hover:text-on-primary-container transition-colors" href="#">ΠΡΟΓΡΑΜΜΑ</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Regular Cards (Bulgarreklama) -->
+<article class="bg-white border border-outline-variant flex flex-col transition-all hover:border-primary hover:-translate-y-1">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A modern industrial exhibition hall in Sofia, Bulgaria, showcasing machinery and metal products. Professional atmosphere with European business focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA01lb0YJmOz807NyX80DVBChQQ-M6rBJHLWL3eO89rx2I2QlnH1ldU1f11x3DrOgT9VM-TOnwe_fqk6w-SYkx2qV4H02luE8uMj6uSMKxrl_9xUSkfOqOdhpg2I1Ir3jBTSSNwXMdTudJ1mJQeUe4-evP9d-Cc8AbaK2PU3QL1yryP_RJIe7KiRpz1p02xXccCXIDk9zXjvClSvZ01JNdHicXiGf5FhoFl8h0wnKSzAl2kpWdrV6IajiH8BUk8i2UTAgDy38bKcbWK">
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-label-caps text-label-caps text-primary mb-3">ΔΙΕΘΝΕΙΣ ΑΓΟΡΕΣ</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Bulgarreklama: Επέκταση στα Βαλκάνια</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">Ενισχύουμε την παρουσία μας στη γειτονική αγορά της Βουλγαρίας, προβάλλοντας τα πιστοποιημένα προϊόντα σύρματος και περίφραξης.</p>
+<a class="mt-auto font-label-caps text-label-caps text-primary flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">
+                                ΛΕΠΤΟΜΕΡΕΙΕΣ <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Regular Cards (Construct Expo) -->
+<article class="bg-white border border-outline-variant flex flex-col transition-all hover:border-primary hover:-translate-y-1">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Construct Expo in Bucharest, Romania. Large scale construction equipment and structural steel components displayed in a professional trade show setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOJHeobbhwo8wBYwdFLYEqAxZzSUv0-co2Brln_VjrY1mZJt9Q88oiK-EHoSly6nTnxumKc0SttpfyP0a7Qa8MsrUpCTw1NRTjWJ8h9ibsk2c1Z2t1AtRiTfn_fBg_B-xpg0OXAgqYt2FMPEbt6przMT9da4zgSl7zm8WQo7ibkKkM1khbAklJ04a3e9WiOyMeAqMyFAExNwbHGThtOnpLZJqk2fJ0fJepU7NHOJsMLGvfPm48deYEOAbmErD1JHMff2UyG38y_tYJ">
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-label-caps text-label-caps text-primary mb-3">ΔΟΜΙΚΑ ΥΛΙΚΑ</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Construct Expo Βουκουρέστι</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">Παρουσίαση του δομικού χάλυβα και των ειδικών κατασκευών της Panmetal στη μεγαλύτερη κατασκευαστική έκθεση της Ρουμανίας.</p>
+<a class="mt-auto font-label-caps text-label-caps text-primary flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">
+                                ΠΛΗΡΟΦΟΡΙΕΣ <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Regular Cards (Vinaria & Wine Roads) -->
+<article class="bg-white border border-outline-variant flex flex-col transition-all hover:border-primary hover:-translate-y-1">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A lush vineyard landscape with metal trellising systems under the sun. Highlighting the intersection of metallurgy and agriculture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMyDIDCabQ-De0-iCAZAt5zUOPLKz92bvfERBuGF4P7cdNF48Scrb-uH1JggD9ywZHXjdeO5IDUK6993Lk52we1m3EsSXZNGWC74aKgwFwawwqOvxQ1AWHGEiBAQsfOuCkD6-IRyJyXSAd5vh5_WxQXYOapJ_Z8U_iDzsx-tsxfsnT682QTaFJUdiTjXFsDyR1D4UbIfxm0i0v-469qiBgvqylFBz0BieiaVUNVw0nkpKK4S8hTSsw8domSVd-92tNhPs0UsiMYJTh">
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-label-caps text-label-caps text-primary mb-3">ΑΓΡΟΤΙΚΗ ΤΕΧΝΟΛΟΓΙΑ</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Vinaria &amp; Δρόμοι του Κρασιού</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">Εξειδικευμένες λύσεις συρματοπλεγμάτων για αμπελουργία. Συμμετοχή στη Vinaria και υποστήριξη των οινικών διαδρομών (Wine Roads).</p>
+<a class="mt-auto font-label-caps text-label-caps text-primary flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">
+                                ΕΞΟΠΛΙΣΜΟΣ <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Regular Cards (General Participation) -->
+<article class="bg-white border border-outline-variant flex flex-col transition-all hover:border-primary hover:-translate-y-1">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of professional networking at a trade show stand. Business people discussing industrial blueprints over a table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1DhBsk_I0MOr7F7ISKkyVRxI0JFakaX37kRITaidOuOOI5-JtZXEPCECKUWjmCM4jwEV4s4bHi0MxlIvGatpVc_Zc3Z0eoJSNHmFUTXbot4uSaXri86CBfN4ofoIBy7giDSyz9K9JEKXl84BVavNtKB3OTr0yLKgdSU602jmxtt-go4-MoKRAtaajgfDpAD_mwStF4EpjrcSrfQ65xB1ba32hwiWHgjVTvCjSU2eqHXq7d25LH8XZn4Hg5PWuxV_u7gzkFQRfzFo6">
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-label-caps text-label-caps text-primary mb-3">ΕΠΙΧΕΙΡΗΜΑΤΙΚΟΤΗΤΑ</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Roadmap Εκθέσεων 2024-2025</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">Δείτε τον αναλυτικό χάρτη των επερχόμενων συμμετοχών μας σε διεθνή φόρουμ και κλαδικές εκδηλώσεις.</p>
+<a class="mt-auto font-label-caps text-label-caps text-primary flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">
+                                ΔΕΙΤΕ ΤΟ ROADMAP <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-12 flex items-center justify-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center border border-outline hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-primary text-white font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline hover:bg-industrial-gray transition-colors font-bold">2</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Sidebar -->
+<aside class="w-full lg:w-80 space-y-12">
+<!-- Search Widget -->
+<div class="bg-industrial-gray p-6">
+<h4 class="font-label-caps text-label-caps mb-4 text-on-surface">ΑΝΑΖΗΤΗΣΗ</h4>
+<div class="relative">
+<input class="w-full bg-white border-outline-variant focus:border-primary focus:ring-0 text-body-md py-3 px-4 outline-none" placeholder="Αναζήτηση εκδηλώσεων..." type="text">
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-primary">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+</div>
+<!-- Categories Widget -->
+<div>
+<h4 class="font-label-caps text-label-caps mb-6 text-on-surface border-b border-outline-variant pb-2">ΘΕΜΑΤΟΛΟΓΙΑ</h4>
+<ul class="space-y-4">
+<li>
+<a class="flex justify-between items-center group" href="#">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Διεθνείς Εκθέσεις</span>
+<span class="text-xs bg-outline-variant text-on-surface-variant px-2 py-1">08</span>
+</a>
+</li>
+<li>
+<a class="flex justify-between items-center group" href="#">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Αγροτική Ανάπτυξη</span>
+<span class="text-xs bg-outline-variant text-on-surface-variant px-2 py-1">05</span>
+</a>
+</li>
+<li>
+<a class="flex justify-between items-center group" href="#">
+<span class="font-body-md text-body-md text-secondary group-hover:text-primary transition-colors">Κατασκευαστικός Κλάδος</span>
+<span class="text-xs bg-outline-variant text-on-surface-variant px-2 py-1">12</span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Newsletter Widget -->
+<div class="bg-primary p-8 text-white">
+<h4 class="font-headline-sm text-headline-sm mb-4">Newsletter</h4>
+<p class="font-body-md text-body-md opacity-90 mb-6 text-on-primary">Εγγραφείτε για να λαμβάνετε προσκλήσεις για τις επερχόμενες εκθέσεις μας.</p>
+<form class="space-y-4">
+<input class="w-full bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:bg-white focus:text-on-surface py-3 px-4 transition-all" placeholder="Email" type="email">
+<button class="w-full bg-white text-primary font-bold py-3 uppercase tracking-wider hover:bg-industrial-gray transition-colors">ΕΓΓΡΑΦΗ</button>
+</form>
+</div>
+<!-- Recent Posts Widget -->
+<div>
+<h4 class="font-label-caps text-label-caps mb-6 text-on-surface border-b border-outline-variant pb-2">ΠΡΟΣΦΑΤΑ</h4>
+<div class="space-y-6">
+<a class="flex gap-4 group" href="#">
+<div class="w-20 h-20 shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Wine bottle and metal grape trellis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGCNyz3boK-OZDhQZ_1abuDR8Qfg5F8-1HDQoOnBk78sjqRryP8THySxWZqK3qxDgzK2IMN8ySJTbWYGVgQWodJolT2LnMaS9M1OP7l8EjkgPx6R8ofmWB373dPGuu2_hMOkUN0A82lu0q40QX7M66EkpLhXg3OTblaaqtVSz8G4v3CvVGAY72BZ-kZxmPqYvRjXlpexgmu-dr_fKtBoD7UTqMmvRRa_xorz_lHqAn8DyfnM26qTkO-tdUzZ7ccROTYDXuSxQArv47">
+</div>
+<div>
+<span class="text-[10px] text-outline font-bold uppercase block mb-1">ΜΑΪΟΣ 2024</span>
+<h5 class="font-body-md text-body-md leading-snug group-hover:text-primary transition-colors">Νέες λύσεις για τα δίκτυα Wine Roads.</h5>
+</div>
+</a>
+<a class="flex gap-4 group" href="#">
+<div class="w-20 h-20 shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Exhibition stand detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOkTJLAkZoR1tjpQ0-Mj2fic8994REannnBIEEyHHknM2wRRTzM8MntUxi6j2E4_cf-Zw-nBF9tEH_kDu2_VqIuchrZnlb66L61zTeJf3Zs2Gaht5-qhY-bUyQFwm4K402AKp8gq9ktGVOmmWE3modaRR3JG02y-B71pEU6GR1RSvoj-3MPcn9GZA0DJMjvnmqeXpLI94OkuMSo7NO2rokBc5bWtqSQuvi1IioIwK3nxPoX7SrXQkOODhCnAusPDKewpK4mMUDAcwp">
+</div>
+<div>
+<span class="text-[10px] text-outline font-bold uppercase block mb-1">ΑΠΡΙΛΙΟΣ 2024</span>
+<h5 class="font-body-md text-body-md leading-snug group-hover:text-primary transition-colors">Απολογισμός συμμετοχής στη Vinaria.</h5>
+</div>
+</a>
+</div>
+</div>
+</aside>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-steel-dark text-white pt-section-padding-sm pb-8 border-t border-white/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto mb-16">
+<!-- Company Info -->
+<div>
+<img alt="PANMETAL Logo" class="h-16 w-auto object-contain mb-6" src="images/logo-light-2.png">
+<p class="font-body-md text-body-md text-industrial-gray mb-6">Πρωτοπόρος βιομηχανία επεξεργασίας χάλυβα και εμπορίας μετάλλων. Εγγύηση ποιότητας και αξιοπιστίας από το 6ο χλμ Σερρών-Δράμας.</p>
+<div class="flex gap-4">
+<a href="https://www.facebook.com/profile.php?id=100063501614919" target="_blank" rel="nofollow" class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-accent-orange hover:border-accent-orange transition-colors">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+</a>
+<a href="https://www.linkedin.com/company/panmetal" target="_blank" rel="nofollow" class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-accent-orange hover:border-accent-orange transition-colors">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="font-label-caps text-label-caps text-[#b85c10] mb-6">ΠΡΟΪΟΝΤΑ</h4>
+<ul class="space-y-4 font-body-md text-body-md text-industrial-gray">
+<li><a class="hover:text-on-primary transition-colors" href="lamarines.html">Λαμαρίνες Coils &amp; Τραπεζοειδείς</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="sirmata.html">Συρματοκιβώτια &amp; Πλέγματα</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="solines.html">Κοίλοι Δοκοί &amp; Σωλήνες</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="inox.html">Ανοξείδωτα &amp; Inox Προϊόντα</a></li>
+</ul>
+</div>
+<!-- Support -->
+<div>
+<h4 class="font-label-caps text-label-caps text-[#b85c10] mb-6">ΕΤΑΙΡΕΙΑ</h4>
+<ul class="space-y-4 font-body-md text-body-md text-industrial-gray">
+<li><a class="hover:text-on-primary transition-colors" href="quality.html">Ποιότητα &amp; Πολιτική</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="financial.html">Οικονομικά Στοιχεία</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="blog.html">Νέα &amp; Εκθέσεις</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="contact.html">Επικοινωνία</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div>
+<h4 class="font-label-caps text-label-caps text-[#b85c10] mb-6">ΕΠΙΚΟΙΝΩΝΙΑ</h4>
+<div class="space-y-4 font-body-md text-body-md text-industrial-gray mb-6">
+<p class="flex gap-3"><span class="material-symbols-outlined text-[#b85c10]">location_on</span> 6ο χλμ Σερρών - Δράμας, Τ.Κ. 62122 Σέρρες</p>
+<p class="flex gap-3"><span class="material-symbols-outlined text-[#b85c10]">call</span> +30 23210 74499</p>
+<p class="flex gap-3"><span class="material-symbols-outlined text-[#b85c10]">mail</span> info@panmetal.gr</p>
+</div>
+<a href="https://www.google.com/maps/place/Panmetal-+%CE%A0%CE%B1%CE%BD%CE%BC%CE%B5%CF%84%CE%B1%CE%BB/@41.069774,23.631248,15z" target="_blank" rel="nofollow" class="w-[280px] h-24 overflow-hidden relative group block">
+<img src="images/footer-map.png" alt="Panmetal location map" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" style="transition: filter 0.5s ease, transform 0.5s ease;">
+<div class="absolute inset-0 pointer-events-none" style="background: rgba(230, 126, 34, 0.07);"></div>
+</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-industrial-gray font-label-caps text-[10px] tracking-widest opacity-60">
+<div class="flex items-center gap-2">Powered by <a href="https://progressnet.gr/" target="_blank" rel="nofollow" class="inline-flex items-center gap-1 hover:opacity-80 transition-opacity">Progress Net<img src="images/sima.png" alt="Progress Net" style="height:16px;vertical-align:middle;display:inline;"></a></div>
+<div class="flex gap-6">
+<span>Πολιτική Απορρήτου</span>
+<span>Όροι Χρήσης</span>
+<span>Πολιτική Cookies</span>
+</div>
+</div>
+</footer>
+<script>
+    // Simple hover effect for cards
+    document.querySelectorAll('article').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-4px)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0px)';
+        });
+    });
+
+    // Search focus effect
+    const searchInput = document.querySelector('input[placeholder="Αναζήτηση εκδηλώσεων..."]');
+    searchInput?.addEventListener('focus', () => {
+        searchInput.parentElement.classList.add('ring-1', 'ring-primary');
+    });
+    searchInput?.addEventListener('blur', () => {
+        searchInput.parentElement.classList.remove('ring-1', 'ring-primary');
+    });
+</script>
+</body></html>

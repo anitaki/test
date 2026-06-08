@@ -1,0 +1,303 @@
+/*Remove empty space between brands and footer*/
+html {
+    scroll-behavior: smooth;
+}
+
+main#main-content {
+    padding-bottom: 0;
+}
+
+
+/* --- BUTTONS: GENERAL STYLES --- */
+.my-teal-button {
+    background-color: #6fc8c4;
+    color: #000 !important;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    /* Vertical & Horizontal Centering for Text */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    max-width: 300px; 
+    height: 48px;
+    text-align: center;
+    text-decoration: none;
+}
+ .wd-rs-6a144952a4361 .btn  
+ {
+    font-size: 25px !important;
+}
+.my-teal-button:hover {
+    filter: brightness(0.95);
+    transform: translateY(-1px);
+}
+
+/*Teal + White button align center*/
+@media (max-width: 767px) {
+    div#wd-6a0af67188d99,
+    div#wd-6a0af67188d99 {
+    text-align: center;
+    margin-bottom: 3rem;
+    }
+}
+
+
+/*SECTION 2 -WHY IDEFY*/
+.why-idefy-text {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+   .why-idefy-text {
+    font-size: 16px;
+    margin-inline: 15px;
+} 
+
+/*Teal button in center*/
+div#wd-6a02e669205cb {
+    text-align: center;
+}
+
+/*Why idefy title*/
+h1.vc_custom_heading.vc_do_custom_heading.why-idefy-title.vc_custom_1779287877628 {
+    font-size: 54px !important;
+    margin-left: 15px;
+}
+}
+
+
+
+/* SECTION 3 - List rows with lines */
+.my-list-lines-col .vc_column-inner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-top: 0px;
+}
+
+/* The parent flex container */
+.my-list-item {
+    display: flex;
+    flex-direction: row;       /* Forces them onto the same line */
+    align-items: flex-start;   /* Keeps the number aligned to the top line of text */
+    gap: 2rem;                 /* Creates the gap between the number and text on large screens */
+}
+
+.my-list-lines {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Item 1: The Number */
+.my-list-lines .my-list-number {
+    font-size: 20px;
+    flex-shrink: 0;           
+}
+
+/* Item 2: The Text */
+.my-list-lines .my-list-text {
+    flex-grow: 1;             
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .my-list-item {
+        gap: 1.5rem;   
+        margin-inline: 15px;
+    }
+
+    .my-list-lines {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .my-list-lines .my-list-number {
+        font-size: 16px;
+    }   
+    
+    .my-list-text {
+    font-size: 16px;
+}
+}
+
+
+
+
+
+/*SECTION 4 - TEAMWORK SECTION*/
+.my-teamwork-img-top img {
+    width: 60%;
+    margin-right: 5%;
+}
+
+.my-teamwork-img-bottom img {
+    width: 80%;
+}
+
+.my-teamwork-text-top,
+.my-teamwork-text-bottom {
+    font-size: 22px;
+    width: 95%;
+}
+
+.my-teamwork-text-top {
+    padding-left: 5em;
+}
+
+.my-teamwork-text-bottom {
+    padding-top: 5em;
+    text-transform: uppercase;
+}
+
+
+.my-teamwork-title-top,
+.my-teamwork-title-bottom {
+    font-size: 54px;
+    letter-spacing: -1px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Manrope";
+    text-align: center;
+}
+
+.my-teamwork-title-bottom span {
+    padding-inline: 1rem;
+    color: #ffffff;
+    background-color: #000000;
+    display: inline-block;
+}
+
+/*Overlapping Rows*/
+.top-overlap {
+    z-index: 1; 
+    position: relative;
+}
+
+.bottom-layer {
+    position: relative; 
+    z-index: 0;        
+}
+
+
+@media (max-width: 768px) {
+    .my-teamwork-text-top,
+    .my-teamwork-text-bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.my-teamwork-text-top {
+    text-align: left;
+}
+
+
+.my-teamwork-text-bottom {
+    padding-top: 0px;
+    text-align: right;
+}
+
+.my-teamwork-title-top, 
+.my-teamwork-title-bottom {
+    font-size: 40px;
+    padding-inline: 15px;
+}
+
+.my-teamwork-img-top img {
+    width: 60%;
+    margin-right: 5%;
+    margin-top: -52%;
+}
+
+.my-teamwork-img-bottom img {
+    width: 100%;
+    padding-inline: 15px;
+}
+
+.my-white-button {
+    text-align: center;
+}
+
+/*Center white button*/
+.wd-rs-69fc971ec9a27 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+    h2 {
+    font-size: 17px;
+}
+}
+
+
+
+
+
+
+
+/**
+*MENU ITEMS HOVER, UNDERLINE, LAST CHILD MENU ITEM**
+*/
+
+
+/* 1. Disable WoodMart's default underline animation logic */
+.wd-nav-main.wd-style-underline .nav-link-text:after {
+    transition: none !important;
+    transform: none !important;
+    width: 0;
+    left: 0;
+    height: 2px;
+    opacity: 1;
+}
+
+/* 2. Set the starting state for text */
+#menu-main-menu .woodmart-nav-link {
+    transition: color 0.05s ease !important;
+}
+
+/* 3. The Sync: Animate both at once */
+#menu-main-menu .menu-item:hover > a .nav-link-text:after {
+    width: 100%;
+    background-color: white !important;
+    transition: width 0.25s ease !important;
+}
+
+#menu-main-menu .menu-item:hover > a {
+    color: white !important;
+}
+
+/* 4. Keep the 'Active' page underlined and white */
+#menu-main-menu .current-menu-item .nav-link-text:after {
+    width: 100%;
+    background-color: white !important;
+}
+
+
+
+/* 5. Fix for your 'WHY MICRO' black item */
+#menu-main-menu .menu-item:last-child > a {
+    background-color: #6fc8c4 !important;
+    padding: 5px 12px;
+    /* Ensure no underline inside the black button if you prefer */
+}
+
+/*Why Micro - last menu item*/
+#menu-main-menu .menu-item:last-child {
+    margin-bottom: 0;
+    background-color: #6fc8c4;
+}
+
+#menu-main-menu .menu-item:last-child a {
+    color: black;
+}

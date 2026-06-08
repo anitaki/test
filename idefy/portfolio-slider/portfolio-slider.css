@@ -1,0 +1,123 @@
+/*** IDEFY REELS SLIDER ***/
+
+.reel-slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 48px 0;
+  box-sizing: border-box;
+  font-family: "Manrope", system-ui, -apple-system, sans-serif;
+  background: #fff;
+}
+
+/* ARROWS ---------------------------------------------------------- */
+.reel-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1;
+  opacity: 0.45;
+  transition: opacity 0.2s;
+  padding: 0;
+  user-select: none;
+}
+
+.reel-arrow:hover  { opacity: 1; }
+.reel-arrow:disabled { opacity: 0.12; cursor: default; }
+
+/* TRACK ----------------------------------------------------------- */
+.reel-track-wrap {
+  flex: 1;
+  overflow: hidden;
+}
+
+.reel-track {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.55s cubic-bezier(.6,.05,.4,1);
+  will-change: transform;
+}
+
+/* SLIDE ----------------------------------------------------------- */
+.reel-slide {
+  flex: 0 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reel-slide:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* COVER + PLAY BUTTON --------------------------------------------- */
+.reel-cover-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 17;
+  cursor: pointer;
+  display: block;
+}
+
+.reel-cover-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reel-play-btn {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.18);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.reel-play-btn:hover { background: rgba(0,0,0,0.32); }
+
+/* Play triangle */
+.reel-play-btn::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 0 18px 30px;
+  border-color: transparent transparent transparent rgba(255,255,255,0.92);
+  margin-left: 5px;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
+}
+
+/* IFRAME (replaces cover on play) --------------------------------- */
+.reel-slide iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 17 !important;
+  border: none;
+}
+
+/* MOBILE --------------------------------------------------------- */
+@media (max-width: 768px) {
+  .reel-slider { gap: 16px; padding: 32px 0; }
+  .reel-arrow  { width: 32px; font-size: 1.8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reel-track { transition: none !important; }
+  .reel-slide { transition: none !important; }
+}

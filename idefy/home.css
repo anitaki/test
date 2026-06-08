@@ -1,3 +1,11 @@
+/*Remove empty space between brands and footer*/
+main#main-content {
+    padding-bottom: 0;
+}
+
+
+
+
 /* --- SECTION-2 HERO TEXT WITH OVERLAY CIRCLE --- */
 
 .hero-text-container {
@@ -46,7 +54,7 @@ p.big-centered-text {
 
 /* --- BUTTONS: GENERAL STYLES --- */
 .my-teal-button {
-    background-color: #97c6c3;
+    background-color: #6fc8c4;
     color: #000 !important;
     font-weight: 600;
     border: none;
@@ -119,13 +127,18 @@ p.big-centered-text {
         white-space: nowrap;
         padding: 0 15px !important;
     }
+    
+    /*my teal button align center*/
+    div#wd-6a0c26d1c450f {
+    text-align: center;
+}
 }
 
 /* Extra Small Mobile (480px and below) */
 @media (max-width: 480px) {
-    .hero-text-container { padding-top: 60px; }
+    .hero-text-container { padding-top: 25px; }
     
-    .teal-overlay-circle { width: 85%; top: 52px; }
+    .teal-overlay-circle { width: 85%; top: 15px; }
     p.big-centered-text { font-size: 24px; }
 
     .vc_row.wd-rs-69f351b89bb3a .wpb_column {
@@ -137,6 +150,20 @@ p.big-centered-text {
         font-size: 11px !important;
         height: 42px;
     }
+}
+
+@media (max-width: 767px) {
+    /*Teal Button in 1 row*/
+     .my-teal-button {
+        min-width: 35% !important; /* Prevents buttons from being too small */
+        font-size: 11px !important;
+        height: 42px;
+    }
+    
+    .my-teal-buttons-row {
+        display: flex;
+        justify-content: center;
+}
 }
 
 
@@ -186,6 +213,7 @@ p.big-centered-text {
     padding-inline: 1rem;
     color: #ffffff;
     background-color: #000000;
+    display: inline-block;
 }
 
 /*Overlapping Rows*/
@@ -194,11 +222,157 @@ p.big-centered-text {
     position: relative;
 }
 
+.bottom-layer {
+    position: relative; 
+    z-index: 0;        
+}
+
+@media (max-width: 767px) {
+    .my-teamwork-text-top,
+    .my-teamwork-text-bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.my-teamwork-text-bottom {
+    padding-top: 0px;
+}
+
+.my-teamwork-title-top, 
+.my-teamwork-title-bottom {
+    font-size: 45px;
+    padding-inline: 15px;
+}
+
+.my-teamwork-img-top img {
+    width: 60%;
+    margin-right: 5%;
+    margin-top: -52%;
+}
+
+.my-teamwork-img-bottom img {
+    width: 100%;
+    padding-inline: 15px;
+}
+
+.my-teal-button {
+    text-align: center;
+}
+
+/*Center teal button*/
+.wd-rs-69fc971ec9a27 {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+/*SECTION 5 - We do best*/
+
+.we-do-best-row h4.info-box-title.title.box-title-style-default.wd-fontsize-m {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 892px) {
+  .we-do-best-row h4.info-box-title.title.box-title-style-default.wd-fontsize-m {
+    margin-top: 0;
+}  
+}
+
+@media (max-width: 767px) {
+.we-do-best-row .box-with-icon .info-box-icon {
+    display: none;
+}
+
+.we-do-best-row .info-box-inner.reset-last-child {
+    width: 50%;
+    margin: auto;
+}
+}
+
+
+
+
+
+
+
+/**
+*MENU ITEMS HOVER, UNDERLINE, LAST CHILD MENU ITEM**
+*/
+
+
+/* 1. Disable WoodMart's default underline animation logic */
+.wd-nav-main.wd-style-underline .nav-link-text:after {
+    transition: none !important;
+    transform: none !important;
+    width: 0;
+    left: 0;
+    height: 2px;
+    opacity: 1;
+}
+
+/* 2. Set the starting state for text */
+#menu-main-menu .woodmart-nav-link {
+    transition: color 0.05s ease !important;
+}
+
+/* 3. The Sync: Animate both at once */
+#menu-main-menu .menu-item:hover > a .nav-link-text:after {
+    width: 100%;
+    background-color: white !important;
+    transition: width 0.25s ease !important;
+}
+
+#menu-main-menu .menu-item:hover > a {
+    color: white !important;
+}
+
+/* 4. Keep the 'Active' page underlined and white */
+#menu-main-menu .current-menu-item .nav-link-text:after {
+    width: 100%;
+    background-color: white !important;
+}
+
+
+
+/* 5. Fix for your 'WHY MICRO' black item */
+#menu-main-menu .menu-item:last-child > a {
+    background-color: #6fc8c4 !important;
+    padding: 5px 12px;
+    /* Ensure no underline inside the black button if you prefer */
+}
+
+/*Why Micro - last menu item*/
+#menu-main-menu .menu-item:last-child {
+    margin-bottom: 0;
+    background-color: #6fc8c4;
+}
+
+#menu-main-menu .menu-item:last-child a {
+    color: black;
+}
+
+
+
+
+
+
+
 
 
 
 
 /*** SECTION 3 - IDEFY STATS SLIDER ***/
+
+/*** IDEFY STATS SLIDER ***/
 
 .stats-slider {
   --teal: #5bc0be;
@@ -240,6 +414,7 @@ p.big-centered-text {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: transform 0.9s cubic-bezier(.6,.05,.4,1);
 }
 
@@ -429,4 +604,34 @@ p.big-centered-text {
   .card-inner,
   .ring-fg,
   .stat-card { transition: none !important; }
+}
+
+/* iOS Safari: preserve-3d breaks with overflow:hidden in ancestor chain.
+   Uses opacity fade instead — same tap-to-reveal result, no 3D needed. */
+.stats-slider.is-ios .card-inner {
+  transform-style: flat;
+  -webkit-transform-style: flat;
+}
+
+.stats-slider.is-ios .card-face {
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.45s ease;
+}
+
+.stats-slider.is-ios .card-back {
+  transform: none;
+  opacity: 0;
+}
+
+.stats-slider.is-ios .stat-card.is-active .card-inner {
+  transform: none;
+}
+
+.stats-slider.is-ios .stat-card.is-active .card-front {
+  opacity: 0;
+}
+
+.stats-slider.is-ios .stat-card.is-active .card-back {
+  opacity: 1;
 }

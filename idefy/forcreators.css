@@ -1,0 +1,97 @@
+main#main-content {
+    padding-bottom: 0;
+}
+
+
+/**
+Menu items underline animation*
+*/
+
+/* 1. Disable WoodMart's default underline animation logic */
+.wd-nav-main.wd-style-underline .nav-link-text:after {
+    transition: none !important;
+    transform: none !important;
+    width: 0;
+    left: 0;
+    height: 2px;
+    opacity: 1;
+}
+
+/* 2. Set the starting state for text */
+#menu-main-menu .woodmart-nav-link {
+    transition: color 0.05s ease !important;
+}
+
+/* 3. The Sync: Animate both at once */
+#menu-main-menu .menu-item:hover > a .nav-link-text:after {
+    width: 100%;
+    background-color: black !important;
+    transition: width 0.25s ease !important;
+}
+
+#menu-main-menu .menu-item:hover > a {
+    color: black !important;
+}
+
+/* 4. Keep the 'Active' page underlined and white */
+#menu-main-menu .current-menu-item .nav-link-text:after {
+    width: 100%;
+    background-color: black !important;
+}
+
+#menu-main-menu .current-menu-item > a {
+    color: black !important;
+}
+
+/* 5. Fix for your 'WHY MICRO' black item */
+#menu-main-menu .menu-item:last-child > a {
+    background-color: white !important;
+    /* Ensure no underline inside the black button if you prefer */
+}
+
+/*Why Micro - last menu item*/
+#menu-main-menu .menu-item:last-child {
+    margin-bottom: 0;
+    background-color: white;
+}
+
+#menu-main-menu .menu-item:last-child a {
+    color: black;
+}
+
+
+
+/*Why join lines*/
+.bold-text {
+    font-weight: 800;
+}
+
+
+
+
+
+/*Page styles*/
+
+
+.how-it-works-section {
+  position: relative;
+  background-image: 
+    url('/wp-content/uploads/2026/05/WEBSITE-IDEFY-2-17.png'),
+    url('/wp-content/uploads/2026/05/MAIN-SLIDER-FOR-BRANDS-scaled.png');
+  background-size: cover, cover;
+  background-position: center top, center center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+
+@media (max-width: 768px) {
+  .how-it-works-title .liner-continer {
+    text-align: center;
+}
+}
+
+
+.vc_row.vc_row-flex{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
