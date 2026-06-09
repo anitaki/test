@@ -1,0 +1,40 @@
+name: Deploy Panmetal to GitHub Pages
+
+on:
+  push:
+    branches:
+      - test # Triggers whenever you push to your main branch (test)
+    paths:
+      - 'panmetal/**' # ONLY triggers if files inside the panmetal folder change
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # This isolates your 'panmetal' folder and treats it as the root of the website
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './panmetal' 
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
