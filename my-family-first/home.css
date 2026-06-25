@@ -44,9 +44,330 @@ a.btn.btn-style-link.btn-color-primary.info-box-btn {
 /*Titloi */
 
 .my-services h4 {
-  font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;
+  /*font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;*/
   color: white;
 }
+
+.home-about-me-title h4 {
+  /*font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;*/
+  padding-top: 0px;
+  margin-right: 20px;
+  /*color: #475420;*/
+  color: #5a6e34;
+}
+
+.therapy-process-title h4 {
+  /*color: #475420;*/
+  color: #5a6e34;
+  /*font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;*/
+}
+
+.therapeytiki-diadikasia-text h4 {
+  /*color: #475420;*/
+  color: #5a6e34;
+}
+
+#therapies-row-1 {
+  padding-bottom: 0 !important;
+}
+
+/*Therapeftiki diadikasia on hover*/
+
+#therapeytiki-diadikasia-box-1,
+#therapeytiki-diadikasia-box-2,
+#therapeytiki-diadikasia-box-3,
+#therapeytiki-diadikasia-box-4,
+#therapeytiki-diadikasia-box-5,
+#therapeytiki-diadikasia-box-6 {
+  min-height: 350px;
+  transition:
+    transform 330ms ease-in-out,
+    background-color 330ms ease-in-out,
+    box-shadow 330ms ease-in-out;
+}
+
+#therapeytiki-diadikasia-box-1:hover,
+#therapeytiki-diadikasia-box-2:hover,
+#therapeytiki-diadikasia-box-3:hover,
+#therapeytiki-diadikasia-box-4:hover,
+#therapeytiki-diadikasia-box-5:hover,
+#therapeytiki-diadikasia-box-6:hover {
+  transform: scale(1.02);
+  border-radius: 8px;
+  background-color: rgba(243, 238, 230, 0.7);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);*/
+}
+
+.wpb_text_column.wpb_content_element.vc_custom_1744300528591.my-office-text {
+  padding-top: 0px;
+}
+
+.basel-info-box2.text-left.icon-alignment-left.box-style-shadow.color-scheme-dark.home-about-me-iconbox {
+  padding: 8px;
+}
+
+/* Quotation section */
+
+.quote-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image */
+.quote-image {
+  width: 30%;
+  max-width: 200px;
+}
+
+/* Content */
+.quote-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Quote */
+.quote-content blockquote {
+  color: #ffffff;
+  margin: 0;
+}
+
+.quote-author {
+  color: #d0db99;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .quote-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote-image {
+    width: 65%;
+  }
+}
+
+
+/*Image gallery Ο χώρος μας*/
+
+.my-office-title h4 {
+  /*color: #475420;*/
+  color: #5a6e34;
+}
+
+.my-office-title .title-subtitle span {
+  color: #855a17 !important;
+}
+
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+/*Members carousel*/
+.members-banner [class*="basel-info-box"].box-style-border .info-box-content {
+  padding: 50px 20px 20px 20px;
+  border: 0.5px solid rgba(97, 97, 97, 0.09);
+}
+
+.members-banner a.btn.btn-style-link.btn-color-primary.info-box-btn {
+  /* background: #333c1a !important; */
+  background-color: #5a6e34 !important;
+  border-color: #596100 !important;
+  margin-top: -5px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.members-banner .info-btn-wrapper {
+    padding-top: 6px !important;
+}
+
+.members-banner .info-box-inner p {
+    min-height: 103px;
+}
+
+
+
+/* Newsletter section */
+.newsletter-home {
+background: linear-gradient(
+  to bottom,
+  #6B7E38 0%,
+  #6B7E38 35%,
+  #7F9446 100%
+);
+}
+
+div#newsletter-form {
+    max-width: 680px;
+    margin: auto;
+}
+
+
+/* Hide category on blog post image */
+.meta-post-categories {
+    background: #00000000;
+}
+
+.meta-post-categories>a {
+  display: none;
+}
+
+/*Διάφορα*/
+.showonmobile {
+  display: none;
+}
+
+
+@media (max-width: 1200px) {
+  .vc_column-inner.vc_custom_1739982249088 {
+    padding: 0px 15px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .vc_column_container > .vc_column-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (width: 768px) {
+  .my-services-info-box {
+    padding-inline: 15px;
+  }
+  
+  div#newsletter-form {
+    max-width: 90%;
+}
+}
+
+@media (max-width: 768px) {
+  .vc_column_container > .vc_column-inner {
+    padding-left: 18px !important;
+    padding-right: 18px;
+  }
+
+  .wpb_text_column.wpb_content_element.vc_custom_1744300528591.my-office-text {
+    padding-right: 0px !important;
+  }
+
+  .hideonmobile {
+    display: none;
+  }
+  .showonmobile {
+    display: block;
+  }
+}
+
+@media (max-width: 620px) {
+  .cursor-pointer.basel-info-box2.text-center.icon-alignment-top.box-style-base.color-scheme-dark.what-i-offer-text.vc_custom_1739891142890 {
+    padding-top: 0px !important;
+  }
+
+  .my-services h4.title,
+  .home-about-me-title h4,
+  .therapy-process-title h4 {
+    font-size: 2.2em !important;
+    padding-block: 5px;
+  }
+
+  .my-services-info-box,
+  .my-services-info-box h3,
+  .my-services-info-box p {
+    text-align: center !important;
+  }
+
+  .home-about-me-text h4,
+  .my-office-text h4 {
+    text-align: center !important;
+  }
+}
+
+/*Blog Articles Carousel */
+.owl-stage {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*Section Dividers padding max-width 768*/
+@media (max-width: 768px) {
+    .vc_column-inner.vc_custom_1497271836592,
+    .vc_column-inner.vc_custom_1776955293248 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+}
+
+/* Section Title/Text Ypiresies */
+
+.title-wrapper .title-after_title {
+    margin-bottom: 10px !important;
+    margin-top: -5px;
+    line-height: 1.6;
+}
+
+
+/* Mathete Perisotera Ypiresies */
+
+.color-scheme-dark a{
+    color: #ccae93;
+    font-size: 14px;
+
+}
+.color-scheme-dark:hover a{
+    color: #ccae93;
+    font-size: 14px;
+
+}
+
+
+/* Oles Oi Ypiresies Button */
+
+.btn.btn-style-link {
+    padding: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-transform: capitalize;
+    color: #CCAe93;
+    border-color: #CCAE93;
+}
+
+.btn.btn-style-link:hover {
+    padding: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-transform: capitalize;
+    color: #CCAe93;
+    border-color: #CCAE93;
+}
+
+.btn.my-ipiresies-button {
+    background-color: #c4af97;
+}
+
+
+@media (max-width: 767px) {
+   .vc_custom_1777557561869 {
+    margin-bottom: 3vh !important;
+    margin-right: 20px;
+   }
+}
+
+@media (min-width:768px) and (max-width: 991px){
+    .vc_col-sm-offset-3 {
+       margin-left: 16%;
+}
+}
+
 
 .color-primary,
 .mobile-nav ul li.current-menu-item > a,
@@ -210,220 +531,4 @@ blockquote cite,
   > a,
 .basel-free-progress-bar .amount {
   color: #ccae93 !important;
-}
-
-.home-about-me-title h4 {
-  font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;
-  padding-top: 0px;
-  margin-right: 20px;
-  /*color: #475420;*/
-  color: #5a6e34;
-}
-
-.therapy-process-title h4 {
-  /*color: #475420;*/
-  color: #5a6e34;
-  font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;
-}
-
-.therapeytiki-diadikasia-text h4 {
-  /*color: #475420;*/
-  color: #5a6e34;
-}
-
-/*Therapeftiki diadikasia on hover*/
-
-#therapeytiki-diadikasia-box-1,
-#therapeytiki-diadikasia-box-2,
-#therapeytiki-diadikasia-box-3,
-#therapeytiki-diadikasia-box-4,
-#therapeytiki-diadikasia-box-5,
-#therapeytiki-diadikasia-box-6 {
-  min-height: 350px;
-  transition:
-    transform 330ms ease-in-out,
-    background-color 330ms ease-in-out,
-    box-shadow 330ms ease-in-out;
-}
-
-#therapeytiki-diadikasia-box-1:hover,
-#therapeytiki-diadikasia-box-2:hover,
-#therapeytiki-diadikasia-box-3:hover,
-#therapeytiki-diadikasia-box-4:hover,
-#therapeytiki-diadikasia-box-5:hover,
-#therapeytiki-diadikasia-box-6:hover {
-  transform: scale(1.02);
-  border-radius: 8px;
-  background-color: rgba(243, 238, 230, 0.7);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  /*box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);*/
-}
-
-.wpb_text_column.wpb_content_element.vc_custom_1744300528591.my-office-text {
-  padding-top: 0px;
-}
-
-.basel-info-box2.text-left.icon-alignment-left.box-style-shadow.color-scheme-dark.home-about-me-iconbox {
-  padding: 8px;
-}
-
-/* Quotation section */
-
-.quote-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Image */
-.quote-image {
-  width: 30%;
-  max-width: 200px;
-}
-
-/* Content */
-.quote-content {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-/* Quote */
-.quote-content blockquote {
-  color: #ffffff;
-  margin: 0;
-}
-
-.quote-author {
-  color: #d0db99;
-  font-style: italic;
-  margin-top: 12px;
-}
-
-@media (max-width: 768px) {
-  .quote-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .quote-image {
-    width: 65%;
-  }
-}
-
-/* .quote-text,
-.green-divider {
-background: linear-gradient(
-    160deg,
-    #5a6e34 0%,
-    #6b7e38 55%,
-    #aebf6f 85%,
-    #d0db99 100%
-);
-} */
-
-/*Image gallery Ο χώρος μας*/
-
-.my-office-title h4 {
-  /*color: #475420;*/
-  color: #5a6e34;
-}
-
-.my-office-title .title-subtitle span {
-  color: #855a17 !important;
-}
-
-.owl-stage {
-  display: flex;
-  align-items: center;
-}
-
-/*Members carousel*/
-.members-banner [class*="basel-info-box"].box-style-border .info-box-content {
-  padding: 50px 20px 20px 20px;
-  border: 0.5px solid rgba(97, 97, 97, 0.09);
-}
-
-.members-banner a.btn.btn-style-link.btn-color-primary.info-box-btn {
-  /* background: #333c1a !important; */
-  background-color: #5a6e34 !important;
-  border-color: #596100 !important;
-  margin-top: -5pxpx;
-  padding: 8px 20px;
-  border-radius: 5px;
-  color: white;
-}
-
-.members-banner .info-btn-wrapper {
-    padding-top: 6px !important;
-}
-
-.members-banner .info-box-inner p {
-    min-height: 103px;
-}
-
-/*Διάφορα*/
-.showonmobile {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .vc_column-inner.vc_custom_1739982249088 {
-    padding: 0px 15px !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .vc_column_container > .vc_column-inner {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (width: 768px) {
-  .my-services-info-box {
-    padding-inline: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .vc_column_container > .vc_column-inner {
-    padding-left: 18px !important;
-    padding-right: 18px;
-  }
-
-  .wpb_text_column.wpb_content_element.vc_custom_1744300528591.my-office-text {
-    padding-right: 0px !important;
-  }
-
-  .hideonmobile {
-    display: none;
-  }
-  .showonmobile {
-    display: block;
-  }
-}
-
-@media (max-width: 620px) {
-  .cursor-pointer.basel-info-box2.text-center.icon-alignment-top.box-style-base.color-scheme-dark.what-i-offer-text.vc_custom_1739891142890 {
-    padding-top: 0px !important;
-  }
-
-  .my-services h4.title,
-  .home-about-me-title h4,
-  .therapy-process-title h4 {
-    font-size: 2.2em !important;
-    padding-block: 5px;
-  }
-
-  .my-services-info-box,
-  .my-services-info-box h3,
-  .my-services-info-box p {
-    text-align: center !important;
-  }
-
-  .home-about-me-text h4,
-  .my-office-text h4 {
-    text-align: center !important;
-  }
 }

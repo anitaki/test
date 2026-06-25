@@ -1,0 +1,74 @@
+.therapy-process-title h4 {
+  /*color: #475420;*/
+  color: #5a6e34;
+  font-family: Caudex, "Comfortaa", Arial, Helvetica, sans-serif;
+}
+.my-office-title h4 {
+  /*color: #475420;*/
+  color: #5a6e34;
+}
+
+.my-office-title .title-subtitle span {
+  color: #855a17 !important;
+}
+
+.main-page-wrapper {
+    padding-top: 0px;
+}
+
+@media (max-width: 767px) {
+    div#butterfly {
+    margin-top: -25px !important;
+}
+}
+
+
+
+/* -- Quotation section */
+
+.quote-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image */
+.quote-image {
+  width: 30%;
+  max-width: 200px;
+}
+
+/* Content */
+.quote-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Quote */
+.quote-content blockquote {
+  color: #ffffff;
+  margin: 0;
+}
+
+.quote-author {
+  color: #d0db99;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .quote-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote-image {
+    width: 65%;
+  }
+}
+
+/*-- Image carousel width*/
+img.promo-banner-image {
+    max-width: 480px;
+}
