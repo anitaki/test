@@ -1,0 +1,129 @@
+
+/*
+--- SECTION 5 SLIDE 5 --- 
+*/
+
+
+/***LEFT SIDE OF SLIDE***/
+
+#hero-wrap-5 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark solid left block */
+#shape-left-5 {
+  position: relative;
+  background-color: #2b2c34;
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+  z-index: 2;
+  padding: 40px 100px 40px 40px;
+}
+
+#hero-wrap-5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20.65%;
+  width: 95%;
+  height: 100%;
+  clip-path: polygon(
+    36% 0,    /* top-left of strip: where shape-left's 85% lands on hero-wrap */
+    40% 0,    /* top-right of strip */
+    50% 87%, /* bottom-right: where shape-left's 100% lands on hero-wrap */
+    47% 100%  /* bottom-left */
+  );
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+
+
+
+/*
+**BUTTON BLUE**
+*/
+
+/* 1. Ensure the container behaves correctly and elements align */
+#btn-blue .etheme-button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* 2. Style the actual button text link */
+#btn-blue .elementor-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.1875rem !important; 
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .0625rem;
+    background-color: transparent !important; 
+    text-decoration: none;
+    /* FIXED: Explicitly handles background-color along with color smoothly */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 3. Common rules for both left and right brackets */
+#btn-blue .elementor-button::before,
+#btn-blue .elementor-button::after {
+    content: "" !important;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px; 
+    border-top: 4px solid  #0671c2 !important;
+    border-bottom: 4px solid  #0671c2 !important;
+    box-sizing: border-box;
+    pointer-events: none; 
+    background-color: transparent !important; 
+    transform: none !important; 
+    /* MATCHED: Exactly matches the main button timings */
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 4. Left Bracket specific properties */
+#btn-blue .elementor-button::before {
+    left: 0;
+    border-left: 4px solid  #0671c2 !important;
+    border-right: none !important;
+}
+
+/* 5. Right Bracket specific properties */
+#btn-blue .elementor-button::after {
+    right: 0;
+    border-right: 4px solid  #0671c2 !important;
+    border-left: none !important;
+}
+
+/* ===
+   HOVER STATES: Synced across all elements simultaneously
+=== */
+
+#btn-blue .elementor-button:hover {
+    background-color:  #0671c2 !important; 
+    color: white !important;
+}
+
+/* Left bracket converts smoothly at the exact same pace */
+#btn-blue .elementor-button:hover::before {
+    border-top-color:  #0671c2 !important;
+    border-bottom-color:  #0671c2 !important;
+    border-left-color:  #0671c2 !important;
+    background-color: transparent !important; 
+}
+
+/* Right bracket converts smoothly at the exact same pace */
+#btn-blue .elementor-button:hover::after {
+    border-top-color:  #0671c2 !important;
+    border-bottom-color:  #0671c2 !important;
+    border-right-color:  #0671c2 !important;
+    background-color: transparent !important; 
+}
+
+

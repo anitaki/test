@@ -1,0 +1,212 @@
+
+
+/*
+--- SECTION 2 SLIDE 2 --- 
+*/
+
+
+.underline {
+      text-underline-offset: 20px;
+}
+
+/***LEFT SIDE OF SLIDE 2***/
+
+#shape-left-2 {
+  position: relative !important;
+  background-color: transparent !important; /* Overrides the Elementor blue setting */
+  z-index: 2;
+  padding: 40px 100px 40px 40px;
+}
+
+/* 2. The dark grey polygon handles the actual background shape */
+#shape-left-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b2c34 !important; /* Your dark solid color */
+  clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
+  z-index: 1; 
+  pointer-events: none;
+}
+
+
+/* 3. The yellow-green shape (added behind and right of the dark grey) */
+#shape-left-2::after {
+  content: "";
+  position: absolute;
+  /* Negative top pulls it above the container, height over 100% pushes it below */
+  top: 10%; 
+  left: 0%; 
+  width: 100%; 
+  height: 100%; 
+  background-color: #aac620 !important; /* Yellow-green color */
+  /* Keeps the precise parallel angle matching the grey shape */
+  clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
+  z-index: 0; /* Stays behind the grey background */
+  pointer-events: none;
+}
+
+
+
+
+/* 4. The image sits completely whole on top of everything */
+#shape-left-2 .elementor-widget-image {
+  position: relative;
+  z-index: 5; /* Keeps it layered cleanly over the polygon */
+}
+
+#shape-left-2 .elementor-widget-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+/*RIGHT SIDE OF SLIDE 2*/
+#shape-right-2 {
+    position: relative;
+    overflow: visible;
+    z-index: 20;
+}
+
+#shape-right-2::before {
+    content: "";
+    position: absolute;
+    top: 72%;
+    left: 65%;
+    width: 60%;
+    height: 50%;
+    /*transform-origin: bottom left;*/
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+    background-color: #aac620;
+    z-index: 9;
+}
+
+#shape-right-2::after {
+    content: "";
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform-origin: bottom left;
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+    background-color: #145629;
+    z-index: 110;
+}
+
+
+
+
+
+/*---- SECTION 3 ----*/
+
+
+/*
+**BUTTON YELLOW**
+*/
+
+
+/* 1. Ensure the container behaves correctly and elements align */
+#btn-yellow .etheme-button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* 2. Style the actual button text link */
+#btn-yellow .elementor-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.1875rem !important; /* Adjust padding to control spacing inside brackets */
+    color: #1a2530 !important; /* Dark text color from your image */
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .0625rem;
+    background-color: transparent !important; /* Removes default background */
+    text-decoration: none;
+}
+
+/* 3. Common rules for both left and right brackets */
+#btn-yellow .elementor-button::before,
+#btn-yellow .elementor-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px; /* Controls how far back the horizontal lines go */
+    border-top: 4px solid #aac620;
+    border-bottom: 4px solid #aac620;
+    box-sizing: border-box;
+    pointer-events: none; /* Prevents interference with clicking */
+}
+
+/* 4. Left Bracket specific properties */
+#btn-yellow .elementor-button::before {
+    left: 0;
+    border-left: 4px solid #aac620;
+}
+
+/* 5. Right Bracket specific properties */
+#btn-yellow .elementor-button::after {
+    right: 0;
+    border-right: 4px solid #aac620;
+}
+
+
+
+/*
+**RIGHT SIDE OF SLIDE 3**
+*/
+#shape-right-3 {
+    position: relative;
+    overflow: visible;
+    z-index: 10;
+}
+
+#shape-right-3::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 160%;
+    height: 100%;
+    /*transform-origin: bottom left;*/
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+  background-color: #2b2c34 !important; /* Your dark solid color */
+    z-index: 0;
+}
+
+#shape-right-3::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: -45%;
+    width: 50%;
+    height: 50%;
+    transform-origin: bottom left;
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+     background-color: #aac620 !important; /* Yellow-green color */
+    z-index: -2;
+}
+
+
+
+
+
+

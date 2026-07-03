@@ -1,0 +1,92 @@
+
+/*
+--- SECTION 4 SLIDE 4 --- 
+*/
+
+
+/***LEFT SIDE OF SLIDE 2***/
+
+#shape-left-4 {
+  position: relative !important;
+  background-color: transparent !important; /* Overrides the Elementor blue setting */
+  z-index: 2;
+  /*padding: 40px 100px 40px 40px;*/
+}
+
+/* 2. The dark grey polygon handles the actual background shape */
+#shape-left-4::before {
+ content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%; /* Explicit width control */
+  height: 100%; /* Spans full height of the container */
+  background-color: #2b2c34 !important; 
+  clip-path: polygon(0 0, 100% 0, 35% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 0, 100% 0, 35% 100%, 0% 100%);
+  z-index: 1; 
+  pointer-events: none;
+}
+
+
+
+/* 3. The yellow-green shape (added behind and right of the dark grey) */
+#shape-left-4::after {
+  content: "";
+  position: absolute;
+  /* Negative top pulls it above the container, height over 100% pushes it below */
+  top: 10%; 
+  left: 28%; 
+  width: 120%; 
+  height: 100%; 
+  background-color: #aac620 !important; /* Yellow-green color */
+  /* Keeps the precise parallel angle matching the grey shape */
+  clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
+  z-index: 0; /* Stays behind the grey background */
+  pointer-events: none;
+}
+
+
+
+
+/* 4. The image sits completely whole on top of everything */
+#shape-left-4 .elementor-widget-image {
+  position: relative;
+  z-index: 5; /* Keeps it layered cleanly over the polygon */
+}
+
+#shape-left-4 .elementor-widget-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* 1. Hide Elementor's original play icon container and its internal SVG completely */
+#video-thumb .elementor-custom-embed-play,
+#video-thumb .elementor-custom-embed-play svg {
+    display: none !important;
+}
+
+/* 2. Inject your green arrow directly into the clickable overlay layer */
+#video-thumb .elementor-custom-embed-image-overlay::after {
+    content: url('/wp-content/uploads/2026/06/play.svg');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+    
+    /* Forces the button sizing */
+    display: block;
+    width: 100px; 
+    height: 100px;
+}
+
+/* 3. Ensure the parent overlay allows seamless clicks to start the video */
+#video-thumb .elementor-custom-embed-image-overlay {
+    cursor: pointer !important;
+}
