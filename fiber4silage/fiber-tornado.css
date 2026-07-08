@@ -1,0 +1,190 @@
+#badge {
+  padding-top: 15px;
+}
+
+
+
+
+/*
+--- SECTION 1 --- 
+*/
+
+#btn-yellow .elementor-button-text,
+#btn-yellow  i.et-icon.et-right-arrow-2 
+ {
+    color: white !important;
+}
+
+
+/***LEFT SIDE OF SECTION 1***/
+
+#shape-left {
+  position: relative !important;
+  background-color: transparent !important; /* Overrides the Elementor blue setting */
+  z-index: 2;
+  padding: 40px 100px 40px 40px;
+}
+
+/* 2. The dark grey polygon handles the actual background shape */
+#shape-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2.5%;
+  height: 125%;
+  background-color: #2b2c34 !important; /* Your dark solid color */
+  clip-path: polygon(0 0, 15% 0, 5% 28%, 0% 28%) !important;
+  -webkit-clip-path: polygon(0 0, 15% 0, 5% 28%, 0% 28%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 3. The yellow-green shape (added behind and right of the dark grey) */
+#shape-left::after {
+  content: "";
+  position: absolute;
+  /* Negative top pulls it above the container, height over 100% pushes it below */
+  top: 0%;
+  left: -3.5%;
+  width: 100%;
+  height: 32%;
+  background-color: #aac620 !important; /* Yellow-green color */
+  /* Keeps the precise parallel angle matching the grey shape */
+  clip-path: polygon(0 0, 20% 0, 10% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 0, 20% 0, 10% 100%, 0% 100%);
+  z-index: 0; /* Stays behind the grey background */
+  pointer-events: none;
+}
+
+/* 4. The image sits completely whole on top of everything */
+#shape-left .elementor-widget-image {
+  position: relative;
+  z-index: 5; /* Keeps it layered cleanly over the polygon */
+}
+
+#shape-left .elementor-widget-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+
+/*
+--- SECTION 3 ---
+*/
+
+#img-wrap::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid #a8e060;
+    border-left: 2px solid #a8e060;
+}
+
+#img-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid #a8e060;
+    border-right: 2px solid #a8e060;
+}
+
+
+
+
+/*
+--- SECTION 4 ---
+*/
+
+/*Title Underline*/
+#underline-title h2 {
+text-underline-offset: 14px !important;
+text-decoration-color: #2d6a2d !important;
+}
+
+
+.icon-boxes:hover {
+    background-color: rgba(45, 106, 45, 0.06);
+}
+
+
+
+
+
+
+
+/*
+--- SECTION 5 -TABLE ---
+*/
+
+/* Table Base & Outer Spacing */
+table.custom-spec-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 40px auto; /* Adds clean spacing above and below the table */
+    font-family: Arial, sans-serif;
+    font-size: 1rem !important;
+    font-weight: 400;
+    border: 1px solid #707070;
+    color: #2b2c34;
+    box-sizing: border-box;
+}
+
+/* Force All Cells and Text to be Centered with Pure Padding for Height */
+table.custom-spec-table th, 
+table.custom-spec-table td {
+    border: 1px solid #707070;
+    padding: 45px 15px; /* Generous top/bottom padding to cleanly double the height */
+    line-height: 1.4 !important; 
+    vertical-align: middle;
+    text-align: center !important; 
+    text-transform: none !important;
+}
+
+/* Header Specific Styles (thead) */
+table.custom-spec-table thead tr {
+    background-color: #2b2c34; /* Dark slate blue background */
+}
+
+table.custom-spec-table thead th {
+    color: #AAC620; /* Bright theme lime-yellow/green typography */
+    font-weight: bold;
+}
+
+/* First Column Visual Header Highlight (Prime) */
+table.custom-spec-table tbody th.row-highlight {
+    background-color: #AAC620; /* Bright theme green cell background */
+    color: #2b2c34; /* Dark text for clean contrast */
+    font-weight: bold;
+}
+
+/* Standard Table Body White Row Cells */
+table.custom-spec-table tbody td {
+    background-color: #ffffff;
+    color: #2b2c34;
+    font-weight: bold; 
+    padding-block: 25px;
+}
+
+
+/* First Column Visual Header Highlight (Prime) */
+table.custom-spec-table tbody tr:first-child th:first-child,
+table.custom-spec-table tbody th.row-highlight {
+    background-color: #AAC620 !important; /* Forces the light green background */
+    color: #2b2c34 !important;            /* Dark text for clean contrast */
+    font-weight: bold !important;
+}

@@ -1,0 +1,330 @@
+/*
+--- SECTION 1 --- 
+*/
+
+/***LEFT SIDE OF SECTION 1***/
+
+#shape-left {
+  position: relative !important;
+  background-color: transparent !important; /* Overrides the Elementor blue setting */
+  z-index: 2;
+  padding: 40px 100px 40px 40px;
+}
+
+/* 2. The dark grey polygon handles the actual background shape */
+#shape-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #2b2c34 !important; /* Your dark solid color */
+  clip-path: polygon(0 0, 20% 0, 2% 37%, 0% 37%) !important;
+  -webkit-clip-path: polygon(0 0, 20% 0, 2% 37%, 0% 37%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 3. The yellow-green shape (added behind and right of the dark grey) */
+#shape-left::after {
+  content: "";
+  position: absolute;
+  /* Negative top pulls it above the container, height over 100% pushes it below */
+  top: 0%;
+  left: -1.5%;
+  width: 100%;
+  height: 30%;
+  background-color: #aac620 !important; /* Yellow-green color */
+  /* Keeps the precise parallel angle matching the grey shape */
+  clip-path: polygon(0 0, 25% 0, 10% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
+  z-index: 0; /* Stays behind the grey background */
+  pointer-events: none;
+}
+
+/* 4. The image sits completely whole on top of everything */
+#shape-left .elementor-widget-image {
+  position: relative;
+  z-index: 5; /* Keeps it layered cleanly over the polygon */
+}
+
+#shape-left .elementor-widget-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*RIGHT SIDE OF SECTION 1*/
+#shape-right {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#shape-right::before {
+  content: "";
+  position: absolute;
+  top: 68%;
+  left: 70%;
+  width: 60%;
+  height: 40%;
+  /*transform-origin: bottom left;*/
+  transform: skewX(-28deg);
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.3607843137);
+  background-color: #aac620;
+  z-index: 9;
+}
+
+#shape-right::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+  width: 50%;
+  height: 40%;
+  transform-origin: bottom left;
+  transform: skewX(-28deg);
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.3607843137);
+  background-color: #145629;
+  z-index: 11;
+}
+
+
+
+
+
+/*
+--- TABLE ---
+*/
+
+/* Table Base & Outer Spacing */
+table.custom-spec-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 40px auto; /* Adds clean spacing above and below the table */
+    font-family: Arial, sans-serif;
+    font-size: 1rem !important;
+    font-weight: 400;
+    border: 1px solid #707070;
+    color: #2b2c34;
+    box-sizing: border-box;
+}
+
+/* Force All Cells and Text to be Centered with Pure Padding for Height */
+table.custom-spec-table th, 
+table.custom-spec-table td {
+    border: 1px solid #707070;
+    padding: 45px 15px; /* Generous top/bottom padding to cleanly double the height */
+    line-height: 1.4 !important; 
+    vertical-align: middle;
+    text-align: center !important; 
+    text-transform: none !important;
+}
+
+/* Header Specific Styles (thead) */
+table.custom-spec-table thead tr {
+    background-color: #2b2c34; /* Dark slate blue background */
+}
+
+table.custom-spec-table thead th {
+    color: #AAC620; /* Bright theme lime-yellow/green typography */
+    font-weight: bold;
+}
+
+/* First Column Visual Header Highlight (Prime) */
+table.custom-spec-table tbody th.row-highlight {
+    background-color: #AAC620; /* Bright theme green cell background */
+    color: #2b2c34; /* Dark text for clean contrast */
+    font-weight: bold;
+}
+
+/* Standard Table Body White Row Cells */
+table.custom-spec-table tbody td {
+    background-color: #ffffff;
+    color: #2b2c34;
+    font-weight: bold; 
+    padding-block: 25px;
+}
+
+
+
+
+
+/*---- SECTION 3 ----*/
+
+/*
+**RIGHT SIDE OF SLIDE 3**
+*/
+#shape-right-3 {
+    position: relative;
+    overflow: visible;
+    z-index: 10;
+}
+
+#shape-right-3::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 300%;
+    height: 100%;
+    transform: skewX(-28deg);
+    /*box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);*/
+    background-color: #2b2c34 !important; /* Your dark solid color */
+    border-color: #2b2c34 !important;;
+    z-index: 0;
+}
+
+#shape-right-3::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 103%;
+    width: 50%;
+    height: 90%;
+    transform-origin: bottom left;
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+     background-color: #aac620 !important; /* Yellow-green color */
+    z-index: -1;
+}
+
+@media(min-width: 1500px) {
+    #shape-right-3::after {
+        right: 143%;
+    }
+}
+
+@media(min-width: 1800px) {
+    #shape-right-3::after {
+        right: 138%;
+    }
+}
+
+@media(min-width: 2000px) {
+    #shape-right-3::after {
+        right: 134%;
+    }
+}
+
+
+
+
+
+
+
+/*
+--- SECTION 6 --- 
+*/
+
+
+.underline {
+      text-underline-offset: 20px;
+}
+
+/***LEFT SIDE OF SECTION 6***/
+
+#shape-left-2 {
+  position: relative !important;
+  background-color: transparent !important; /* Overrides the Elementor blue setting */
+  z-index: 2;
+  padding: 40px 100px 40px 40px;
+  overflow: visible !important;
+}
+
+/* 2. The dark grey polygon handles the actual background shape */
+#shape-left-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 105%;
+  /*bottom: 0;*/
+  background-color: #2b2c34 !important; /* Your dark solid color */
+  clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
+  z-index: 1; 
+  pointer-events: none;
+}
+
+
+/* 3. The yellow-green shape (added behind and right of the dark grey) */
+#shape-left-2::after {
+  content: "";
+  position: absolute;
+  /* Negative top pulls it above the container, height over 100% pushes it below */
+  top: 10%; 
+  left: -1.5%; 
+  width: 100%; 
+  height: 110%; 
+  background-color: #aac620 !important; /* Yellow-green color */
+  /* Keeps the precise parallel angle matching the grey shape */
+  clip-path: polygon(0 0, 75% 0, 8% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
+  z-index: 0; /* Stays behind the grey background */
+  pointer-events: none;
+}
+
+
+
+
+/* 4. The image sits completely whole on top of everything */
+#shape-left-2 .elementor-widget-image {
+  position: relative;
+  z-index: 5; /* Keeps it layered cleanly over the polygon */
+}
+
+#shape-left-2 .elementor-widget-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+/*
+--- SECTION 7 --- 
+*/
+
+
+/*RIGHT SIDE OF SECTION 1*/
+#shape-right-7 {
+  position: relative;
+  overflow: visible;
+  z-index: 0;
+}
+
+#shape-right-7::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  width: 60%;
+  height: 90%;
+  /*transform-origin: bottom left;*/
+  transform: skewX(-28deg);
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.3607843137);
+  background-color: #aac620;
+  z-index: 9;
+}
+
+#shape-right-7::after {
+  content: "";
+  position: absolute;
+  top: 18%;
+  left: 83%;
+  width: 50%;
+  height: 100%;
+  transform-origin: bottom left;
+  transform: skewX(-28deg);
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.3607843137);
+  background-color: #145629;
+  z-index: 11;
+}
+
