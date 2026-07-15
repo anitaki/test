@@ -1,0 +1,171 @@
+/*
+**BUTTON TORNADO CYAN**
+*/
+
+/* 1. Ensure the container behaves correctly and elements align */
+#btn-cyan .etheme-button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* 2. Style the actual button text link */
+#btn-cyan .elementor-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.1875rem !important;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .0625rem;
+    background-color: transparent !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 3. Common rules for both left and right brackets */
+#btn-cyan .elementor-button::before,
+#btn-cyan .elementor-button::after {
+    content: "" !important;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    border-top: 4px solid #34B2C6 !important;
+    border-bottom: 4px solid #34B2C6 !important;
+    box-sizing: border-box;
+    pointer-events: none;
+    background-color: transparent !important;
+    transform: none !important;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 4. Left Bracket specific properties */
+#btn-cyan .elementor-button::before {
+    left: 0;
+    border-left: 4px solid #34B2C6 !important;
+    border-right: none !important;
+}
+
+/* 5. Right Bracket specific properties */
+#btn-cyan .elementor-button::after {
+    right: 0;
+    border-right: 4px solid #34B2C6 !important;
+    border-left: none !important;
+}
+
+/* ===
+   HOVER STATES: Synced across all elements simultaneously
+   Hover fill darkened from #34B2C6 to #2C97A8 (15% darker) so the fill
+   visibly changes. For WCAG AA on the button label use #26808F instead.
+=== */
+
+#btn-cyan .elementor-button:hover {
+    background-color: #2C97A8 !important;
+    color: white !important;
+    border-radius: 2px;
+}
+
+/* Left bracket — FIXED: added the missing space before .elementor-button */
+#btn-cyan .elementor-button:hover::before {
+    border-top-color: #2C97A8 !important;
+    border-bottom-color: #2C97A8 !important;
+    border-left-color: #2C97A8 !important;
+    background-color: transparent !important;
+}
+
+/* Right bracket converts smoothly at the exact same pace */
+#btn-cyan .elementor-button:hover::after {
+    border-top-color: #2C97A8 !important;
+    border-bottom-color: #2C97A8 !important;
+    border-right-color: #2C97A8 !important;
+    background-color: transparent !important;
+}
+
+
+
+
+/*
+**BUTTON BRAND GREEN**
+*/
+
+/* 1. Ensure the container behaves correctly and elements align */
+#btn-green .etheme-button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* 2. Style the actual button text link */
+#btn-green .elementor-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.1875rem !important;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .0625rem;
+    background-color: transparent !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 3. Common rules for both left and right brackets */
+#btn-green .elementor-button::before,
+#btn-green .elementor-button::after {
+    content: "" !important;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    border-top: 4px solid #209578 !important;
+    border-bottom: 4px solid #209578 !important;
+    box-sizing: border-box;
+    pointer-events: none;
+    background-color: transparent !important;
+    transform: none !important;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 4. Left Bracket specific properties */
+#btn-green .elementor-button::before {
+    left: 0;
+    border-left: 4px solid #209578 !important;
+    border-right: none !important;
+}
+
+/* 5. Right Bracket specific properties */
+#btn-green .elementor-button::after {
+    right: 0;
+    border-right: 4px solid #209578 !important;
+    border-left: none !important;
+}
+
+/* ===
+   HOVER STATES: Synced across all elements simultaneously
+=== */
+
+#btn-green .elementor-button:hover {
+    background-color: #1B7F66 !important;
+    color: white !important;
+    border-radius: 2px;
+}
+
+/* Left bracket — FIXED: added the missing space before .elementor-button
+   (this is why the left bracket didn't change colour on hover) */
+#btn-green .elementor-button:hover::before {
+    border-top-color: #1B7F66 !important;
+    border-bottom-color: #1B7F66 !important;
+    border-left-color: #1B7F66 !important;
+    background-color: transparent !important;
+}
+
+/* Right bracket converts smoothly at the exact same pace */
+#btn-green .elementor-button:hover::after {
+    border-top-color: #1B7F66 !important;
+    border-bottom-color: #1B7F66 !important;
+    border-right-color: #1B7F66 !important;
+    background-color: transparent !important;
+}

@@ -3,6 +3,94 @@
 }
 
 
+/*
+**BUTTON TORNADO CYAN**
+*/
+
+/* 1. Ensure the container behaves correctly and elements align */
+#btn-cyan .etheme-button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* 2. Style the actual button text link */
+#btn-cyan .elementor-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.1875rem !important;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .0625rem;
+    background-color: transparent !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 3. Common rules for both left and right brackets */
+#btn-cyan .elementor-button::before,
+#btn-cyan .elementor-button::after {
+    content: "" !important;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    border-top: 4px solid #aac620 !important;
+    border-bottom: 4px solid #aac620 !important;
+    box-sizing: border-box;
+    pointer-events: none;
+    background-color: transparent !important;
+    transform: none !important;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 4. Left Bracket specific properties */
+#btn-cyan .elementor-button::before {
+    left: 0;
+    border-left: 4px solid #aac620 !important;
+    border-right: none !important;
+}
+
+/* 5. Right Bracket specific properties */
+#btn-cyan .elementor-button::after {
+    right: 0;
+    border-right: 4px solid #aac620 !important;
+    border-left: none !important;
+}
+
+/* ===
+   HOVER STATES: Synced across all elements simultaneously
+   Hover fill darkened from #34B2C6 to #2C97A8 (15% darker) so the fill
+   visibly changes. For WCAG AA on the button label use #26808F instead.
+=== */
+
+#btn-cyan .elementor-button:hover {
+    background-color: #209578 !important;
+    color: white !important;
+    border-radius: 2px;
+}
+
+/* Left bracket — FIXED: added the missing space before .elementor-button */
+#btn-cyan .elementor-button:hover::before {
+    border-top-color: #209578 !important;
+    border-bottom-color: #209578 !important;
+    border-left-color: #209578 !important;
+    background-color: transparent !important;
+}
+
+/* Right bracket converts smoothly at the exact same pace */
+#btn-cyan .elementor-button:hover::after {
+    border-top-color: #209578 !important;
+    border-bottom-color: #209578 !important;
+    border-right-color: #209578 !important;
+    background-color: transparent !important;
+}
+
+
+
+
 
 
 /*
@@ -25,7 +113,7 @@
   top: 0;
   left: -2.5%;
   height: 125%;
-  background-color: #2b2c34 !important; /* Your dark solid color */
+  background-color: #209578 !important; /* Your dark solid color */
   clip-path: polygon(0 0, 15% 0, 5% 28%, 0% 28%) !important;
   -webkit-clip-path: polygon(0 0, 15% 0, 5% 28%, 0% 28%);
   z-index: 1;
@@ -78,8 +166,8 @@
     left: -1px;
     width: 40px;
     height: 40px;
-    border-top: 2px solid #2d6a2d;
-    border-left: 2px solid #2d6a2d;
+    border-top: 2px solid #209578;
+    border-left: 2px solid #209578;
 }
 
 #img-wrap::after {
@@ -89,8 +177,8 @@
     right: -1px;
     width: 40px;
     height: 40px;
-    border-bottom: 2px solid #2d6a2d;
-    border-right: 2px solid #2d6a2d;
+    border-bottom: 2px solid #209578;
+    border-right: 2px solid #209578;
 }
 
 
@@ -103,7 +191,7 @@
 /*Title Underline*/
 #underline-title h2 {
 text-underline-offset: 14px !important;
-text-decoration-color: #2d6a2d !important;
+text-decoration-color: #209578 !important;
 }
 
 
@@ -198,12 +286,11 @@ table.custom-spec-table tbody th.row-highlight {
 /* Dark solid left block */
 #shape-left-6 {
   position: relative;
-  background-color: #ffffff;
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
   z-index: 2;
   padding: 40px 100px 40px 40px;
   box-shadow: 0 33px 30px rgba(0,0,0,.168627451);
-  background-color: #F2F2EE;
+  background-color: #F1F3F3;
  
 }
 
@@ -335,7 +422,7 @@ table.custom-spec-table tbody th.row-highlight {
     transform-origin: bottom left;
     transform: skewX(-28deg);
     box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
-    background-color: #145629;
+    background-color: #209578;
     z-index: 110;
 }
 

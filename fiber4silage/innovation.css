@@ -248,3 +248,60 @@
 
 
 
+
+
+
+
+/*SECTION 4 - PRODUCTS*/
+
+
+/*RIGHT SIDE OF SLIDE 4*/
+
+#shape-right-4 {
+    position: relative;
+    overflow: visible;
+    z-index: 20;
+}
+
+#shape-right-4::before {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 87.5%;
+    width: 30%;
+    height: 36%;
+    /*transform-origin: bottom left;*/
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+    background-color: #aac620;
+    z-index: -2;
+}
+
+#shape-right-4::after {
+    content: "";
+    position: absolute;
+    top: 75%;
+    right: -15%;
+    width: 33%;
+    height: 36%;
+    transform-origin: bottom left;
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+    background-color: #145629;
+    z-index: -1;
+}
+
+@media(min-width: 1500px) {
+    #shape-right-1::after {
+            left: 58%;
+    }
+}
+
+
+
+
+
+
+
+
+
