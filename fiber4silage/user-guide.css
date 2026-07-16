@@ -19,8 +19,8 @@
   left: 0;
   right: 0;
   background-color: #2b2c34 !important; /* Your dark solid color */
-  clip-path: polygon(0 0, 20% 0, 2% 37%, 0% 37%) !important;
-  -webkit-clip-path: polygon(0 0, 20% 0, 2% 37%, 0% 37%);
+  clip-path: polygon(0 0, 15% 0, 2% 37%, 0% 37%) !important;
+  -webkit-clip-path: polygon(0 0, 15% 0, 2% 37%, 0% 37%);
   z-index: 1;
   pointer-events: none;
 }
@@ -36,7 +36,7 @@
   height: 30%;
   background-color: #aac620 !important; /* Yellow-green color */
   /* Keeps the precise parallel angle matching the grey shape */
-  clip-path: polygon(0 0, 25% 0, 10% 100%, 0% 100%) !important;
+  clip-path: polygon(0 0, 20% 0, 9% 100%, 0% 100%) !important;
   -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
   z-index: 0; /* Stays behind the grey background */
   pointer-events: none;
@@ -155,7 +155,8 @@ table.custom-spec-table tbody td {
 /*---- SECTION 3 ----*/
 
 /*
-**RIGHT SIDE OF SLIDE 3**
+**RIGHT SIDE OF SLIDE 3 
+ROW 1**
 */
 #shape-right-3 {
     position: relative;
@@ -209,6 +210,53 @@ table.custom-spec-table tbody td {
     }
 }
 
+
+
+
+/*
+**RIGHT SIDE OF SLIDE 3 
+ROW 2**
+*/
+
+#shape-right-3b {
+    position: relative;
+    overflow: visible;
+    z-index: 20;
+}
+
+#shape-right-3b::before {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 87.5%;
+    width: 30%;
+    height: 36%;
+    /*transform-origin: bottom left;*/
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+    background-color: #aac620;
+    z-index: -2;
+}
+
+#shape-right-3b::after {
+    content: "";
+    position: absolute;
+    top: 75%;
+    right: -15%;
+    width: 33%;
+    height: 36%;
+    transform-origin: bottom left;
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+    background-color: #145629;
+    z-index: -1;
+}
+
+@media(min-width: 1500px) {
+    #shape-right-3b::after {
+            left: 58%;
+    }
+}
 
 
 

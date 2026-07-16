@@ -159,6 +159,8 @@
 --- SECTION 3 ---
 */
 
+/*IMAGE BORDERS*/
+
 #img-wrap::before {
     content: '';
     position: absolute;
@@ -180,6 +182,51 @@
     border-bottom: 2px solid #209578;
     border-right: 2px solid #209578;
 }
+
+
+
+
+/*RIGHT SIDE OF SLIDE 3*/
+#shape-right-3 {
+    position: relative;
+    overflow: visible;
+    z-index: 20;
+}
+
+#shape-right-3::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    width: 60%;
+    height: 100%;
+    /*transform-origin: bottom left;*/
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+    background-color: #AAC620;
+    z-index: 9;
+}
+
+#shape-right-3::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 64%;
+    width: 60%;
+    height: 110%;
+    transform-origin: bottom left;
+    transform: skewX(-28deg);
+    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
+    background-color: #209578;
+    z-index: 110;
+}
+
+@media(min-width: 1500px) {
+    #shape-right-3::after {
+            left: 58%;
+    }
+}
+
 
 
 
