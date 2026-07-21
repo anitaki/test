@@ -1,14 +1,16 @@
 /*MENU ITEMS*/
 .e--pointer-underline .elementor-item:after {
-  background-color: #8bc34a;
+    background-color: #8bc34a;
 }
+
 
 /*HEADER*/
 #menu-wrapper {
-  z-index: 5 !important;
-  padding-left: 60px;
-  clip-path: none !important;
+    z-index: 5 !important;
+    padding-left: 60px;
+   /*clip-path: none !important;*/
 }
+
 
 #menu-wrapper .elementor-item:hover,
 #menu-wrapper .elementor-item.elementor-item-active {
@@ -18,12 +20,17 @@
   background-color: #8bc34a !important;
 }
 
+
 #logo-wrapper {
-  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
-  z-index: 3;
-  padding-right: 80px;
-  padding-left: 20px;
+   clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+    z-index: 3;
+    padding-right: 80px;
+    padding-left: 20px;
 }
+
+
+
+
 
 /* 1. The dark green nav bar */
 .elementor-element-fa6cb76 {
@@ -45,9 +52,12 @@
   position: relative;
 }
 
+
+
+
 /* 4. Lime green diagonal accent strip below the bar */
 .elementor-element-fa6cb76::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -30px;
@@ -69,8 +79,8 @@
 #logo-wrapper {
   position: relative;
   z-index: 20;
-  align-self: stretch;
-  margin-bottom: -10px; /* extend 10px past the bottom */
+  align-self: stretch;     
+  margin-bottom: -10px;       /* extend 10px past the bottom */
   display: flex;
-  align-items: center;
+  align-items: center;     
 }

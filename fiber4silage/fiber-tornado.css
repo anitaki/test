@@ -390,7 +390,7 @@ table.custom-spec-table tbody th.row-highlight {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #209578 !important; /* Your dark solid color */
+  background-color: #2b2c34 !important; /* Your dark solid color */
   clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%) !important;
   -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
   z-index: 1; 
