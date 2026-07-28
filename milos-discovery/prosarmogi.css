@@ -1,0 +1,214 @@
+/* Delete user login from header */
+.user-area {
+    display: none !important;
+}
+
+
+/* Listing card h2 height */
+.lf-item-info-2 h4,
+h4.case27-primary-text.listing-preview-title {
+line-height: 18px;	
+}
+
+
+
+/* FOOTER */
+
+/* Footer menu */
+.c_widget .menu>li>a {
+    color: #242429;
+    font-size: 14px;
+    font-weight: 400 !important;
+    transition: .2s ease;
+}
+
+.c_widget .menu>li>a:hover {
+		color: rgb(4, 159, 191); /* 	turquoise */
+}
+
+/* Email in footer */
+.footer-mail-link {
+	color: rgb(225, 151, 64); /* 	orange */
+	font-weight: 500;
+}
+
+.footer-mail-link:hover {
+	color: rgb(4, 159, 191); /* 	turquoise */
+}
+
+
+/* Footer alignment */
+/* 1. Make the first .row a flex container */
+.footer > .container > .row:first-of-type {
+  display: flex;
+  flex-wrap: wrap; /* Allows columns to wrap cleanly on mobile screens */
+  align-items: stretch; /* Forces all columns to match the height of the tallest one */
+}
+
+/* 2. Ensure each column fills the height of the flex container */
+.footer > .container > .row:first-of-type > .c_widget {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alignment of columns */
+.footer > .container > .row:first-of-type > .c_widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+		align-items: center;
+}
+
+/* Alignment of menu in col */
+/* .footer > .container > .row:first-of-type > .c_widget:last-child {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Alignment of MENU title */
+.footer .c_widget_title {
+    padding-bottom: 5px;
+    width: 25%;
+    text-align: left;
+}
+
+
+
+
+
+
+/* LOGO PAGE LOADER */
+
+/* Force the loader container to cover the entire screen */
+.loader-bg.main-loader.site-logo-loader {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    
+
+    
+    /* Change screen background color here if needed */
+    background-color: rgb(32, 33, 37); 
+}
+
+/* Make the logo image larger while preserving scale and aspect ratio */
+.site-logo-loader img {
+    width: 80px !important;     
+    max-width: 20vw !important; 
+    height: auto !important;     
+    max-height: none !important; 
+    object-fit: contain; 
+    margin: 0 auto !important;
+}
+
+
+
+
+/*CONTACT US */
+.contact-form-wrapper {
+    padding: 40px;
+    border-radius: 20px;
+   /* box-shadow: 0 10px 30px rgba(0,0,0,0.08);*/
+	   background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+
+.contact-form-wrapper label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+
+.form-row label {
+    width: 50%;
+}
+
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+.contact-form-wrapper textarea {
+    height: 150px;
+}
+
+
+.contact-form-wrapper input:focus,
+.contact-form-wrapper textarea:focus {
+    border-color: #000;
+    outline: none;
+}
+
+
+.contact-form-wrapper .wpcf7-submit {
+    background: #000;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+	    display: inline-block;
+    margin: 20px auto 0;
+	text-align:center;
+	width:150px;
+	box-sizing: border-box;
+	    text-indent: -15px;
+}
+.contact-form-wrapper p:has(.wpcf7-submit) {
+    text-align: center;
+
+}
+
+
+.contact-form-wrapper .wpcf7-submit:hover {
+    opacity: 0.8;
+}
+
+
+@media(max-width:768px){
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        width:100%;
+    }
+}
+
+
+
+/* EXPLORE PAGE SECTIONS / MAP  */
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  /* Hide the map column on the Explore results (Places + Events) by default */
+  #c27-explore-listings.finder-two-columns:not(.map-expanded) #finderMap {
+    display: none !important;
+  }
+  /* Let the results fill the freed space */
+  #c27-explore-listings.finder-two-columns:not(.map-expanded) #finderListings {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    max-width: none !important;
+    right: 0 !important;
+  }
+}
