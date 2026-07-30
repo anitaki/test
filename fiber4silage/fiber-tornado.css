@@ -478,3 +478,88 @@ table.custom-spec-table tbody th.row-highlight {
 
 
 
+
+
+
+/* 
+   BUTTON DARK GREEN  */
+
+/* 1. Ensure the container behaves correctly and elements align */
+#btn-dark-green .etheme-button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* 2. Style the actual button text link */
+#btn-dark-green .elementor-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.1875rem !important;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .0625rem;
+    background-color: transparent !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 3. Common rules for both left and right brackets */
+#btn-dark-green .elementor-button::before,
+#btn-dark-green .elementor-button::after {
+    content: "" !important;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    box-sizing: border-box;
+    pointer-events: none;
+    background-color: transparent !important;
+    transform: none !important;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+}
+
+/* 4. Initial bracket colors & placement */
+#btn-dark-green .elementor-button::before,
+#btn-dark-green .elementor-button::after {
+    border-top: 4px solid #209578 !important;
+    border-bottom: 4px solid #209578 !important;
+}
+
+#btn-dark-green .elementor-button::before {
+    left: 0;
+    border-left: 4px solid #209578 !important;
+    border-right: none !important;
+}
+
+#btn-dark-green .elementor-button::after {
+    right: 0;
+    border-right: 4px solid #209578 !important;
+    border-left: none !important;
+}
+
+/* ==========================================================================
+   HOVER STATES
+   ========================================================================== */
+
+#btn-dark-green .elementor-button:hover {
+    background-color: #34B2C6 !important;
+    color: white !important;
+    border-radius: 2px;
+}
+
+#btn-dark-green .elementor-button:hover::before {
+    border-top-color: #34B2C6 !important;
+    border-bottom-color: #34B2C6 !important;
+    border-left-color: #34B2C6 !important;
+    background-color: transparent !important;
+}
+
+#btn-dark-green .elementor-button:hover::after {
+    border-top-color: #34B2C6 !important;
+    border-bottom-color: #34B2C6 !important;
+    border-right-color: #34B2C6 !important;
+    background-color: transparent !important;
+}

@@ -197,7 +197,7 @@
     content: "";
     position: absolute;
     top: 15%;
-    left: 75%;
+    left: 22vw;
     width: 60%;
     height: 100%;
     /*transform-origin: bottom left;*/
@@ -210,9 +210,9 @@
 #shape-right-3::after {
     content: "";
     position: absolute;
-    top: 20%;
-    left: 64%;
-    width: 60%;
+    top: 29%;
+    left: 17vw;
+    width: 90%;
     height: 110%;
     transform-origin: bottom left;
     transform: skewX(-28deg);
@@ -221,9 +221,15 @@
     z-index: 110;
 }
 
-@media(min-width: 1500px) {
+@media(min-width: 1800px) {
     #shape-right-3::after {
-            left: 58%;
+            left:19vw;
+    }
+}
+
+@media(min-width: 2400px) {
+    #shape-right-3::after {
+            left: 20vw;
     }
 }
 

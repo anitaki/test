@@ -1,0 +1,101 @@
+/*Athens office contact cards*/
+.address-box .elementor-widget-container {
+    min-height:270px !important;
+}
+
+.terms {
+    color: red;
+}
+
+
+/*Hover animation dark cards*/
+.etheme-icon-box {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.etheme-icon-box:hover {
+    transform: translateY(-5px);
+}
+
+.etheme-icon-box-icon {
+    transition: all 0.3s ease;
+}
+
+.etheme-icon-box:hover .etheme-icon-box-icon {
+    transform: scale(1.15);
+}
+
+.etheme-icon-box-title {
+    transition: color 0.3s ease;
+}
+
+.etheme-icon-box:hover .etheme-icon-box-title {
+    color: #5A8F29;
+}
+
+.etheme-icon-box-description {
+    transition: color 0.3s ease;
+}
+
+.etheme-icon-box:hover .etheme-icon-box-description {
+    color: #333;
+}
+
+
+
+/*Map shadow / hover animation*/
+
+.maps {
+  position: relative;
+  border-radius: 16px; 
+  overflow: hidden;
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+  /* Nice soft shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 
+              0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* The Dark Overlay */
+.maps::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Adjust the 0.35 value to make the initial state darker (closer to 1) or lighter */
+  background-color: rgba(0, 0, 0, 0.35); 
+  
+  /* CRITICAL: Allows clicks, scrolls, and drags to pass directly through to the map */
+  pointer-events: none; 
+  
+  /* Smooth fade transition */
+  transition: background-color 0.3s ease;
+}
+
+
+
+/*Images of Megaplast overlay*/
+.buildings::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  
+  /* Adjust the 0.35 value to make the initial state darker (closer to 1) or lighter */
+  background-color: rgba(0, 0, 0, 0.05); 
+  
+  /* CRITICAL: Allows clicks, scrolls, and drags to pass directly through to the map */
+  pointer-events: none; 
+  
+  /* Smooth fade transition */
+  transition: background-color 0.3s ease;
+}

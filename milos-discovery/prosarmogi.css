@@ -4,12 +4,19 @@
 }
 
 
+
+/* LISTING CARDS */
+
 /* Listing card h2 height */
 .lf-item-info-2 h4,
 h4.case27-primary-text.listing-preview-title {
 line-height: 18px;	
 }
 
+/* Remove bookmark button from card */
+a.c27-bookmark-button {
+    display: none !important;
+}
 
 
 /* FOOTER */
@@ -59,12 +66,6 @@ line-height: 18px;
 		align-items: center;
 }
 
-/* Alignment of menu in col */
-/* .footer > .container > .row:first-of-type > .c_widget:last-child {
-    display: flex;
-    flex-direction: column;
-} */
-
 /* Alignment of MENU title */
 .footer .c_widget_title {
     padding-bottom: 5px;
@@ -72,7 +73,9 @@ line-height: 18px;
     text-align: left;
 }
 
-
+.footer .c_widget {
+    line-height: 26px !important;
+}
 
 
 
@@ -212,3 +215,140 @@ line-height: 18px;
     right: 0 !important;
   }
 }
+
+
+
+/* Explore page Advanced filter - Remove order by filter */
+
+.form-group.explore-filter.orderby-filter.md-group {
+    display: none;
+}
+
+
+/* SINGLE LISTING PAGE */
+/* 
+Remove contact form / author sections from each listing */
+.block-type-author {
+	display: none;
+}
+
+
+/* GTRANSLATE LANGUAGE SWITCHER */
+/* Container & Base Typography */
+#gt_float_wrapper,
+.gt_float_switcher,
+.gt_float_switcher a,
+.gt_float_switcher .gt-selected {
+    font-family: 'Manrope', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    
+    /* Fixes typing cursor issue */
+    cursor: pointer !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+}
+
+/* Base Floating Switcher State */
+.gt_float_switcher {
+    position: relative !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    overflow: visible !important;
+}
+
+/* Flag Size Adjustment */
+.gt_float_switcher img {
+    width: 18px !important;
+    height: auto !important;
+    vertical-align: middle !important;
+}
+
+/* Selected Language Trigger */
+.gt_float_switcher .gt-selected {
+    background: transparent !important;
+    padding: 4px 8px !important;
+}
+
+.gt_float_switcher .gt-current-lang {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    color: #ffffff !important;
+}
+
+.gt_float_switcher .gt-lang-code {
+    color: #ffffff !important;
+    cursor: pointer !important;
+}
+
+/* Fix Arrow: Overriding GTranslate's default SVG fill with a white (#ffffff) SVG */
+.gt_float_switcher .gt_float_switcher-arrow {
+    display: inline-block !important;
+    height: 12px !important;
+    width: 12px !important;
+    margin-left: 4px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 285 285'><path d='M282 76.5l-14.2-14.3a9 9 0 0 0-13.1 0L142.5 174.4 30.3 62.2a9 9 0 0 0-13.2 0L3 76.5a9 9 0 0 0 0 13.1l133 133a9 9 0 0 0 13.1 0l133-133a9 9 0 0 0 0-13z' style='fill:%23ffffff'/></svg>") !important;
+}
+
+/* Dropdown Menu (White Background, Positional & Visibility Fixes) */
+.gt_float_switcher .gt_options {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+    
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 4px !important;
+    padding: 8px 0 !important;
+    
+    max-height: 280px !important;
+    overflow-y: auto !important;
+    z-index: 99999 !important;
+    width: max-content !important;
+    min-width: 100% !important;
+}
+
+/* Dropdown Item Links */
+.gt_float_switcher .gt_options a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 6px 14px !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    transition: background-color 0.2s ease !important;
+}
+
+/* Hover & Active Options */
+.gt_float_switcher .gt_options a:hover,
+.gt_float_switcher .gt_options a.gt-current {
+    background-color: #f1f2f3 !important;
+    color: #000000 !important;
+}
+
+
+/* Review tab */
+
+/* Add spacing between total stars and reviews and enlarge rate us button */
+.wp-gr .wp-google-list .grw-header-inner {
+    padding: 0 0 60px 0!important;
+}
+
+/* Enlarge rate us button */
+.wp-gr .wp-google-wr a {
+    padding: 12px 25px 12px !important;
+	margin-top: 8px;
+}
+
+/* Enlarge stars section */
+span.rpi-stars {
+    font-size: 20px !important;
+} 
