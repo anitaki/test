@@ -1,9 +1,23 @@
+/**** HEADER *****/
+
 /* Delete user login from header */
 .user-area {
     display: none !important;
 }
 
+.mob-sign-in {
+    display: none !important;
+}
 
+.user-profile-dropdown {
+    display: none;
+}
+
+/* Hamburger menu teal color */
+.material-icons.menu:before, .mi.menu:before {
+    content: "\e5d2";
+    color: #049fbf;
+}
 
 /* LISTING CARDS */
 
@@ -69,16 +83,91 @@ a.c27-bookmark-button {
 /* Alignment of MENU title */
 .footer .c_widget_title {
     padding-bottom: 5px;
-    width: 25%;
+    width: 100%;
     text-align: left;
+    padding-left: 25%;
 }
 
 .footer .c_widget {
     line-height: 26px !important;
 }
 
+.menu-footer-info-container {
+    width: 100%;
+    padding-left: 25%;
+}
+
+/* Weather widget σαν 2nd child στο mobile, και όχι στο τέλος */
+@media (max-width: 991px) {
+  /* Turn the row into a flex container on mobile/tablet */
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Target the 3rd widget (Weather) and place it 2nd */
+  .row > .c_widget:nth-child(3) {
+    order: 2;
+  }
+
+  /* Explicitly position the other two widgets */
+  .row > .c_widget:nth-child(1) {
+    order: 1; /* Logo/About stays first */
+  }
+
+  .row > .c_widget:nth-child(2) {
+    order: 3; /* Menu moves to last */
+  }
+}
+
+/* COPYRIGHTS SECTION */
+.copyrights-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media(max-width: 768px) {
+.copyrights-wrapper {
+	justify-content: center;
+	gap: 1rem;
+}
+}
+
+/* FOOTER MEDIA QUERIES */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .col-lg-4.col-sm-6.col-xs-12.c_widget.woocommerce:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Optional: keeps the weather widget card contained rather than stretching edge-to-edge */
+  .col-lg-4.col-sm-6.col-xs-12.c_widget.woocommerce:last-child .spl-weather-vertical-card {
+    max-width: 320px;
+    width: 100%;
+  }
+}
 
 
+@media(max-width: 768px) {
+	.wp-block-image.footer-logo {
+    text-align: center;
+}
+	
+	.footer-text {
+    text-align: center;
+		padding-inline: 15px;
+}
+}
+
+.menu-footer-info-container {
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
 
 /* LOGO PAGE LOADER */
 
@@ -352,3 +441,17 @@ Remove contact form / author sections from each listing */
 span.rpi-stars {
     font-size: 20px !important;
 } 
+
+/* See all reviews button */
+.wp-gr .wp-google-url {
+    margin-top: 40px !important;
+    margin-bottom: 25px !important;
+}
+
+
+/* HEADER */
+@media only screen and (min-width: 1201px) {
+    .main-nav .socials-in-menu a> i {
+        display: block !important;
+    }
+}

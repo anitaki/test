@@ -1,35 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<label for="name"> Ονοματεπωνυμο: <span class="required">*</span> </label>[text* your-name id:name]
+[honeypot fname]
+<label for="email"> E-mail: <span class="required">*</span> </label>[email* email id:email]
 
-    <style>
-      body {
+<label for="message"> ΤΟ ΜΗΝΥΜΑ ΣΑΣ: <span class="required">*</span> </label>[textarea* message id:message rows:4 placeholder]
+[honeypot vbmb-6764]
+[acceptance acceptance-185] Αποδέχομαι τους <a href="/personal-data">όρους πολιτικής απορρήτου</a> [/acceptance]
 
-      }
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-
-      thead {
-        border-bottom: 3px solid;
-      }
-
-      tr {
-        display: table-row;
-        vertical-align: inherit;
-        unicode-bidi: isolate;
-        border-color: inherit;
-      }
-    </style>
-  </head>
-  <body>
-  
-
-
-
-</body>
-</html>
+[submit class:btn class:btn-sm class:btn-primary "ΑΠΟΣΤΟΛΗ"]
