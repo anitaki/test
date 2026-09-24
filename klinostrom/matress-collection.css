@@ -1,0 +1,197 @@
+/****CUSTOM BANNERS****/
+
+/* 1. Base Container Setup & Border Radius */
+.et-banner.custom-banner {
+    aspect-ratio: 9 / 10;
+    width: 100%;
+    border-radius: 31px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background image scaling */
+.et-banner.custom-banner .et-banner-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.et-banner.custom-banner:hover .et-banner-main-image {
+    transform: scale(1.05);
+}
+
+/* 2. Color Overlay Effect (#79b0b5 & 0.788 opacity) */
+.et-banner.custom-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #79b0b5;
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.et-banner.custom-banner:hover::after {
+    opacity: 0.788;
+}
+
+/* 3. Text Container Setup */
+.et-banner.custom-banner .et-banner-content {
+    z-index: 2;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Anchored from bottom */
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+}
+
+.et-banner.custom-banner .et-banner-text-inner {
+    width: 100%;
+}
+
+/* Title & Subtitle - Start shifted down (middle look) */
+.et-banner.custom-banner .et-banner-title,
+.et-banner.custom-banner .et-banner-subtitle {
+    color: #ffffff;
+    transform: translate3d(0, 35px, 0); /* Initial offset towards middle */
+    will-change: transform;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.et-banner.custom-banner .et-banner-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.et-banner.custom-banner .et-banner-subtitle {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+/* Paragraph - Starts 35px down with zero opacity */
+.et-banner.custom-banner .et-banner-paragraph {
+    color: #ffffff;
+    line-height: 1.4;
+    margin-top: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, 35px, 0); /* Identical 35px offset */
+    will-change: transform, opacity;
+    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.35s step-after;
+}
+
+/* 4. Synchronized Hover State (All elements move up by 35px together) */
+.et-banner.custom-banner:hover .et-banner-title,
+.et-banner.custom-banner:hover .et-banner-subtitle {
+    transform: translate3d(0, 0, 0); /* Slides up to top position */
+}
+
+.et-banner.custom-banner:hover .et-banner-paragraph {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0); /* Slides up to top position in sync */
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.05s,
+                transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0s linear;
+}
+
+.wpb_column.vc_column_container.vc_col-sm-6.et-dark-column .button-1 {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+
+
+@media (max-width: 767px) {
+    .banner-row .wpb_column {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    padding-left:0 !important;
+   
+    }
+
+    .banner-row .wpb_column:last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+
+.vc_row.wpb_row.vc_row-fluid.align-center.banner-row.vc_custom_1790064746323.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex{
+    padding-top:15px !important;
+}
+
+/****BUTTONS****/
+
+.vc_btn3-container.button-1 .vc_btn3 {
+    background-color: #79b0b5 !important;
+    color: #fff !important;
+    border-radius:30px;
+    font-size:14px;
+}
+
+.vc_btn3-container.button-1 {
+    position: relative;
+}
+
+.vc_btn3-container.button-1 .vc_btn3-icon {
+    position: absolute;
+    left:100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #79b0b5 !important;
+}
+
+.button-1 .vc_btn3-icon {
+    font-size: 40px !important;
+}
+
+.button-1 .vc_btn3 {
+    font-size: 18px !important;
+    height: 45px !important;
+ 
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    text-align: center !important;
+    justify-content:center !important;
+      padding-left: 20px !important;
+    padding-right: 20px !important;
+    display: inline-flex !important;
+    align-items: center !important;     /* Κατακόρυφο κεντράρισμα */
+      line-height: normal !important;
+}
+
+
+/*
+.wpb_column.vc_column_container.vc_col-sm-6.et-dark-column:has(.et-banner.custom-banner:hover) .button-1 {
+    transform: translate3d(0, -300px, 0);
+    padding-left:90px;
+}
+
+Το button πάνω από το overlay 
+.vc_btn3-container.button-1.vc_btn3-left.vc_custom_1790086382746.vc_do_btn {
+    position: relative !important;
+    z-index: 10 !important;
+}
+*/
+
+
+/* 1. Ομαλή μετάβαση (Transition) και για τα δύο κουμπιά */
+.button-1.vc_do_btn {
+    transition: transform 0.3s ease !important;
+}
+
+/* 2. Hover - Zoom In & Μετατόπιση προς τα δεξιά */
+.button-1.vc_do_btn:hover {
+    transform: translateX(15px) scale(1.15) !important;
+}

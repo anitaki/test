@@ -107,6 +107,38 @@ a.btn.btn-style-link.btn-color-primary.info-box-btn {
   padding: 8px;
 }
 
+@media (max-width: 991px) {
+#therapeytiki-diadikasia-box-1 .title-after_title,
+#therapeytiki-diadikasia-box-2  .title-after_title,
+#therapeytiki-diadikasia-box-3 .title-after_title,
+#therapeytiki-diadikasia-box-4  .title-after_title,
+#therapeytiki-diadikasia-box-5 .title-after_title,
+#therapeytiki-diadikasia-box-6 .title-after_title {
+        font-size: 14px !important;
+    }
+    
+#therapeytiki-diadikasia-box-1 .color-scheme-dark a,
+#therapeytiki-diadikasia-box-2 .color-scheme-dark a,
+#therapeytiki-diadikasia-box-3 .color-scheme-dark a,
+#therapeytiki-diadikasia-box-4 .color-scheme-dark a,
+#therapeytiki-diadikasia-box-5 .color-scheme-dark a,
+#therapeytiki-diadikasia-box-6 .color-scheme-dark a {
+        font-size: 16px !important;
+    }
+    
+.blog-title .title-wrapper.basel-title-size-extra-large .title-after_title, .title-wrapper.basel-title-size-large .title-after_title {
+        font-size: 14px !important;
+    }
+    
+}
+
+@media (max-width: 480px) {
+  .blog-title span.title-after_title {
+        font-size: 16px !important;
+    }
+}
+
+
 /* Quotation section */
 
 .quote-wrapper {
@@ -193,6 +225,12 @@ a.btn.btn-style-link.btn-color-primary.info-box-btn {
 }
 
 
+/*Post carousel*/
+.post-mask {
+    margin-top: 20px;
+}
+
+
 
 /* Newsletter section */
 .newsletter-home {
@@ -235,6 +273,10 @@ div#newsletter-form {
   .vc_column_container > .vc_column-inner {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  
+  .newsletter-title span.title-after_title {
+    font-size: 16px !important;
   }
 }
 

@@ -1,9 +1,41 @@
-<label for="name"> Ονοματεπωνυμο: <span class="required">*</span> </label>[text* your-name id:name]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-evenly;align-items:center">
+<label>Όνομα *
+    [text* your-name] </label>
+<label>Επώνυμο *
+    [text* your-last] </label>
+<label>Email *
+    [email* your-email] </label>
+<label>Τηλέφωνο *
+    [text* your-phone] </label>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center">
+<label>Ενήλικες *
+    [text* your-adults] </label>
 [honeypot fname]
-<label for="email"> E-mail: <span class="required">*</span> </label>[email* email id:email]
-
-<label for="message"> ΤΟ ΜΗΝΥΜΑ ΣΑΣ: <span class="required">*</span> </label>[textarea* message id:message rows:4 placeholder]
-[honeypot vbmb-6764]
-[acceptance acceptance-185] Αποδέχομαι τους <a href="/personal-data">όρους πολιτικής απορρήτου</a> [/acceptance]
-
-[submit class:btn class:btn-sm class:btn-primary "ΑΠΟΣΤΟΛΗ"]
+<label>Παιδιά (και ημερ/νίες γέννησής τους) *
+    [text* your-childrens] </label>
+<label>Αναχώρηση από *
+    [date* date-364] </label>
+<label>Αναχώρηση έως *
+    [date* date-365] </label>
+<label>Σχόλια[textarea your-message]</label>
+</div>
+[recaptcha class:captcha-contact]
+<div style="margin-top: 10px">
+[acceptance acceptance-894] Με την αποστολή αποδέχομαι τους <a href="/oroi-xrisis/" target="_blank">Όρους χρήσης</a> και την <a href="/politiki-apporitou/" target="_blank">Πολιτική Απορρήτου</a>.
+</div>
+<div style="margin-top: 5px">
+[acceptance acceptance-332 optional] Επιθυμώ να λαμβάνω ενημερώσεις για νέα, προσφορές και νέες κληρώσεις δώρων! [/acceptance]
+</div>
+[submit "Αποστολή"]
+</body>
+</html>

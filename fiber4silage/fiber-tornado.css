@@ -2,97 +2,98 @@
   padding-top: 15px;
 }
 
-
-
-
-
 /*
-**BUTTON BRAND GREEN**
+**BUTTON TORNADO CYAN**
 */
 
 /* 1. Ensure the container behaves correctly and elements align */
-#btn-green .etheme-button-wrapper {
-    display: inline-block;
-    position: relative;
+#btn-cyan .etheme-button-wrapper {
+  display: inline-block;
+  position: relative;
 }
 
 /* 2. Style the actual button text link */
-#btn-green .elementor-button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem 2.1875rem !important;
-    font-family: Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: .0625rem;
-    background-color: transparent !important;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+#btn-cyan .elementor-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 2.1875rem !important;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  background-color: transparent !important;
+  text-decoration: none;
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out !important;
 }
 
 /* 3. Common rules for both left and right brackets */
-#btn-green .elementor-button::before,
-#btn-green .elementor-button::after {
-    content: "" !important;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 30px;
-    border-top: 4px solid #34B2C6 !important;
-    border-bottom: 4px solid #34B2C6 !important;
-    box-sizing: border-box;
-    pointer-events: none;
-    background-color: transparent !important;
-    transform: none !important;
-    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+#btn-cyan .elementor-button::before,
+#btn-cyan .elementor-button::after {
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  border-top: 4px solid #aac620 !important;
+  border-bottom: 4px solid #aac620 !important;
+  box-sizing: border-box;
+  pointer-events: none;
+  background-color: transparent !important;
+  transform: none !important;
+  transition:
+    border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out !important;
 }
 
 /* 4. Left Bracket specific properties */
-#btn-green .elementor-button::before {
-    left: 0;
-    border-left: 4px solid #34B2C6 !important;
-    border-right: none !important;
+#btn-cyan .elementor-button::before {
+  left: 0;
+  border-left: 4px solid #aac620 !important;
+  border-right: none !important;
 }
 
 /* 5. Right Bracket specific properties */
-#btn-green .elementor-button::after {
-    right: 0;
-    border-right: 4px solid #34B2C6 !important;
-    border-left: none !important;
+#btn-cyan .elementor-button::after {
+  right: 0;
+  border-right: 4px solid #aac620 !important;
+  border-left: none !important;
 }
 
 /* ===
    HOVER STATES: Synced across all elements simultaneously
+   Hover fill darkened from #34B2C6 to #2C97A8 (15% darker) so the fill
+   visibly changes. For WCAG AA on the button label use #26808F instead.
 === */
 
-#btn-green .elementor-button:hover {
-    background-color: #1B7F66 !important;
-    color: white !important;
-    border-radius: 2px;
+#btn-cyan .elementor-button:hover {
+  background-color: #209578 !important;
+  color: white !important;
+  border-radius: 2px;
 }
 
-/* Left bracket — FIXED: added the missing space before .elementor-button
-   (this is why the left bracket didn't change colour on hover) */
-#btn-green .elementor-button:hover::before {
-    border-top-color: #1B7F66 !important;
-    border-bottom-color: #1B7F66 !important;
-    border-left-color: #1B7F66 !important;
-    background-color: transparent !important;
+/* Left bracket — FIXED: added the missing space before .elementor-button */
+#btn-cyan .elementor-button:hover::before {
+  border-top-color: #209578 !important;
+  border-bottom-color: #209578 !important;
+  border-left-color: #209578 !important;
+  background-color: transparent !important;
 }
 
 /* Right bracket converts smoothly at the exact same pace */
-#btn-green .elementor-button:hover::after {
-    border-top-color: #1B7F66 !important;
-    border-bottom-color: #1B7F66 !important;
-    border-right-color: #1B7F66 !important;
-    background-color: transparent !important;
+#btn-cyan .elementor-button:hover::after {
+  border-top-color: #209578 !important;
+  border-bottom-color: #209578 !important;
+  border-right-color: #209578 !important;
+  background-color: transparent !important;
 }
 
-
-
-
+/*
+--- SECTION 1 --- 
+*/
 
 /***LEFT SIDE OF SECTION 1***/
 
@@ -110,7 +111,7 @@
   top: 0;
   left: -2.5%;
   height: 125%;
-  background-color: #209578  !important; /* Your dark solid color */
+  background-color: #209578 !important; /* Your dark solid color */
   clip-path: polygon(0 0, 15% 0, 5% 28%, 0% 28%) !important;
   -webkit-clip-path: polygon(0 0, 15% 0, 5% 28%, 0% 28%);
   z-index: 1;
@@ -126,7 +127,7 @@
   left: -3.5%;
   width: 100%;
   height: 32%;
-  background-color: #34B2C6 !important; /* Yellow-green color */
+  background-color: #aac620 !important; /* Yellow-green color */
   /* Keeps the precise parallel angle matching the grey shape */
   clip-path: polygon(0 0, 20% 0, 10% 100%, 0% 100%) !important;
   -webkit-clip-path: polygon(0 0, 20% 0, 10% 100%, 0% 100%);
@@ -146,12 +147,23 @@
   display: block;
 }
 
+@media (max-width: 1024px) {
+  #shape-left::before,
+  #shape-left::after {
+    display: none !important;
+    content: none !important;
+  }
 
+  #shape-left {
+    padding: 20px 40px 20px 40px;
+  }
+}
 
-
-
-
-
+@media (max-width: 767px) {
+  #shape-left {
+    padding: 20px 20px 20px 20px;
+  }
+}
 
 /*
 --- SECTION 3 ---
@@ -160,72 +172,73 @@
 /*IMAGE BORDERS*/
 
 #img-wrap::before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    width: 40px;
-    height: 40px;
-    border-top: 2px solid #209578;
-    border-left: 2px solid #209578;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 40px;
+  height: 40px;
+  border-top: 2px solid #209578;
+  border-left: 2px solid #209578;
 }
 
 #img-wrap::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    right: -1px;
-    width: 40px;
-    height: 40px;
-    border-bottom: 2px solid #209578;
-    border-right: 2px solid #209578;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid #209578;
+  border-right: 2px solid #209578;
 }
-
-
 
 /*RIGHT SIDE OF SLIDE 3*/
 #shape-right-3 {
-    position: relative;
-    overflow: visible;
-    z-index: 20;
+  position: relative;
+  overflow: visible;
+  z-index: 20;
 }
 
 #shape-right-3::before {
-    content: "";
-    position: absolute;
-    top: 15%;
-    left: 75%;
-    width: 60%;
-    height: 100%;
-    /*transform-origin: bottom left;*/
-    transform: skewX(-28deg);
-    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
-    background-color: #34B2C6;
-    z-index: 9;
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 22vw;
+  width: 60%;
+  height: 100%;
+  /*transform-origin: bottom left;*/
+  transform: skewX(-28deg);
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.3607843137);
+  background-color: #aac620;
+  z-index: 9;
 }
 
 #shape-right-3::after {
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: 64%;
-    width: 60%;
-    height: 110%;
-    transform-origin: bottom left;
-    transform: skewX(-28deg);
-    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
-    background-color: #209578;
-    z-index: 110;
+  content: "";
+  position: absolute;
+  top: 29%;
+  left: 17vw;
+  width: 90%;
+  height: 110%;
+  transform-origin: bottom left;
+  transform: skewX(-28deg);
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.3607843137);
+  background-color: #209578;
+  z-index: 110;
 }
 
-@media(min-width: 1500px) {
-    #shape-right-3::after {
-            left: 58%;
-    }
+@media (min-width: 1800px) {
+  #shape-right-3::after {
+    left: 19vw;
+  }
 }
 
-
-
+@media (min-width: 2400px) {
+  #shape-right-3::after {
+    left: 20vw;
+  }
+}
 
 /*
 --- SECTION 4 ---
@@ -233,20 +246,13 @@
 
 /*Title Underline*/
 #underline-title h2 {
-text-underline-offset: 14px !important;
-text-decoration-color: #209578 !important;
+  text-underline-offset: 14px !important;
+  text-decoration-color: #209578 !important;
 }
-
 
 .icon-boxes:hover {
-    background-color: rgba(45, 106, 45, 0.06);
+  background-color: rgba(45, 106, 45, 0.06);
 }
-
-
-
-
-
-
 
 /*
 --- SECTION 5 -TABLE ---
@@ -254,79 +260,118 @@ text-decoration-color: #209578 !important;
 
 /* Table Base & Outer Spacing */
 table.custom-spec-table {
-    width: 100%;
-    max-width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    margin: 40px auto; /* Adds clean spacing above and below the table */
-    font-family: Arial, sans-serif;
-    font-size: 1rem !important;
-    font-weight: 400;
-    border: 1px solid #707070;
-    color: #2b2c34;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 40px auto; /* Adds clean spacing above and below the table */
+  font-family: Arial, sans-serif;
+  font-size: 1rem !important;
+  font-weight: 400;
+  /*border: 1px solid #707070;*/
+  color: #2b2c34;
+  box-sizing: border-box;
 }
 
 /* Force All Cells and Text to be Centered with Pure Padding for Height */
-table.custom-spec-table th, 
+table.custom-spec-table th,
 table.custom-spec-table td {
-    border: 1px solid #707070;
-    padding: 45px 15px; /* Generous top/bottom padding to cleanly double the height */
-    line-height: 1.4 !important; 
-    vertical-align: middle;
-    text-align: center !important; 
-    text-transform: none !important;
+  border: 1px solid #707070;
+  padding: 45px 15px; /* Generous top/bottom padding to cleanly double the height */
+  line-height: 1.4 !important;
+  vertical-align: middle;
+  text-align: center !important;
+  text-transform: none !important;
 }
 
 /* Header Specific Styles (thead) */
 table.custom-spec-table thead tr {
-    background-color: #2b2c34; /* Dark slate blue background */
+  background-color: #2b2c34; /* Dark slate blue background */
 }
 
 table.custom-spec-table thead th {
-    color: #AAC620; /* Bright theme lime-yellow/green typography */
-    font-weight: bold;
+  color: #aac620; /* Bright theme lime-yellow/green typography */
+  font-weight: bold;
 }
 
 /* First Column Visual Header Highlight (Prime) */
 table.custom-spec-table tbody th.row-highlight {
-    background-color: #AAC620; /* Bright theme green cell background */
-    color: #2b2c34; /* Dark text for clean contrast */
-    font-weight: bold;
+  background-color: #aac620; /* Bright theme green cell background */
+  color: #2b2c34; /* Dark text for clean contrast */
+  font-weight: bold;
 }
 
 /* Standard Table Body White Row Cells */
 table.custom-spec-table tbody td {
-    background-color: #ffffff;
-    color: #2b2c34;
-    font-weight: bold; 
-    padding-block: 25px;
+  background-color: #ffffff;
+  color: #2b2c34;
+  font-weight: bold;
+  padding-block: 25px;
 }
-
 
 /* First Column Visual Header Highlight (Prime) */
 table.custom-spec-table tbody tr:first-child th:first-child,
 table.custom-spec-table tbody th.row-highlight {
-    background-color: #AAC620 !important; /* Forces the light green background */
-    color: #2b2c34 !important;            /* Dark text for clean contrast */
-    font-weight: bold !important;
+  background-color: #aac620 !important; /* Forces the light green background */
+  color: #2b2c34 !important; /* Dark text for clean contrast */
+  font-weight: bold !important;
+}
+/* ===========================
+   TABLET
+=========================== */
+@media (max-width: 1024px) {
+  table.custom-spec-table {
+    min-width: 700px;
+    font-size: 0.9rem !important;
+  }
+
+  table.custom-spec-table th,
+  table.custom-spec-table td {
+    padding: 18px 10px;
+    font-size: 0.9rem !important;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
 }
 
+/* ===========================
+   MOBILE
+=========================== */
+@media (max-width: 767px) {
+  .custom-spec-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
+  table.custom-spec-table {
+    min-width: 619px;
+    font-size: 0.85rem !important;
+  }
 
+  table.custom-spec-table th,
+  table.custom-spec-table td {
+    padding: 15px 8px;
+  }
 
-
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: none !important;
+  }
+}
 
 /*
 --- SECTION 6 --- 
 */
 
-
 /***LEFT SIDE OF SLIDE 6***/
 
 #hero-wrap-6 {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Dark solid left block */
@@ -335,42 +380,41 @@ table.custom-spec-table tbody th.row-highlight {
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
   z-index: 2;
   padding: 40px 100px 40px 40px;
-  box-shadow: 0 33px 30px rgba(0,0,0,.168627451);
-  background-color: #ffffff ;
- 
+  box-shadow: 0 33px 30px rgba(0, 0, 0, 0.168627451);
+  background-color: #f1f3f3;
 }
 
 #hero-wrap-6::after {
   content: "";
   position: absolute;
-  top: 20PX;
+  top: 20px;
   left: 20.65%;
   width: 95%;
   height: 100%;
   clip-path: polygon(
-    36% 0,    /* top-left of strip: where shape-left's 85% lands on hero-wrap */
-    40.5% 0,    /* top-right of strip */
-    50% 87%, /* bottom-right: where shape-left's 100% lands on hero-wrap */
-    47% 100%  /* bottom-left */
+    36% 0,
+    /* top-left of strip: where shape-left's 85% lands on hero-wrap */ 40.5% 0,
+    /* top-right of strip */ 50% 87%,
+    /* bottom-right: where shape-left's 100% lands on hero-wrap */ 47% 100%
+      /* bottom-left */
   );
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 0;
   pointer-events: none;
 }
 
-
-
-
-
-
+@media (max-width: 1024px) {
+  #shape-left-6 {
+    padding: 20px 40px 20px 40px;
+  }
+}
 
 /*
 --- SECTION 7 --- 
 */
 
-
 .underline {
-      text-underline-offset: 20px;
+  text-underline-offset: 20px;
 }
 
 /***LEFT SIDE OF SLIDE 7***/
@@ -393,30 +437,26 @@ table.custom-spec-table tbody th.row-highlight {
   background-color: #2b2c34 !important; /* Your dark solid color */
   clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%) !important;
   -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
-  z-index: 1; 
+  z-index: 1;
   pointer-events: none;
 }
-
 
 /* 3. The yellow-green shape (added behind and right of the dark grey) */
 #shape-left-7::after {
   content: "";
   position: absolute;
   /* Negative top pulls it above the container, height over 100% pushes it below */
-  top: 10%; 
-  left: -1.5%; 
-  width: 100%; 
-  height: 100%; 
-  background-color: #34B2C6 !important; /* Yellow-green color */
+  top: 10%;
+  left: -1.5%;
+  width: 100%;
+  height: 100%;
+  background-color: #aac620 !important; /* Yellow-green color */
   /* Keeps the precise parallel angle matching the grey shape */
   clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%) !important;
   -webkit-clip-path: polygon(0 0, 75% 0, 10% 100%, 0% 100%);
   z-index: 0; /* Stays behind the grey background */
   pointer-events: none;
 }
-
-
-
 
 /* 4. The image sits completely whole on top of everything */
 #shape-left-7 .elementor-widget-image {
@@ -430,114 +470,120 @@ table.custom-spec-table tbody th.row-highlight {
   display: block;
 }
 
-
-
-
-
-
 /*RIGHT SIDE OF SLIDE 7*/
 #shape-right-7 {
-    position: relative;
-    overflow: visible;
-    z-index: 20;
+  position: relative;
+  overflow: visible;
+  z-index: 20;
 }
 
 #shape-right-7::before {
-    content: "";
-    position: absolute;
-    top: 72%;
-    left: 65%;
-    width: 60%;
-    height: 40%;
-    /*transform-origin: bottom left;*/
-    transform: skewX(-28deg);
-    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
-    background-color: #34B2C6;
-    z-index: 9;
+  content: "";
+  position: absolute;
+  top: 72%;
+  left: 65%;
+  width: 60%;
+  height: 40%;
+  /*transform-origin: bottom left;*/
+  transform: skewX(-28deg);
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.3607843137);
+  background-color: #aac620;
+  z-index: 9;
 }
 
 #shape-right-7::after {
-    content: "";
-    position: absolute;
-    top: 75%;
-    left: 54%;
-    width: 60%;
-    height: 40%;
-    transform-origin: bottom left;
-    transform: skewX(-28deg);
-    box-shadow: 0 3px 26px rgba(0, 0, 0, .3607843137);
-    background-color: #209578;
-    z-index: 110;
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 54%;
+  width: 60%;
+  height: 40%;
+  transform-origin: bottom left;
+  transform: skewX(-28deg);
+  box-shadow: 0 3px 26px rgba(0, 0, 0, 0.3607843137);
+  background-color: #209578;
+  z-index: 110;
 }
 
-@media(min-width: 1500px) {
-    #shape-right-7::after {
-            left: 58%;
-    }
+@media (min-width: 1500px) {
+  #shape-right-7::after {
+    left: 58%;
+  }
 }
+/* Hide shape-right-7 on tablet and mobile */
+@media (max-width: 1024px) {
+  #shape-right-7::before,
+  #shape-right-7::after {
+    display: none !important;
+    content: none !important;
+  }
 
-
-
-
-
+  #shape-left-7 {
+    padding: 40px;
+  }
+}
 
 /* 
    BUTTON DARK GREEN  */
 
 /* 1. Ensure the container behaves correctly and elements align */
 #btn-dark-green .etheme-button-wrapper {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 /* 2. Style the actual button text link */
 #btn-dark-green .elementor-button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem 2.1875rem !important;
-    font-family: Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: .0625rem;
-    background-color: transparent !important;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 2.1875rem !important;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  background-color: transparent !important;
+  text-decoration: none;
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out !important;
 }
 
 /* 3. Common rules for both left and right brackets */
 #btn-dark-green .elementor-button::before,
 #btn-dark-green .elementor-button::after {
-    content: "" !important;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 30px;
-    box-sizing: border-box;
-    pointer-events: none;
-    background-color: transparent !important;
-    transform: none !important;
-    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  box-sizing: border-box;
+  pointer-events: none;
+  background-color: transparent !important;
+  transform: none !important;
+  transition:
+    border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out !important;
 }
 
 /* 4. Initial bracket colors & placement */
 #btn-dark-green .elementor-button::before,
 #btn-dark-green .elementor-button::after {
-    border-top: 4px solid #209578 !important;
-    border-bottom: 4px solid #209578 !important;
+  border-top: 4px solid #209578 !important;
+  border-bottom: 4px solid #209578 !important;
 }
 
 #btn-dark-green .elementor-button::before {
-    left: 0;
-    border-left: 4px solid #209578 !important;
-    border-right: none !important;
+  left: 0;
+  border-left: 4px solid #209578 !important;
+  border-right: none !important;
 }
 
 #btn-dark-green .elementor-button::after {
-    right: 0;
-    border-right: 4px solid #209578 !important;
-    border-left: none !important;
+  right: 0;
+  border-right: 4px solid #209578 !important;
+  border-left: none !important;
 }
 
 /* ==========================================================================
@@ -545,21 +591,130 @@ table.custom-spec-table tbody th.row-highlight {
    ========================================================================== */
 
 #btn-dark-green .elementor-button:hover {
-    background-color: #34B2C6 !important;
-    color: white !important;
-    border-radius: 2px;
+  background-color: #34b2c6 !important;
+  color: white !important;
+  border-radius: 2px;
 }
 
 #btn-dark-green .elementor-button:hover::before {
-    border-top-color: #34B2C6 !important;
-    border-bottom-color: #34B2C6 !important;
-    border-left-color: #34B2C6 !important;
-    background-color: transparent !important;
+  border-top-color: #34b2c6 !important;
+  border-bottom-color: #34b2c6 !important;
+  border-left-color: #34b2c6 !important;
+  background-color: transparent !important;
 }
 
 #btn-dark-green .elementor-button:hover::after {
-    border-top-color: #34B2C6 !important;
-    border-bottom-color: #34B2C6 !important;
-    border-right-color: #34B2C6 !important;
-    background-color: transparent !important;
+  border-top-color: #34b2c6 !important;
+  border-bottom-color: #34b2c6 !important;
+  border-right-color: #34b2c6 !important;
+  background-color: transparent !important;
+}
+
+/*
+**BUTTON BRAND GREEN**
+*/
+
+/* 1. Ensure the container behaves correctly and elements align */
+#btn-green .etheme-button-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+/* 2. Style the actual button text link */
+#btn-green .elementor-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 2.1875rem !important;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  background-color: transparent !important;
+  text-decoration: none;
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out !important;
+}
+
+/* 3. Common rules for both left and right brackets */
+#btn-green .elementor-button::before,
+#btn-green .elementor-button::after {
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  border-top: 4px solid #34b2c6 !important;
+  border-bottom: 4px solid #34b2c6 !important;
+  box-sizing: border-box;
+  pointer-events: none;
+  background-color: transparent !important;
+  transform: none !important;
+  transition:
+    border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out !important;
+}
+
+/* 4. Left Bracket specific properties */
+#btn-green .elementor-button::before {
+  left: 0;
+  border-left: 4px solid #34b2c6 !important;
+  border-right: none !important;
+}
+
+/* 5. Right Bracket specific properties */
+#btn-green .elementor-button::after {
+  right: 0;
+  border-right: 4px solid #34b2c6 !important;
+  border-left: none !important;
+}
+
+/* ===
+   HOVER STATES: Synced across all elements simultaneously
+=== */
+
+#btn-green .elementor-button:hover {
+  background-color: #1b7f66 !important;
+  color: white !important;
+  border-radius: 2px;
+}
+
+/* Left bracket — FIXED: added the missing space before .elementor-button
+   (this is why the left bracket didn't change colour on hover) */
+#btn-green .elementor-button:hover::before {
+  border-top-color: #1b7f66 !important;
+  border-bottom-color: #1b7f66 !important;
+  border-left-color: #1b7f66 !important;
+  background-color: transparent !important;
+}
+
+/* Right bracket converts smoothly at the exact same pace */
+#btn-green .elementor-button:hover::after {
+  border-top-color: #1b7f66 !important;
+  border-bottom-color: #1b7f66 !important;
+  border-right-color: #1b7f66 !important;
+  background-color: transparent !important;
+}
+
+@media (max-width: 1024px) {
+  .e-acbb177-7a9e223 .etheme-advanced-headline {
+    font-size: 35px !important;
+  }
+}
+
+/* Κρύβει το div σε Mobile και Tablet */
+@media (max-width: 1024px) {
+  #bck-img {
+    display: none !important;
+  }
+}
+
+/* Κρύβει τα ::before και ::after pseudo-elements σε Tablet και Mobile */
+@media (max-width: 1024px) {
+  #shape-left-7::before,
+  #shape-left-7::after {
+    display: none !important;
+  }
 }

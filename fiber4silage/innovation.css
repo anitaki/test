@@ -67,6 +67,19 @@
 }
 
 
+/* Hide on tablet and mobile */
+@media (max-width: 1024px) {
+  #shape-left-1::before,
+  #shape-left-1::after {
+    display: none !important;
+  }
+
+  /* Προαιρετικά αν δεν χρειάζεται και το επιπλέον padding */
+  #shape-left-1 {
+    padding: 40px !important;
+  }
+}
+
 
 
 
@@ -113,7 +126,18 @@
     }
 }
 
+@media (max-width: 1024px) {
+    #shape-right-1::before,
+    #shape-right-1::after {
+        content: none !important;
+    }
+}
 
+@media (max-width: 767px) {
+    #shape-right-1 {
+        display: none !important;
+    }
+}
 
 
 
@@ -169,7 +193,12 @@
   pointer-events: none;
 }
 
-
+@media (max-width: 1024px) {
+    #shape-left-2::before,
+    #shape-left-2::after {
+        content: none !important;
+    }
+}
 
 
 /* 4. The image sits completely whole on top of everything */
@@ -245,7 +274,21 @@
 }
 
 
+/* Mobile */
+@media (max-width: 767px) {
+    #shape-right-3::before,
+    #shape-right-3::after {
+        content: none !important;
+    }
+}
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #shape-right-3::before,
+    #shape-right-3::after {
+        content: none !important;
+    }
+}
 
 
 
@@ -298,7 +341,12 @@
     }
 }
 
-
+@media (max-width: 1024px) {
+    #shape-right-4::before,
+    #shape-right-4::after {
+        content: none !important;
+    }
+}
 
 
 
